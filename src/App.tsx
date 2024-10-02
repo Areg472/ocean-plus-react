@@ -1,4 +1,4 @@
-import './App.css'
+import './App.css';
 
 function App() {
 
@@ -9,6 +9,7 @@ function App() {
           <h2>Welcome!</h2>
       </div>
       </body>
+
   )
 }
 

@@ -10,6 +10,9 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url('./pictures/background.jpg') center center fixed no-repeat;
+  object-fit: fill;
+  background-size: 150%;
 }
 
 

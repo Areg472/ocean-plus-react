@@ -4,8 +4,3 @@
   padding: 2rem;
   text-align: center;
 }
-
-.background {
-  background: url('./pictures/background.jpg') center center fixed no-repeat;
-  width: 300%;
-}

@@ -1,7 +1,4 @@
 import './App.css';
-import profile1 from './pictures/areg profile icon.jpg'
-import profile2 from './pictures/leon profile icon.jpg'
-import profile3 from './pictures/veysshal profile icon.jpg'
 
 function App() {
     return (

@@ -13,6 +13,7 @@
     -moz-osx-font-smoothing: grayscale;
     background: url('./pictures/background.jpg') center center fixed no-repeat;
     object-fit: fill;
+    overflow-x: hidden;
     background-size: 130% 400%;
   }
 }
@@ -31,7 +32,8 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     object-fit: fill;
-    background-size: 130% 400%;
+    background-size: 100vw 100vw;
+    overflow-x: hidden;
     background: url('./pictures/background.jpg') fixed center center;
   }
 }

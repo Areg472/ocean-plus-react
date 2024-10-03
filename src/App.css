@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -17,31 +21,6 @@
   }
 }
 
-.Profileimage1 {
-  filter: brightness(70%);
-}
-
-.Profileimage2 {
-  filter: brightness(70%);
-}
-
-.Profileimage3 {
-  filter: brightness(70%);
-}
-
-@media (min-width: 320px) and (max-width: 999px) {
-  .textprofile1 {
-    font-size: 16px;
-    position: absolute;
-    z-index: 10;
-    transform: translate(140px, -200px);
-  }
-}
-
-@media (min-width: 1000px) {
-  .textprofile1 {
-    transform: translate(140px, -200px);
-    font-size: 16px;
-    position: absolute;
-  }
+.oplusbuttons {
+  @apply bg-blue-400 text-white font-roboto rounded-full py-2 px-4
 }

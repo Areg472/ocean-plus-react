@@ -10,5 +10,5 @@
 }
 
 .oplusbuttons {
-  @apply bg-blue-400 text-white font-roboto rounded-full py-2 px-4
+  @apply bg-blue-400 text-white rounded-full py-2 px-4
 }

@@ -4,3 +4,14 @@
   padding: 2rem;
   text-align: center;
 }
+
+.Profileimage1 {
+  margin-right: 850px;
+  max-width: 50%;
+  max-height: 50%;
+}
+
+.Profileimage2 {
+  max-width: 50%;
+  max-height: 50%;
+}

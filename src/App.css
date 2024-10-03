@@ -8,18 +8,6 @@
   padding: 2rem;
   text-align: center;
 }
-@media (min-width: 320px) and (max-width: 999px) {
-  .Imagesprofile {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-@media (min-width: 1000px) {
-  .Imagesprofile {
-    display: flex;
-  }
-}
 
 .oplusbuttons {
   @apply bg-blue-400 text-white font-roboto rounded-full py-2 px-4

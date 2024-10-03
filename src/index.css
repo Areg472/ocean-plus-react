@@ -31,7 +31,6 @@
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    object-fit: fill;
     background-size: 100vw 100vw;
     overflow-x: hidden;
     background: url('./pictures/background.jpg') fixed center center;

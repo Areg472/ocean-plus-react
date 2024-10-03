@@ -4,9 +4,17 @@
   padding: 2rem;
   text-align: center;
 }
+@media (min-width: 320px) and (max-width: 999px) {
+  .Imagesprofile {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
-.Imagesprofile {
-  display: flex;
+@media (min-width: 1000px) {
+  .Imagesprofile {
+    display: flex;
+  }
 }
 
 .Profileimage1 {
@@ -21,9 +29,19 @@
   filter: brightness(70%);
 }
 
-.textprofile1 {
-  transform: translate(140px, -200px);
-  font-size: 16px;
-  position: absolute;
+@media (min-width: 320px) and (max-width: 999px) {
+  .textprofile1 {
+    font-size: 16px;
+    position: absolute;
+    z-index: 10;
+    transform: translate(140px, -200px);
+  }
 }
 
+@media (min-width: 1000px) {
+  .textprofile1 {
+    transform: translate(140px, -200px);
+    font-size: 16px;
+    position: absolute;
+  }
+}

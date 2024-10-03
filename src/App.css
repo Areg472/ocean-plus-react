@@ -4,6 +4,7 @@
   padding: 2rem;
   text-align: center;
 }
+
 @media (min-width: 320px) and (max-width: 999px) {
   .Imagesprofile {
     display: flex;
@@ -18,15 +19,15 @@
 }
 
 .Profileimage1 {
-  filter: brightness(70%);
+  filter: brightness(50%);
 }
 
 .Profileimage2 {
-  filter: brightness(70%);
+  filter: brightness(50%);
 }
 
 .Profileimage3 {
-  filter: brightness(70%);
+  filter: brightness(50%);
 }
 
 @media (min-width: 320px) and (max-width: 999px) {

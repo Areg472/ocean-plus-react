@@ -9,7 +9,7 @@ export function Movies() {
 
             <body>
                 <div className="Headings">
-                    <h1>Movies and shows!</h1>
+                    <h1 className="leading-normal">Movies and shows!</h1>
                 </div>
             </body>
         </>

@@ -6,4 +6,9 @@
     width: 100px;
     height: 30px;
     text-align: center;
+    transition: .4s;
+}
+
+.button:hover {
+    box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5);
 }

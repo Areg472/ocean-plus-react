@@ -25,7 +25,7 @@ export function Contactus() {
                         id="message"
                         name="message"
                         placeholder="Message"
-                        className="field textarea"
+                        className="field textarea mb-2.5"
                         required={true}
                     ></textarea><br/>
                     <Turnstile

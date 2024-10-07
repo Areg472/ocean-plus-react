@@ -14,28 +14,51 @@
     border-radius: 7px;
 }
 
-.movietext
-{
-    margin-right: 142px;
+@supports (-webkit-appearance: none) and (not (-ms-ime-align: auto)) {
+    .movietext {
+        margin-right: 157px;
+    }
+
+    .nametext {
+        margin-right: 186px;
+    }
+
+    .emailtext {
+        margin-right: 190px;
+    }
+
+    .textarea {
+        max-height: 100px;
+        min-height: 35px;
+        width: 235px;
+    }
+
+    .form {
+        margin-top: 10px;
+    }
 }
 
-.nametext
-{
-    margin-right: 173px;
-}
+@supports (-moz-appearance: none) {
 
-.emailtext
-{
-    margin-right: 176px;
-}
+    .movietext {
+        margin-right: 142px;
+    }
 
-.textarea
-{
-    max-height: 100px;
-    min-height: 35px;
-}
+    .nametext {
+        margin-right: 173px;
+    }
 
-.form
-{
-    margin-top: 10px;
+    .emailtext {
+        margin-right: 176px;
+    }
+
+    .textarea {
+        max-height: 100px;
+        min-height: 35px;
+        width: 220px;
+    }
+
+    .form {
+        margin-top: 10px;
+    }
 }

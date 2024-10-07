@@ -55,10 +55,23 @@
     .textarea {
         max-height: 100px;
         min-height: 35px;
-        width: 220px;
+        width: 225px;
     }
 
     .form {
         margin-top: 10px;
+    }
+
+    @media only screen and (max-device-width: 1000px)
+    {
+        .otherfield
+        {
+            width: 230px;
+        }
+
+        .textarea
+        {
+            width: 220px;
+        }
     }
 }

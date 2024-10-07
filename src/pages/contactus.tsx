@@ -16,9 +16,9 @@ export function Contactus() {
                     oceanplus@oceanbluestream.com</h2>
                 <form action="https://submit-form.com/dY5qR0N3q" className="form">
                     <label htmlFor="name" className="nametext">Name</label><br/>
-                    <input type="text" id="name" name="name" placeholder="Name" className="field" required={true}/><br/>
+                    <input type="text" id="name" name="name" placeholder="Name" className="field otherfield" required={true}/><br/>
                     <label htmlFor="email" className="emailtext">Email</label><br/>
-                    <input type="email" id="email" name="email" placeholder="Email" className="field"
+                    <input type="email" id="email" name="email" placeholder="Email" className="field otherfield"
                            required={true}/><br/>
                     <label htmlFor="message" className="movietext">Movie link</label><br/>
                     <textarea

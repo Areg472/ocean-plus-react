@@ -16,7 +16,8 @@ export function Contactus() {
                     <label htmlFor="name" className="nametext">Name</label><br/>
                     <input type="text" id="name" name="name" placeholder="Name" className="field" required={true}/><br/>
                     <label htmlFor="email" className="emailtext">Email</label><br/>
-                    <input type="email" id="email" name="email" placeholder="Email" className="field" required={true}/><br/>
+                    <input type="email" id="email" name="email" placeholder="Email" className="field"
+                           required={true}/><br/>
                     <label htmlFor="message" className="movietext">Movie link</label><br/>
                     <textarea
                         id="message"
@@ -25,6 +26,11 @@ export function Contactus() {
                         className="field textarea"
                         required={true}
                     ></textarea><br/>
+                    <div
+                        className="cf-turnstile"
+                        data-sitekey="0x4AAAAAAAYxUbQvN-b9P7bk"
+                        data-callback="javascriptCallback"
+                    ></div>
                     <button type="submit" className="submit">Send</button>
                 </form>
             </div>

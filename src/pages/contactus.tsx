@@ -35,7 +35,7 @@ export function Contactus() {
                                 method: "POST",
                                 body: JSON.stringify({ token }),
                             }).then((response) => {
-                                if (!response.ok) turnstile.reset();
+                                if (!response.ok) turnstile.return('Turnstile token successfuly validated.');
                             });
                         }}
                     />

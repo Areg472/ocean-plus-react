@@ -14,22 +14,28 @@
     border-radius: 7px;
 }
 
-@supports (-webkit-appearance: none) and (not (-ms-ime-align: auto)) {
+@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
     .movietext {
-        margin-right: 157px;
+        margin-right: 160px;
     }
 
     .nametext {
-        margin-right: 186px;
+        margin-right: 189px;
     }
 
     .emailtext {
-        margin-right: 190px;
+        margin-right: 193px;
     }
 
     .textarea {
         max-height: 100px;
         min-height: 35px;
+        width: 235px;
+    }
+
+    .otherfield
+    {
+        margin-right: 2px;
         width: 235px;
     }
 
@@ -81,15 +87,15 @@
     {
 
         .movietext {
-            margin-right: 160px;
+            margin-right: 154px;
         }
 
         .nametext {
-            margin-right: 189px;
+            margin-right: 183px;
         }
 
         .emailtext {
-            margin-right: 193px;
+            margin-right: 187px;
         }
 
         .otherfield
@@ -99,7 +105,8 @@
 
         .textarea
         {
-            width: 216px;
+            width: 220px;
+            margin-right: 2px;
         }
     }
 }

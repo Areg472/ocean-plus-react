@@ -38,7 +38,7 @@
     }
 }
 
-@supports (-moz-appearance: none) {
+@-moz-document url-prefix() {
 
     .movietext {
         margin-right: 142px;

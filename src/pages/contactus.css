@@ -36,6 +36,21 @@
     .form {
         margin-top: 10px;
     }
+
+    @media only screen and (max-device-width: 1000px)
+    {
+        .movietext {
+            margin-right: 155px;
+        }
+
+        .nametext {
+            margin-right: 184px;
+        }
+
+        .emailtext {
+            margin-right: 188px;
+        }
+    }
 }
 
 @-moz-document url-prefix() {
@@ -64,14 +79,27 @@
 
     @media only screen and (max-device-width: 1000px)
     {
+
+        .movietext {
+            margin-right: 160px;
+        }
+
+        .nametext {
+            margin-right: 189px;
+        }
+
+        .emailtext {
+            margin-right: 193px;
+        }
+
         .otherfield
         {
-            width: 220px;
+            width: 223px;
         }
 
         .textarea
         {
-            width: 220px;
+            width: 216px;
         }
     }
 }

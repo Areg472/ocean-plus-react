@@ -46,15 +46,15 @@
     @media only screen and (max-device-width: 1000px)
     {
         .movietext {
-            margin-right: 155px;
+            margin-right: 157px;
         }
 
         .nametext {
-            margin-right: 184px;
+            margin-right: 186px;
         }
 
         .emailtext {
-            margin-right: 188px;
+            margin-right: 190px;
         }
     }
 }

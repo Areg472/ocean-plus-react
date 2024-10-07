@@ -62,21 +62,21 @@
 @-moz-document url-prefix() {
 
     .movietext {
-        margin-right: 142px;
+        margin-right: 160px;
     }
 
     .nametext {
-        margin-right: 173px;
+        margin-right: 191px;
     }
 
     .emailtext {
-        margin-right: 176px;
+        margin-right: 194px;
     }
 
     .textarea {
         max-height: 100px;
         min-height: 35px;
-        width: 225px;
+        width: 235px;
     }
 
     .form {

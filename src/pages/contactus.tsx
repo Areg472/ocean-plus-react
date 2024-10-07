@@ -1,6 +1,8 @@
 import './contactus.css'
+import Turnstile, {useTurnstile} from "react-turnstile";
 
 export function Contactus() {
+    const turnstile = useTurnstile();
     return (
         <>
             <head>
@@ -26,11 +28,17 @@ export function Contactus() {
                         className="field textarea"
                         required={true}
                     ></textarea><br/>
-                    <div
-                        className="cf-turnstile"
-                        data-sitekey="0x4AAAAAAAYxUbQvN-b9P7bk"
-                        data-callback="javascriptCallback"
-                    ></div>
+                    <Turnstile
+                        sitekey="0x4AAAAAAAYxUbQvN-b9P7bk"
+                        onVerify={(token) => {
+                            fetch("/Contact-Us", {
+                                method: "POST",
+                                body: JSON.stringify({ token }),
+                            }).then((response) => {
+                                if (!response.ok) turnstile.reset();
+                            });
+                        }}
+                    />
                     <button type="submit" className="submit">Send</button>
                 </form>
             </div>

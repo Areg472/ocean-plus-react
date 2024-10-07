@@ -1,0 +1,41 @@
+.submit{
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.field
+{
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+.movietext
+{
+    margin-right: 142px;
+}
+
+.nametext
+{
+    margin-right: 173px;
+}
+
+.emailtext
+{
+    margin-right: 176px;
+}
+
+.textarea
+{
+    max-height: 100px;
+    min-height: 35px;
+}
+
+.form
+{
+    margin-top: 10px;
+}

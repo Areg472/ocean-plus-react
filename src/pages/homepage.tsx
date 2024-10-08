@@ -7,7 +7,7 @@ export function Homepage() {
             <head>
                 <title>Ocean+ 0.1</title>
                 <meta property="og:title" content="Ocean+ - Homepage"/>
-                <meta property="og:type" content="website"/>
+                <meta property="og:type" content="article"/>
                 <meta property="og:url" content="https://ocean-plus-react.pages.dev/"/>
                 <meta property="og:image" content="../pictures/logo.jpg"/>
             </head>

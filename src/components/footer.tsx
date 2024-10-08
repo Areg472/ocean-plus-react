@@ -6,7 +6,7 @@ export function Footer()
             <>
             <div className="row space-x-5">
                 <div className="column left">
-                    <a href="https://oceanbluestream.com/discord/">
+                    <a target="_blank" href="https://oceanbluestream.com/discord/">
                         <button className="buttons">Discord</button>
                     </a>
                 </div>
@@ -19,9 +19,9 @@ export function Footer()
                                      src="https://uptime.betterstack.com/assets/static_assets/badges/blue.png"/>
                             </center>
                         </button></a>
-            </div>
-    <div className="column right">
-                        <a href="https://www.youtube.com/@RosieBrosEntertainment">
+                    </div>
+                    <div className="column right">
+                        <a target="_blank" href="https://www.youtube.com/@RosieBrosEntertainment">
                              <button className="buttons">© Ocean Blue Studios, 2024</button>
                         </a>
                     </div>

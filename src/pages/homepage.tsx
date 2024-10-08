@@ -1,15 +1,17 @@
 import './homepage.css';
 import {Link} from "react-router-dom"
+import { SEO } from '../components/SEO'
 
 export function Homepage() {
     return (
         <>
             <head>
-                <title>Ocean+ 0.1</title>
-                <meta property="og:title" content="Ocean+ - Homepage"/>
-                <meta property="og:type" content="article"/>
-                <meta property="og:url" content="https://ocean-plus-react.pages.dev/"/>
-                <meta property="og:image" content="https://github.com/Areg472/ocean-plus-react/blob/main/src/pictures/logo.jpg"/>
+                <title>Ocean+ React</title>
+                <SEO title='Ocean+ - Homepage'
+                description='The place for Vyond movies!'
+                name='Ocean+'
+                type='article'
+                image='https://github.com/Areg472/ocean-plus-react/blob/main/src/pictures/logo.jpg'/>
             </head>
             <body className="body">
             <div className="Headings">

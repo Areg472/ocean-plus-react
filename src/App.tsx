@@ -4,11 +4,9 @@ import {Homepage} from './pages/homepage.tsx';
 import {Movies} from './pages/movies.tsx';
 import {Layout} from "./Layout.tsx";
 import {Contactus} from "./pages/contactus.tsx";
-import HelmetWrapper from './components/HelmetWrapper';
 
 function App() {
     return (
-        <HelmetWrapper>
         <Router>
             <Routes>
                 <Route element={<Layout/>}>
@@ -18,7 +16,6 @@ function App() {
                 </Route>
             </Routes>
         </Router>
-        </HelmetWrapper>
     )
 }
 

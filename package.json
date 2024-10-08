@@ -12,9 +12,11 @@
   "dependencies": {
     "@formspark/use-formspark": "^0.1.39",
     "@logtail/next": "^0.1.5",
+    "@types/react-helmet": "^6.1.11",
     "@vercel/speed-insights": "^1.0.12",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-helmet": "^6.1.0",
     "react-helmet-async": "^2.0.5",
     "react-router": "^6.26.2",
     "react-router-dom": "^6.26.2",

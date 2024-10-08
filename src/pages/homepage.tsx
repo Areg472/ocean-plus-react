@@ -1,14 +1,13 @@
 import './homepage.css';
 import {Link} from "react-router-dom"
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 
 
 export function Homepage() {
     return (
 
         <>
-            <HelmetProvider>
-                <Helmet prioritizeSeoTags>
+                <Helmet>
                 <title>Ocean+ - Homepage</title>
                 <meta name="description" content='The place to watch Vyond content!'/>
                 <meta property="og:title" content='Ocean+ - Homepage'/>
@@ -21,7 +20,6 @@ export function Homepage() {
                 <meta name="twitter:image" content='https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/logo.jpg'/>
                 <meta name="twitter:card" content="summary_large_image"/>
                 </Helmet>
-            </HelmetProvider>
             <body className="body">
             <div className="Headings">
                 <h1 className="mb-4 leading-normal">Vyond movies and shows.</h1>

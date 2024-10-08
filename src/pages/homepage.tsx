@@ -1,6 +1,6 @@
 import './homepage.css';
 import {Link} from "react-router-dom"
-import { HelmetProvider } from 'react-helmet-async';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 
 export function Homepage() {
@@ -8,6 +8,7 @@ export function Homepage() {
 
         <>
             <HelmetProvider>
+                <Helmet prioritizeSeoTags>
                 <title>Ocean+ - Homepage</title>
                 <meta name="description" content='The place to watch Vyond content!'/>
                 <meta property="og:title" content='Ocean+ - Homepage'/>
@@ -19,6 +20,7 @@ export function Homepage() {
                 <meta name="twitter:description" content='The place to watch Vyond content!'/>
                 <meta name="twitter:image" content='https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/logo.jpg'/>
                 <meta name="twitter:card" content="summary_large_image"/>
+                </Helmet>
             </HelmetProvider>
             <body className="body">
             <div className="Headings">

@@ -45,15 +45,11 @@ and (max-device-width: 1000px)
     .buttons
     {
         width: 220px;
+        vertical-align: middle;
     }
 
     .column {
         margin-bottom: 20px;
         max-width: 100%;
-    }
-
-    .middle
-    {
-        margin-right: 4px;
     }
 }

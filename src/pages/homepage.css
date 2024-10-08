@@ -1,4 +1,10 @@
 .oplusbuttons {
   @apply bg-blue-400 text-white rounded-full py-2 px-4;
   cursor: pointer;
+  transition: .4s;
+}
+
+.oplusbuttons:hover {
+  box-shadow: 5px 5px 10px #60a5fa;
+  transition: .4s;
 }

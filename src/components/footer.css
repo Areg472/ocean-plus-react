@@ -25,3 +25,17 @@
 .column {
     flex: 33%;
 }
+
+@media only screen
+and (max-device-width: 1000px)
+{
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column {
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
+}

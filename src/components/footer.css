@@ -51,4 +51,9 @@ and (max-device-width: 1000px)
         margin-bottom: 20px;
         max-width: 100%;
     }
+
+    .middle
+    {
+        margin-left: 4px;
+    }
 }

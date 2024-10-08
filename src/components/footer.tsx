@@ -13,11 +13,9 @@ export function Footer()
                 <div className="column middle">
                     <a target="_blank" href="https://uptime.betterstack.com">
                         <button className="buttons">
-                            <center>
                                 <img className="uptimebutton"
                                      alt="Better Stack Website Monitoring"
                                      src="https://uptime.betterstack.com/assets/static_assets/badges/blue.png"/>
-                            </center>
                         </button></a>
                     </div>
                     <div className="column right">

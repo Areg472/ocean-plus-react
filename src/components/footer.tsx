@@ -20,7 +20,7 @@ export function Footer()
                     </div>
                     <div className="column">
                         <a target="_blank" href="https://www.youtube.com/@RosieBrosEntertainment">
-                             <button className="buttons middle">© Ocean Blue Studios, 2024</button>
+                             <button className="buttons right">© Ocean Blue Studios, 2024</button>
                         </a>
                     </div>
                 </div>

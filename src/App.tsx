@@ -9,15 +9,15 @@ import HelmetWrapper from './components/HelmetWrapper';
 function App() {
     return (
         <HelmetWrapper>
-            <Router>
-                <Routes>
-                    <Route element={<Layout/>}>
-                        <Route path="/" element={<Homepage/>}/>
-                        <Route path="/Movies" element={<Movies/>}/>
-                        <Route path="/Contact-Us" element={<Contactus/>}/>
-                    </Route>
-                </Routes>
-            </Router>
+        <Router>
+            <Routes>
+                <Route element={<Layout/>}>
+                    <Route path="/" element={<Homepage/>}/>
+                    <Route path="/Movies" element={<Movies/>}/>
+                    <Route path="/Contact-Us" element={<Contactus/>}/>
+                </Route>
+            </Routes>
+        </Router>
         </HelmetWrapper>
     )
 }

@@ -24,8 +24,8 @@ export function SEO({ title, description, name, type, image }: SEOProps) {
             { /* End Facebook tags */}
 
             { /* Twitter tags */}
-            <meta name="twitter:creator" content={name}/>
             <meta name="twitter:card" content={type}/>
+            <meta name="twitter:creator" content={name}/>
             <meta name="twitter:title" content={title}/>
             <meta name="twitter:description" content={description}/>
             <meta name="twitter:image" content={image}/>

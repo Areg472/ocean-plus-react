@@ -7,7 +7,10 @@ export function Footer()
             <div className="row space-x-5">
                 <div className="column left">
                     <a target="_blank" href="https://oceanbluestream.com/discord/">
-                        <button className="buttons">Discord</button>
+                        <button className="buttons2 mb-1.5">Discord</button>
+                    </a>
+                    <a target="_blank" href="https://status.oceanbluestream.com/">
+                        <button className="buttons2">Status</button>
                     </a>
                 </div>
                 <div className="column middle">

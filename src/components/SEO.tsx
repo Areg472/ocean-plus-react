@@ -5,7 +5,7 @@ interface SEOProps {
     description: string;
     name: string;
     type: string;
-    url: string;
+    url?: string;
     image?: string;
     twittercard?: string;
 

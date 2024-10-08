@@ -6,6 +6,8 @@ export function Homepage() {
         <>
             <head>
                 <title>Ocean+ 0.1</title>
+                <meta property="og:title" content="Ocean+ - Homepage"/>
+                <meta property="og:image" content="../pictures/logo.jpg" />
             </head>
             <body className="body">
             <div className="Headings">

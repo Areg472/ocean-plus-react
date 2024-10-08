@@ -1,17 +1,16 @@
 import './homepage.css';
 import {Link} from "react-router-dom"
-import {Helmet} from 'react-helmet';
+import { SEO } from '../components/SEO'
 
 export function Homepage() {
     return (
         <>
-            <Helmet>
-                <title>Ocean+ - Homepage</title>
-                <meta name="description" content="The place for Vyond movies!"/>
-                <meta property="og:title" content="Ocean+ - Homepage"/>
-                <meta property="og:description" content="The place for Vyond movies!"/>
-                <meta property="og:image" content="https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/logo.jpg"/>
-            </Helmet>
+            <SEO title='Ocean+ - Homepage'
+                 description='The place for Vyond movies!'
+                 name='Ocean+'
+                 type='article'
+                 image='https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/logo.jpg'/>
+
             <body className="body">
             <div className="Headings">
                 <h1 className="mb-4 leading-normal">Vyond movies and shows.</h1>

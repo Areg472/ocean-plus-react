@@ -1,4 +1,4 @@
-import { HelmetProvider } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 
 interface SEOProps {
     title: string;
@@ -10,7 +10,7 @@ interface SEOProps {
 
 export function SEO({ title, description, name, type, image }: SEOProps) {
     return (
-        <HelmetProvider>
+        <Helmet>
             { /* Standard metadata tags */}
             <title>{title}</title>
             <meta name='description' content={description}/>
@@ -30,6 +30,6 @@ export function SEO({ title, description, name, type, image }: SEOProps) {
             <meta name="twitter:description" content={description}/>
             <meta name="twitter:image" content={image}/>
             { /* End Twitter tags */}
-        </HelmetProvider>
+        </Helmet>
     );
 }

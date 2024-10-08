@@ -11,7 +11,7 @@ export function Homepage() {
                  type='article'
                  twittercard='summary_large_image'
                  url='https://reactus.oceanbluestream.com/#/'
-                 image='https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/logo.jpg'/>
+                 image={'https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/logo.jpg'}/>
 
             <body className="body">
             <div className="Headings">

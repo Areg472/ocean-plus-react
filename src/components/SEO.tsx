@@ -5,7 +5,7 @@ interface SEOProps {
     description: string;
     name: string;
     type: string;
-    image: string;
+    image?: string;
 }
 
 export function SEO({ title, description, name, type, image }: SEOProps) {

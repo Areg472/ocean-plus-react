@@ -10,8 +10,9 @@ export function Homepage() {
                 <SEO title='Ocean+ - Homepage'
                 description='The place for Vyond movies!'
                 name='Ocean+'
-                type='article'
-                image='../pictures/logo.jpg'/>
+                type='article'/>
+
+                <meta property="ob:image" content="https://github.com/Areg472/ocean-plus-react/blob/main/src/pictures/logo.jpg"/>
             </head>
             <body className="body">
             <div className="Headings">

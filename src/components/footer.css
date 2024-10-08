@@ -1,0 +1,25 @@
+.uptimebutton {
+    width: 130px;
+    height: 52px;
+}
+
+.column {
+    flex: 33%;
+}
+
+.row {
+    display: flex;
+}
+
+.left {
+    width: 33%;
+}
+
+
+
+.right
+{
+    width: 33%;
+    margin-top: 12px;
+    margin-left: 30px;
+}

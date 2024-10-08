@@ -12,7 +12,7 @@ export function Homepage() {
                 name='Ocean+'
                 type='article'/>
 
-                <meta property="ob:image" content="../pictures/logo.jpg"/>
+                <meta property="ob:image" content="https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/logo.jpg"/>
             </head>
             <body className="body">
             <div className="Headings">

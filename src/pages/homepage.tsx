@@ -5,14 +5,12 @@ import { SEO } from '../components/SEO'
 export function Homepage() {
     return (
         <>
-            <head>
-                <title>Ocean+ React</title>
-                <SEO title='Ocean+ - Homepage'
-                description='The place for Vyond movies!'
-                name='Ocean+'
-                type='article'
-                image='https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/logo.jpg'/>
-            </head>
+            <SEO title='Ocean+ - Homepage'
+                 description='The place for Vyond movies!'
+                 name='Ocean+'
+                 type='article'
+                 image='https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/logo.jpg'/>
+
             <body className="body">
             <div className="Headings">
                 <h1 className="mb-4 leading-normal">Vyond movies and shows.</h1>

@@ -9,6 +9,8 @@ export function Homepage() {
                  description='The place for Vyond movies!'
                  name='Ocean+'
                  type='article'
+                 twittercard='summary_large_image'
+                 url='https://reactus.oceanbluestream.com/#/'
                  image='https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/logo.jpg'/>
 
             <body className="body">

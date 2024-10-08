@@ -28,6 +28,7 @@ export function SEO({ title, description, name, type, image }: SEOProps) {
             <meta name="twitter:card" content={type}/>
             <meta name="twitter:title" content={title}/>
             <meta name="twitter:description" content={description}/>
+            <meta name="twitter:image" content={image}/>
             { /* End Twitter tags */}
         </HelmetProvider>
     );

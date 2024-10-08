@@ -11,7 +11,7 @@ export function Homepage() {
                 description='The place for Vyond movies!'
                 name='Ocean+'
                 type='article'
-                image='https://github.com/Areg472/ocean-plus-react/blob/main/src/pictures/logo.jpg'/>
+                image='../pictures/logo.jpg'/>
             </head>
             <body className="body">
             <div className="Headings">

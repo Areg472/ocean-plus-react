@@ -1,12 +1,18 @@
 import './homepage.css';
 import {Link} from "react-router-dom"
+import MetaTags from "../components/MetaTags.tsx";
 
 
 export function Homepage() {
     return (
 
         <>
-
+            <MetaTags
+                title='Meta Example'
+                description='This is a test description to show you how to improve SEO in your React web applications!'
+                image='https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/logo.jpg'
+                name='FacuDev'
+            />
             <body className="body">
             <div className="Headings">
                 <h1 className="mb-4 leading-normal">Vyond movies and shows.</h1>

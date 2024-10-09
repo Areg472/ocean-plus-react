@@ -8,10 +8,10 @@ export function Homepage() {
 
         <>
             <MetaTags
-                title='Meta Example'
-                description='This is a test description to show you how to improve SEO in your React web applications!'
+                title='Ocean+ - Homepage'
+                description='The place to watch Vyond content!'
                 image='https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/logo.jpg'
-                name='FacuDev'
+                name='Ocean+'
             />
             <body className="body">
             <div className="Headings">

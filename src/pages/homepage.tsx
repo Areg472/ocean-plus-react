@@ -1,6 +1,5 @@
 import './homepage.css';
 import {Link} from "react-router-dom"
-import MetaTags from "../components/MetaTags.tsx";
 import {Helmet} from "react-helmet-async";
 
 

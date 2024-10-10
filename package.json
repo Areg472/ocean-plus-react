@@ -7,7 +7,10 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "pages:build": "npx @cloudflare/next-on-pages",
+    "preview": "npm run pages:build && wrangler pages dev",
+    "deploy": "npm run pages:build && wrangler pages deploy"
   },
   "dependencies": {
     "@formspark/use-formspark": "^0.1.39",
@@ -38,9 +41,5 @@
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.0.1",
     "vite": "^5.4.1"
-  },
-
-  "pages:build": "npx @cloudflare/next-on-pages",
-  "preview": "npm run pages:build && wrangler pages dev",
-  "deploy": "npm run pages:build && wrangler pages deploy"
+  }
 }

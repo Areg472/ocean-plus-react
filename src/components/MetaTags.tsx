@@ -1,6 +1,5 @@
 import { Helmet } from 'react-helmet-async';
 
-// You can have more props. In my case, these are enough.
 function MetaTags ({ title = '', description = '', image = '', name = '' }) {
     return (
         <Helmet>

@@ -4,8 +4,7 @@ import MetaTags from "../components/MetaTags.tsx";
 
 export function Homepage() {
     return (
-
-        <div>
+        <>
             <MetaTags
                 title='Ocean+ - Homepage'
                 description='The place to watch Vyond content!'
@@ -19,7 +18,6 @@ export function Homepage() {
                 <Link to="/Movies"><input className="oplusbuttons leading-loose mt-4" type="button" value="Access As Guest"/></Link>
             </div>
             </body>
-        </div>
-
+        </>
     )
 }

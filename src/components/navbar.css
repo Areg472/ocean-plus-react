@@ -1,12 +1,18 @@
-.button {
-    border: 1px solid black;
-    background-color: black;
-    border-radius: 20px;
-    width: 150px;
-    height: 30px;
-    text-align: center;
-    transition: .4s;
-    margin-top: 10px;
+
+
+@media (min-width: 1024px) {
+    .button {
+        border: 1px solid black;
+        background-color: black;
+        border-radius: 20px;
+        width: 150px;
+        height: 30px;
+        text-align: center;
+        transition: .4s;
+        margin-top: 10px;
+        flex: 33%;
+        margin-right: 20px;
+    }
 }
 
 .button:hover {
@@ -14,8 +20,24 @@
     transition: .4s;
 }
 
-@media (min-width: 1024px) {
+@media only screen
+and (max-device-width: 1023px) {
     .button {
-        margin-right: 20px;
+        border: 1px solid black;
+        background-color: black;
+        border-radius: 20px;
+        width: 150px;
+        height: 30px;
+        text-align: center;
+        transition: .4s;
+        margin-top: 10px;
+        flex: 100%;
+    }
+
+    .navbar
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }

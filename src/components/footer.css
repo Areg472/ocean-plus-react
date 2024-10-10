@@ -42,15 +42,17 @@
     margin-right: auto;
 }
 
-.row {
-    display: flex;
-}
-
 .column {
     flex: 33%;
 }
 
 @media (min-width: 1024px) {
+
+    .row
+    {
+        display: flex;
+    }
+
     .buttons
     {
         width: 200px;
@@ -74,12 +76,8 @@
 }
 
 @media only screen
-and (max-device-width: 1000px)
+and (max-device-width: 1023px)
 {
-    .row {
-        flex-direction: column;
-    }
-
     .buttons
     {
         width: 230px;
@@ -92,7 +90,6 @@ and (max-device-width: 1000px)
 
     .column {
         margin-bottom: 20px;
-        max-width: 100%;
     }
 
     .middle
@@ -103,5 +100,18 @@ and (max-device-width: 1000px)
     .right
     {
         margin-right: 18.5px;
+    }
+
+    .row
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left
+    {
+        flex-direction: column;
+        display: flex;
     }
 }

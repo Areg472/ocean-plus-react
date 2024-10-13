@@ -1,13 +1,17 @@
 import './contactus.css'
 import Turnstile, {useTurnstile} from "react-turnstile";
+import MetaTags from "../components/MetaTags.tsx";
 
 export function Contactus() {
     const turnstile = useTurnstile();
     return (
         <>
-            <head>
-                <title>Contact Us</title>
-            </head>
+            <MetaTags
+                title="Ocean+ - Contact Us"
+                description="The contact us for Ocean+"
+                image="https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/logo.jpg"
+                name="Ocean+"
+            />
 
             <body>
             <div className="contact">

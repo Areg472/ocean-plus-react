@@ -9,13 +9,13 @@
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://reactus.oceanbluestream.com/movies</loc>
+        <loc>https://reactus.oceanbluestream.com/Movies</loc>
         <lastmod>2024-10-13</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://reactus.oceanbluestream.com/contact-us</loc>
+        <loc>https://reactus.oceanbluestream.com/Contact-Us</loc>
         <lastmod>2024-10-13</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>

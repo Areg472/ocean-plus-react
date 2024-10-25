@@ -1,5 +1,13 @@
 import './movies.css';
 import MetaTags from "../components/MetaTags.tsx";
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    CarouselNext,
+    CarouselPrevious,
+} from "@/components/ui/carousel"
+
 
 export function Movies() {
     return (
@@ -14,17 +22,18 @@ export function Movies() {
             <body>
                 <div className="Headings">
                     <h1 className="leading-normal">Movies and shows!</h1>
-                    <div className="row-1 space-x-2.5 mt-2">
-                        <div className="col-1">
-                            <img src="https://github.com/Areg472/ocean-plus-react/blob/main/src/pictures/Cailou-the-movie-thumbnail00086400.png?raw=true" alt="Caillou movie"/>
-                        </div>
-                        <div className="col-2">
-                            <img src="https://github.com/Areg472/ocean-plus-react/blob/main/src/pictures/CFTWCFTL-The-Movie-ocean-poster-with-the-template00086400.png?raw=true" alt="cftwcftl movie 123"/>
-                        </div>
-                        <div className="col-3">
-                            <img src="https://github.com/Areg472/ocean-plus-react/blob/main/src/pictures/CFTWCFTL-The-Movie-4-ocean-poster-with-the-template00086400.png?raw=true" alt="cftwcftl movie 4"/>
-                        </div>
-                    </div>
+                    <Carousel className="dark mt-4">
+                        <CarouselContent>
+                            <CarouselItem className="md:basis-1/2 lg:basis-1/3"><img src="https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/Cailou-the-movie-thumbnail00086400.png" alt="caillou"/></CarouselItem>
+                            <CarouselItem className="md:basis-1/2 lg:basis-1/3"><img src="https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/CFTWCFTL-The-Movie-ocean-poster-with-the-template00086400.png" alt="cft1"/></CarouselItem>
+                            <CarouselItem className="md:basis-1/2 lg:basis-1/3"><img src="https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/CFTWCFTL-The-Movie-4-ocean-poster-with-the-template00086400.png" alt="cft4"/></CarouselItem>
+                            <CarouselItem className="md:basis-1/2 lg:basis-1/3"><img src="https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/CFTWCFTL-The-Movie-5-ocean-poster-with-the-template00086400.png" alt="cft5"/></CarouselItem>
+                            <CarouselItem className="md:basis-1/2 lg:basis-1/3"><img src="https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/Goofus-Doofus-ocean-poster-with-the-template00086400.png" alt="gd1"/></CarouselItem>
+                            <CarouselItem className="md:basis-1/2 lg:basis-1/3"><img src="https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/Goofus-Doofus-2-ocean-poster-with-the-template00086400.png" alt="gd2"/></CarouselItem>
+                        </CarouselContent>
+                        <CarouselPrevious />
+                        <CarouselNext />
+                    </Carousel>
                 </div>
             </body>
         </>

@@ -1,0 +1,18 @@
+@media only screen
+and (max-device-width: 1023px)
+{
+    .carousel
+    {
+        margin-left: 11.25%;
+        width: 80%;
+        height: 80%;
+    }
+}
+
+@media (min-width:1024px) {
+    .carousel {
+        margin-left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}

@@ -23,7 +23,7 @@ export function Movies() {
             <body>
                 <div className="Headings">
                     <h1 className="leading-normal">Movies and shows!</h1>
-                    <Carousel className="dark mt-4"
+                    <Carousel className="dark mt-4 carousel"
                               plugins={[
                                   Autoplay({
                                       delay: 4000,

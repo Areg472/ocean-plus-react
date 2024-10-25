@@ -1,5 +1,4 @@
 import MetaTags from "@/components/MetaTags.tsx";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import {
     Card,
     CardContent,
@@ -22,41 +21,28 @@ export function Movieratings()
                 name='Ocean+'
             />
             <body>
-                <Tabs defaultValue="age" className="dark">
-                    <TabsList className="tabs w-[500px]">
-                        <TabsTrigger value="age" className="w-[250px]">Movie age ratings</TabsTrigger>
-                        <TabsTrigger value="tv" className="w-[250px]">TV age ratings</TabsTrigger>
-                    </TabsList>
-                    <TabsContent value="age">
-                        <Card className="">
-                            <CardHeader>
-                                <CardTitle>Our ratings</CardTitle>
-                                <CardDescription></CardDescription>
-                            </CardHeader>
-                            <CardContent>
-                                <p>Card Content</p>
-                            </CardContent>
-                            <CardFooter>
-                                <p></p>
-                            </CardFooter>
-                        </Card>
+                  <div className="dark">
+                      <Card>
+                          <CardHeader>
+                              <CardTitle>Our ratings</CardTitle>
+                              <CardDescription>We use special age ratings for our movies, created by us.</CardDescription>
+                          </CardHeader>
+                          <CardContent>
+                              <p>The ratings are:</p>
+                              <div className="row">
+                                  <div className="col">
+                                      <p>Everyone</p>
+                                  </div>
+                                  <div className="col">
 
-                    </TabsContent>
-                    <TabsContent value="tv">
-                        <Card className="">
-                            <CardHeader>
-                                <CardTitle>Our ratings</CardTitle>
-                                <CardDescription></CardDescription>
-                            </CardHeader>
-                            <CardContent>
-                                <p>Card Content</p>
-                            </CardContent>
-                            <CardFooter>
-                                <p></p>
-                            </CardFooter>
-                        </Card>
-                    </TabsContent>
-                </Tabs>
+                                  </div>
+                              </div>
+                          </CardContent>
+                          <CardFooter>
+                              <p></p>
+                          </CardFooter>
+                      </Card>
+                  </div>
             </body>
         </>
     )

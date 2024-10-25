@@ -29,14 +29,14 @@ export function Movieratings()
             />
             <body>
                   <div className="dark">
-                      <Card>
+                      <Card className="w-[320px] lg:w-[442px]">
                           <CardHeader>
                               <CardTitle>Our ratings</CardTitle>
                               <CardDescription>We use special age ratings for our movies, created by us.</CardDescription>
                           </CardHeader>
                           <CardContent>
                               <p>The ratings are:</p>
-                              <Carousel className="mt-4 w-[393px] " orientation="horizontal"
+                              <Carousel className="mt-4 w-[280px] lg:w-[393px] " orientation="horizontal"
                                         plugins={[
                                             Autoplay({
                                                 delay: 3000,

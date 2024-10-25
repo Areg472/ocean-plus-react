@@ -1,12 +1,29 @@
-.one
-{
-    margin-left: 55px;
-    transform: scale(70%);
+@media only screen
+and (max-device-width: 1023px) {
+    .one {
+        margin-left: 0px;
+        transform: scale(70%);
+    }
 }
 
-.onep
-{
-    margin-left: 12px;
+@media (min-width:1024px) {
+    .one {
+        margin-left: 55px;
+        transform: scale(70%);
+    }
+}
+
+@media only screen
+and (max-device-width: 1023px) {
+    .onep {
+        margin-left: 0px;
+    }
+}
+
+@media (min-width:1024px) {
+    .onep {
+        margin-left: 12px;
+    }
 }
 
 .hm

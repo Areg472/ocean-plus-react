@@ -4,6 +4,7 @@ import {Homepage} from './pages/homepage.tsx';
 import {Movies} from './pages/movies.tsx';
 import {Layout} from "./Layout.tsx";
 import {Contactus} from "./pages/contactus.tsx";
+import {Movieratings} from "@/pages/movieratings.tsx";
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
                     <Route path="/" element={<Homepage/>}/>
                     <Route path="/Movies" element={<Movies/>}/>
                     <Route path="/Contact-Us" element={<Contactus/>}/>
+                    <Route path="/Movie-ratings" element={<Movieratings/>}/>
                 </Route>
             </Routes>
         </Router>

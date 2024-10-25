@@ -47,7 +47,7 @@ export function Movies() {
                         <CarouselNext />
                     </Carousel>
                     <Link to="/Movie-ratings">
-                        <button className="button mt-10">
+                        <button className="button mt-10 w-[180px] h-[30px]">
                             Movie age ratings
                         </button>
                     </Link>

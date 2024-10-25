@@ -63,3 +63,9 @@ body {
     line-height: 1.1;
   }
 }
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}

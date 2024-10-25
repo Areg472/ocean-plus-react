@@ -8,7 +8,14 @@ import {
     CardTitle,
 } from "@/components/ui/card"
 import "./movieratings.css"
-
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    CarouselNext,
+    CarouselPrevious,
+} from "@/components/ui/carousel"
+import Autoplay from "embla-carousel-autoplay";
 
 export function Movieratings()
 {
@@ -29,14 +36,53 @@ export function Movieratings()
                           </CardHeader>
                           <CardContent>
                               <p>The ratings are:</p>
-                              <div className="row">
-                                  <div className="col">
-                                      <p>Everyone</p>
-                                  </div>
-                                  <div className="col">
-
-                                  </div>
-                              </div>
+                              <Carousel className="mt-4 w-[393px] " orientation="horizontal"
+                                        plugins={[
+                                            Autoplay({
+                                                delay: 3000,
+                                            }),
+                                        ]}
+                                        opts={{
+                                            align: "start",
+                                            loop: true,
+                                        }}>
+                                  <CarouselContent>
+                                      <CarouselItem>
+                                          <img alt="aicon" src={"https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/aicon.png"} className="one"/>
+                                          <p className="onep">Everyone</p>
+                                      </CarouselItem>
+                                      <CarouselItem>
+                                          <img
+                                              src={"https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/7icon.png"}
+                                              className="one"
+                                              alt="7icon"/>
+                                          <p className="onep">7y olds</p>
+                                      </CarouselItem>
+                                      <CarouselItem>
+                                          <img
+                                              src={"https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/ticon.png"}
+                                              className="one"
+                                              alt="ticon"/>
+                                          <p className="onep">Teens(13+)</p>
+                                      </CarouselItem>
+                                      <CarouselItem>
+                                          <img
+                                              src={"https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/micon.png"}
+                                              className="one"
+                                              alt="micon"/>
+                                          <p className="onep">Mature(17+)</p>
+                                      </CarouselItem>
+                                      <CarouselItem>
+                                          <img
+                                              src={"https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/xicon.png"}
+                                              className="one"
+                                              alt="xicon"/>
+                                          <p className="onep">Adults(18+)</p>
+                                      </CarouselItem>
+                                  </CarouselContent>
+                                  <CarouselPrevious className="hm"/>
+                                  <CarouselNext className="hm2"/>
+                              </Carousel>
                           </CardContent>
                           <CardFooter>
                               <p></p>

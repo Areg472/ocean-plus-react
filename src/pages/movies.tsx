@@ -8,6 +8,7 @@ import {
     CarouselPrevious,
 } from "@/components/ui/carousel"
 import Autoplay from "embla-carousel-autoplay"
+import {Link} from "react-router-dom"
 
 
 export function Movies() {
@@ -26,7 +27,7 @@ export function Movies() {
                     <Carousel className="dark mt-4 carousel"
                               plugins={[
                                   Autoplay({
-                                      delay: 4000,
+                                      delay: 7000,
                                   }),
                               ]}
                               opts={{
@@ -45,6 +46,11 @@ export function Movies() {
                         <CarouselPrevious />
                         <CarouselNext />
                     </Carousel>
+                    <Link to="/Movie-ratings">
+                        <button className="button mt-10">
+                            Movie age ratings
+                        </button>
+                    </Link>
                 </div>
             </body>
         </>

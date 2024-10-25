@@ -1,10 +1,20 @@
-.row
+.one
 {
-    display: flex;
-    margin-top: 16px;
+    margin-left: 55px;
+    transform: scale(70%);
 }
 
-.col
+.onep
 {
-    flex: 50%;
+    margin-left: 12px;
+}
+
+.hm
+{
+    margin-left: 70px;
+}
+
+.hm2
+{
+    margin-right: 70px;
 }

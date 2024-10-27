@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/carousel"
 import Autoplay from "embla-carousel-autoplay"
 import {Link} from "react-router-dom"
-import {SidebarProvider} from "@/components/ui/sidebar.tsx";
+import {SidebarProvider, SidebarTrigger} from "@/components/ui/sidebar.tsx";
 import {AppSidebar} from "@/components/app-sidebar.tsx";
 
 
@@ -24,11 +24,10 @@ export function Movies() {
                 name="Ocean+"
             />
             <body>
-
             <SidebarProvider className="dark">
                 <AppSidebar/>
+                <SidebarTrigger/>
             </SidebarProvider>
-
                 <div className="Headings">
                     <h1 className="leading-normal mb-16">Movies and shows!</h1>
                     <h3 className="text-4xl leading-normal">Most Popular</h3>
@@ -46,10 +45,8 @@ export function Movies() {
                         <CarouselContent>
                             <CarouselItem className="md:basis-full lg:basis-1/3"><img src="https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/Rosie-Movie-Poster00086400.png" alt="rosie"/></CarouselItem>
                             <CarouselItem className="md:basis-full lg:basis-1/3"><img src="https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/Cailou-the-movie-thumbnail00086400.png" alt="caillou"/></CarouselItem>
-                            <CarouselItem className="md:basis-full lg:basis-1/3"><img src="https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/The-Vyond-Cinema-Movie-ocean-poster-with-the-template00086400.png" alt="Vyond cinema"/></CarouselItem>
-                            <CarouselItem className="md:basis-full lg:basis-1/3"><img src="https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/CFTWCFTL-The-Movie-5-ocean-poster-with-the-template00086400.png" alt="cft5"/></CarouselItem>
-                            <CarouselItem className="md:basis-full lg:basis-1/3"><img src="https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/Goofus-Doofus-ocean-poster-with-the-template00086400.png" alt="gd1"/></CarouselItem>
-                            <CarouselItem className="md:basis-full lg:basis-1/3"><img src="https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/Goofus-Doofus-2-ocean-poster-with-the-template00086400.png" alt="gd2"/></CarouselItem>
+                            <CarouselItem className="md:basis-full lg:basis-1/3"><img src="https://raw.githubusercontent.com/Areg472/ocean-plus-react/2af654d3dc827c1b17668c26ec853121b9f4ad32/src/pictures/The-Vyond-Cinema-Movie-ocean-poster-with-the-template00086400.png" alt="Vyond cinema"/></CarouselItem>
+                            <CarouselItem className="md:basis-full lg:basis-1/3"><img src="https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/GA-bricks-the-movie-poster-ocean00086400.png" alt="gabricks"/></CarouselItem>
                         </CarouselContent>
                         <CarouselPrevious />
                         <CarouselNext />

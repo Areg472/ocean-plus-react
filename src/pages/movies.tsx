@@ -24,7 +24,7 @@ export function Movies() {
                 name="Ocean+"
             />
             <body>
-            <SidebarProvider className="dark">
+            <SidebarProvider>
                 <AppSidebar/>
                 <SidebarTrigger/>
             </SidebarProvider>

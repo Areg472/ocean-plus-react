@@ -9,7 +9,7 @@ export function Navbar() {
                 <Link to="/">
                     <button className="button leading-loose">Home</button>
                 </Link>
-                <Link to="Movies">
+                <Link to="/Movies">
                     <button className="button leading-loose">Movies</button>
                 </Link>
                 <Link to="/Contact-Us">

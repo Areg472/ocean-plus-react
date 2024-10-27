@@ -1,6 +1,8 @@
 import './contactus.css'
 import Turnstile, {useTurnstile} from "react-turnstile";
 import MetaTags from "../components/MetaTags.tsx";
+import {Navbar} from "@/components/navbar.tsx";
+import {Footer} from "@/components/footer.tsx";
 
 export function Contactus() {
     const turnstile = useTurnstile();
@@ -12,7 +14,7 @@ export function Contactus() {
                 image="https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/logo.jpg"
                 name="Ocean+"
             />
-
+            <Navbar/>
             <body>
             <div className="contact">
                 <h1>Contact Us</h1>
@@ -47,6 +49,7 @@ export function Contactus() {
                 </form>
             </div>
             </body>
+            <Footer/>
         </>
     )
 }

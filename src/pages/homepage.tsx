@@ -1,6 +1,8 @@
 import './homepage.css';
 import {Link} from "react-router-dom"
 import MetaTags from "../components/MetaTags.tsx";
+import {Navbar} from "@/components/navbar.tsx";
+import {Footer} from "@/components/footer.tsx";
 
 export function Homepage() {
     return (
@@ -11,6 +13,7 @@ export function Homepage() {
                 image='https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/logo.jpg'
                 name='Ocean+'
             />
+            <Navbar/>
             <body className="body">
             <div className="Headings">
                 <h1 className="mb-4 leading-normal">Vyond movies and shows.</h1>
@@ -18,6 +21,7 @@ export function Homepage() {
                 <Link to="/Movies"><input className="oplusbuttons leading-loose mt-4" type="button" value="Access As Guest"/></Link>
             </div>
             </body>
+            <Footer/>
         </>
     )
 }

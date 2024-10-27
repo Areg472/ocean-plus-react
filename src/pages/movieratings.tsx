@@ -16,6 +16,8 @@ import {
     CarouselPrevious,
 } from "@/components/ui/carousel"
 import Autoplay from "embla-carousel-autoplay";
+import {Navbar} from "@/components/navbar.tsx";
+import {Footer} from "@/components/footer.tsx";
 
 export function Movieratings()
 {
@@ -27,6 +29,7 @@ export function Movieratings()
                 image="https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/logo.jpg"
                 name='Ocean+'
             />
+            <Navbar/>
             <body>
                   <div className="dark">
                       <Card className="w-[320px] lg:w-[442px]">
@@ -90,6 +93,7 @@ export function Movieratings()
                       </Card>
                   </div>
             </body>
+            <Footer/>
         </>
     )
 }

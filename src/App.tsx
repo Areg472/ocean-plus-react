@@ -19,7 +19,7 @@ function App() {
                         <Route path="/Contact-Us" element={<Contactus/>}/>
                         <Route path="/Movie-ratings" element={<Movieratings/>}/>
                         <Route path="/Caillou-the-movie" element={<Cailloumovie/>}/>
-                        <Route path="/Cfwcftl-the-movie-123" element={<Cftwcftl123/>}/>
+                        <Route path="/Cftwcftl-the-movie-123" element={<Cftwcftl123/>}/>
                     </Route>
                 </Routes>
             </Router>

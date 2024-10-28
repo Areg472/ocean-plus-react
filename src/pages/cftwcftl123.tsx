@@ -25,10 +25,10 @@ export function Cftwcftl123()
                 <SidebarTrigger/>
             </SidebarProvider>
             <div>
-                <h1 className="leading-normal issue">Caillou The Movie</h1>
+                <h1 className="leading-normal issue">CFTWCFTL The Movie 123</h1>
                 <Accordion type="single" collapsible>
                     <AccordionItem value="item-1">
-                        <AccordionTrigger>Who is the creator of this movie?</AccordionTrigger>
+                        <AccordionTrigger>Who are the creators of this movie?</AccordionTrigger>
                         <AccordionContent className="accord">
                             Created by Veyshal & 1Leon
                         </AccordionContent>

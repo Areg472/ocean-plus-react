@@ -25,7 +25,7 @@ export function Cftwcftl5()
                 <SidebarTrigger/>
             </SidebarProvider>
             <div>
-                <h1 className="leading-normal issue">CFTWCFTL The Movie 123</h1>
+                <h1 className="leading-normal issue">CFTWCFTL The Movie 5</h1>
                 <Accordion type="single" collapsible>
                     <AccordionItem value="item-1">
                         <AccordionTrigger>Who are the creators of this movie?</AccordionTrigger>

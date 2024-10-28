@@ -28,7 +28,7 @@ export function Cailloumovie()
                 <h1 className="leading-normal w-[950px]">Caillou The Movie</h1>
                 <Accordion type="single" collapsible>
                     <AccordionItem value="item-1">
-                        <AccordionTrigger>Who is the author of this movie?</AccordionTrigger>
+                        <AccordionTrigger>Who is the creator of this movie?</AccordionTrigger>
                         <AccordionContent className="accord">
                             Created by Anti-Animations
                         </AccordionContent>

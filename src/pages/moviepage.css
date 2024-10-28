@@ -2,3 +2,33 @@
 {
     text-align: left;
 }
+
+@media only screen
+and (max-device-width: 1023px)
+{
+    .issue
+    {
+        width: 90%;
+    }
+
+    .theframe
+    {
+        margin-left: auto;
+        width: 320px;
+        height: 180px;
+    }
+}
+
+@media (min-width:1024px) {
+    .issue {
+        width: 950px;
+    }
+
+    .theframe
+    {
+        margin-left: 16%;
+        width: 640px;
+        height: 360px;
+    }
+}
+

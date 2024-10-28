@@ -24,8 +24,8 @@ export function Cailloumovie()
                 <AppSidebar/>
                 <SidebarTrigger/>
             </SidebarProvider>
-            <div className="basis-full">
-                <h1 className="leading-normal w-[950px]">Caillou The Movie</h1>
+            <div>
+                <h1 className="leading-normal issue">Caillou The Movie</h1>
                 <Accordion type="single" collapsible>
                     <AccordionItem value="item-1">
                         <AccordionTrigger>Who is the creator of this movie?</AccordionTrigger>
@@ -46,8 +46,8 @@ export function Cailloumovie()
                         </AccordionContent>
                     </AccordionItem>
                 </Accordion>
-                <iframe width="640" height="360" frameBorder="0"
-                        className="mt-14 ml-[16%] theframe"
+                <iframe frameBorder="0"
+                        className="mt-14 theframe"
                         src="https://mega.nz/embed/lxZ3hZ4J#D1JQqquI75mhQGD6TRyEwjD4MQ0LOdh5p4CaQ0Wn9Ac"
                         allowFullScreen></iframe>
             </div>

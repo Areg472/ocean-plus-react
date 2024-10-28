@@ -20,7 +20,7 @@ const items = [
     },
     {
         title: "CFTWCFTL The Movie 1-3",
-        url: "#",
+        url: "/Cftwcftl-the-movie-123",
         icon: TvMinimalPlay,
     },
     {

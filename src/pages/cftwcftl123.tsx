@@ -14,8 +14,8 @@ export function Cftwcftl123()
     return(
         <>
             <MetaTags
-                title="Ocean+ - Caillou the movie"
-                description="Watch caillou the movie on Ocean+ for free!"
+                title="Ocean+ - CFTWCFTL The Movie 123"
+                description="Watch CFTWCFTL The Movie 123 on Ocean+ for free!"
                 image="https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/logo.jpg"
                 name="Ocean+"
             />

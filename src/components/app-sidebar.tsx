@@ -1,4 +1,4 @@
-import {Home, TvMinimalPlay, Film, SquareUser, MessageSquareCode, SquareActivity, ShieldEllipsis, Video} from "lucide-react"
+import {Home, TvMinimalPlay, Film, SquareUser, MessageSquareCode, SquareActivity, ShieldEllipsis, Video, Clapperboard} from "lucide-react"
 
 import {
     Sidebar,
@@ -15,7 +15,7 @@ import {
 const items = [
     {
         title: "Caillou The Movie",
-        url: "#",
+        url: "/Caillou-the-movie",
         icon: TvMinimalPlay,
     },
     {
@@ -60,6 +60,31 @@ const items = [
     },
     {
         title: "Jack Paul The Movie",
+        url: "#",
+        icon: TvMinimalPlay,
+    },
+    {
+        title: "Little Bill's Valendies Movie",
+        url: "#",
+        icon: TvMinimalPlay,
+    },
+    {
+        title: "Nightshift Survival",
+        url: "#",
+        icon: TvMinimalPlay,
+    },
+    {
+        title: "Rosie gets grounded the movie",
+        url: "#",
+        icon: TvMinimalPlay,
+    },
+    {
+        title: "The Comedy World Movie",
+        url: "#",
+        icon: TvMinimalPlay,
+    },
+    {
+        title: "The Vyond Cinema Movie",
         url: "#",
         icon: TvMinimalPlay,
     },
@@ -109,6 +134,24 @@ const footer = [
     }
 ]
 
+const shorts = [
+    {
+        title: "Carlos Birthday Gone Wrong",
+        url: "#",
+        icon: Clapperboard,
+    },
+    {
+        title: "Maskmas",
+        url: "#",
+        icon: Clapperboard,
+    },
+    {
+        title: "Steamboat Willie",
+        url: "#",
+        icon: Clapperboard,
+    },
+]
+
 export function AppSidebar() {
     return (
         <Sidebar>
@@ -128,11 +171,12 @@ export function AppSidebar() {
                         </SidebarMenuItem>
                     ))}
                 </SidebarMenu>
-                <SidebarGroupLabel>Movies</SidebarGroupLabel>
+                <SidebarGroupLabel>Movies & Shorts</SidebarGroupLabel>
             </SidebarHeader>
 
             <SidebarContent>
                 <SidebarGroup>
+                    <SidebarGroupLabel>Movies</SidebarGroupLabel>
                     <SidebarGroupContent>
                         <SidebarMenu>
                             {items.map((item) => (
@@ -141,6 +185,23 @@ export function AppSidebar() {
                                         <a href={item.url}>
                                             <item.icon />
                                             <span>{item.title}</span>
+                                        </a>
+                                    </SidebarMenuButton>
+                                </SidebarMenuItem>
+                            ))}
+                        </SidebarMenu>
+                    </SidebarGroupContent>
+                </SidebarGroup>
+                <SidebarGroup>
+                    <SidebarGroupLabel>Shorts</SidebarGroupLabel>
+                    <SidebarGroupContent>
+                        <SidebarMenu>
+                            {shorts.map((shorts) => (
+                                <SidebarMenuItem key={shorts.title}>
+                                    <SidebarMenuButton asChild>
+                                        <a href={shorts.url}>
+                                            <shorts.icon />
+                                            <span>{shorts.title}</span>
                                         </a>
                                     </SidebarMenuButton>
                                 </SidebarMenuItem>

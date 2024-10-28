@@ -19,6 +19,8 @@
 {
     border: 1px solid black;
     border-radius: 7px;
+    background-color: white;
+    color: black;
 }
 
 @media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {

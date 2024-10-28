@@ -6,6 +6,7 @@ import {Contactus} from "./pages/contactus.tsx";
 import {Movieratings} from "@/pages/movieratings.tsx";
 import {ThemeProvider} from "@/components/theme-provider.tsx";
 import {Cailloumovie} from "@/pages/cailloumovie.tsx";
+import {Cftwcftl123} from "@/pages/cftwcftl123.tsx";
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
                         <Route path="/Contact-Us" element={<Contactus/>}/>
                         <Route path="/Movie-ratings" element={<Movieratings/>}/>
                         <Route path="/Caillou-the-movie" element={<Cailloumovie/>}/>
+                        <Route path="/Cfwcftl-the-movie-123" element={<Cftwcftl123/>}/>
                     </Route>
                 </Routes>
             </Router>

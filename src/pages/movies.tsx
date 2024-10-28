@@ -47,6 +47,8 @@ export function Movies() {
                             <CarouselItem className="md:basis-full lg:basis-1/3"><img src="https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/Cailou-the-movie-thumbnail00086400.png" alt="caillou"/></CarouselItem>
                             <CarouselItem className="md:basis-full lg:basis-1/3"><img src="https://raw.githubusercontent.com/Areg472/ocean-plus-react/2af654d3dc827c1b17668c26ec853121b9f4ad32/src/pictures/The-Vyond-Cinema-Movie-ocean-poster-with-the-template00086400.png" alt="Vyond cinema"/></CarouselItem>
                             <CarouselItem className="md:basis-full lg:basis-1/3"><img src="https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/GA-bricks-the-movie-poster-ocean00086400.png" alt="gabricks"/></CarouselItem>
+                            <CarouselItem className="md:basis-full lg:basis-1/3"><img src="https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/Comedy-World-The-Movie-Ocean-Poster00086400.png" alt="Comedy world"/></CarouselItem>
+                            <CarouselItem className="md:basis-full lg:basis-1/3"><img src="https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/Littles-Bill-Valendies-Day-Movie-poster-ocean00086400.png" alt="Little bill"/></CarouselItem>
                         </CarouselContent>
                         <CarouselPrevious />
                         <CarouselNext />

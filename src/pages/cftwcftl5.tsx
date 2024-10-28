@@ -9,13 +9,13 @@ import {
 } from "@/components/ui/accordion"
 import "./moviepage.css";
 
-export function Cftwcftl123()
+export function Cftwcftl5()
 {
     return(
         <>
             <MetaTags
-                title="Ocean+ - CFTWCFTL The Movie 123"
-                description="Watch CFTWCFTL The Movie 123 on Ocean+ for free!"
+                title="Ocean+ - CFTWCFTL The Movie 5"
+                description="Watch CFTWCFTL The Movie 5 on Ocean+ for free!"
                 image="https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/logo.jpg"
                 name="Ocean+"
             />
@@ -42,13 +42,13 @@ export function Cftwcftl123()
                     <AccordionItem value="item-3">
                         <AccordionTrigger>What are the genres?</AccordionTrigger>
                         <AccordionContent className="accord">
-                            The genres are: Animation/Action/Adventure/Comedy/Crime
+                            The genres are: Animation/Action/Adventure/Comedy/Drama/Thriller/Crime
                         </AccordionContent>
                     </AccordionItem>
                 </Accordion>
                 <iframe frameBorder="0"
                         className="mt-14 theframe"
-                        src="https://mega.nz/embed/N0AU3bhC#weuJr5LbTDpHubcVgBxBrecJCwZQ7RimlbU3r2TiB5w"
+                        src="https://mega.nz/embed/Ih4znISK#keSoYPSAH3k3WHbVaGBeR749Oejh1rn5-2mQ2o5GT24"
                         allowFullScreen></iframe>
             </div>
             </body>

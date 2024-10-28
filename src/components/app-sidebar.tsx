@@ -25,12 +25,12 @@ const items = [
     },
     {
         title: "CFTWCFTL The Movie 4",
-        url: "#",
+        url: "/Cftwcftl-the-movie-4",
         icon: TvMinimalPlay,
     },
     {
         title: "CFTWCFTL The Movie 5",
-        url: "#",
+        url: "/Cftwcftl-the-movie-5",
         icon: TvMinimalPlay,
     },
     {

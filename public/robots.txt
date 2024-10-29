@@ -1,0 +1,7 @@
+User-agent: *
+Disallow:
+
+Disallow: /*.png$
+Disallow: /*.jpg$
+
+Sitemap: https://reactus.oceanbluestream.com/sitemap.xml

@@ -2,6 +2,7 @@
   @apply bg-blue-400 text-white rounded-full py-2 px-4;
   cursor: pointer;
   transition: .4s;
+  width: 200px;
 }
 
 .oplusbuttons:hover {

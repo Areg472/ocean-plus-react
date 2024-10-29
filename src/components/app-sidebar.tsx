@@ -35,12 +35,12 @@ const items = [
     },
     {
         title: "GA Bricks The Movie",
-        url: "#",
+        url: "/Ga-bricks-the-movie",
         icon: TvMinimalPlay,
     },
     {
         title: "Goofus & Doofus",
-        url: "#",
+        url: "/Goofus-and-Doofus-1",
         icon: TvMinimalPlay,
     },
     {

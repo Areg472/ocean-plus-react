@@ -11,6 +11,7 @@ import {Cftwcftl4} from "@/pages/cftwcftl4.tsx";
 import {Cftwcftl5} from "@/pages/cftwcftl5.tsx";
 import {Gabricks} from "@/pages/gabricks.tsx";
 import {Goofus1} from "@/pages/goofus1.tsx";
+import {Privacy} from "@/pages/privacypolicy.tsx";
 
 function App() {
     return (
@@ -22,6 +23,7 @@ function App() {
                         <Route path="/Movies" element={<Movies/>}/>
                         <Route path="/Contact-Us" element={<Contactus/>}/>
                         <Route path="/Movie-ratings" element={<Movieratings/>}/>
+                        <Route path="/Privacy-policy" element={<Privacy/>}/>
                         <Route path="/Caillou-the-movie" element={<Cailloumovie/>}/>
                         <Route path="/Cftwcftl-the-movie-123" element={<Cftwcftl123/>}/>
                         <Route path="/Cftwcftl-the-movie-4" element={<Cftwcftl4/>}/>

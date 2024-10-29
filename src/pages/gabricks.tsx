@@ -48,7 +48,7 @@ export function Gabricks()
                 </Accordion>
                 <iframe frameBorder="0"
                         className="mt-14 theframe"
-                        src="https://mega.nz/embed/kw5z1KyC#yrRhlnE6QtixXwpLOI4GbZ1B-QtJGJldSgIihXtU6-k"
+                        src="https://mega.nz/embed/YoIC3RSQ#i9NYg_qzDwc6v9TV8c_0aeUDmeKvAtRGqbswheOPj-8"
                         allowFullScreen></iframe>
             </div>
             </body>

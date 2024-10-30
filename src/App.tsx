@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import {Homepage} from './pages/homepage.tsx';
 import {Movies} from './pages/movies.tsx';
 import {Contactus} from "./pages/contactus.tsx";
+import {Privacy} from "@/pages/privacypolicy.tsx";
 import {Movieratings} from "@/pages/movieratings.tsx";
 import {ThemeProvider} from "@/components/theme-provider.tsx";
 import {Cailloumovie} from "@/pages/cailloumovie.tsx";
@@ -11,7 +12,7 @@ import {Cftwcftl4} from "@/pages/cftwcftl4.tsx";
 import {Cftwcftl5} from "@/pages/cftwcftl5.tsx";
 import {Gabricks} from "@/pages/gabricks.tsx";
 import {Goofus1} from "@/pages/goofus1.tsx";
-import {Privacy} from "@/pages/privacypolicy.tsx";
+import {Goofus2} from "@/pages/goofus2.tsx";
 
 function App() {
     return (
@@ -30,6 +31,7 @@ function App() {
                         <Route path="/Cftwcftl-the-movie-5" element={<Cftwcftl5/>}/>
                         <Route path="/Ga-bricks-the-movie" element={<Gabricks/>}/>
                         <Route path="/Goofus-and-Doofus-1" element={<Goofus1/>}/>
+                        <Route path="/Goofus-and-Doofus-2" element={<Goofus2/>}/>
                     </Route>
                 </Routes>
             </Router>

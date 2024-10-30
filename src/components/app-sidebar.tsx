@@ -45,7 +45,7 @@ const items = [
     },
     {
         title: "Goofus & Doofus 2",
-        url: "#",
+        url: "/Goofus-and-Doofus-2",
         icon: TvMinimalPlay,
     },
     {

@@ -73,7 +73,7 @@ const items = [
         icon: TvMinimalPlay,
     },
     {
-        title: "Rosie gets grounded the movie",
+        title: "Rosie Gets Grounded Movie",
         url: "#",
         icon: TvMinimalPlay,
     },

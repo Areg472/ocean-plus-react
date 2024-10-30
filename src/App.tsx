@@ -13,6 +13,7 @@ import {Cftwcftl5} from "@/pages/cftwcftl5.tsx";
 import {Gabricks} from "@/pages/gabricks.tsx";
 import {Goofus1} from "@/pages/goofus1.tsx";
 import {Goofus2} from "@/pages/goofus2.tsx";
+import {Jpchristmas} from "@/pages/jpchristmas.tsx";
 
 function App() {
     return (
@@ -32,6 +33,7 @@ function App() {
                         <Route path="/Ga-bricks-the-movie" element={<Gabricks/>}/>
                         <Route path="/Goofus-and-Doofus-1" element={<Goofus1/>}/>
                         <Route path="/Goofus-and-Doofus-2" element={<Goofus2/>}/>
+                        <Route path="/Its-Jack-Paul-Christmas" element={<Jpchristmas/>}/>
                     </Route>
                 </Routes>
             </Router>

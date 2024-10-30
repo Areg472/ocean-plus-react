@@ -11,7 +11,6 @@ import {
     SidebarMenuItem,
 } from "@/components/ui/sidebar"
 
-// Menu items.
 const items = [
     {
         title: "Caillou The Movie",
@@ -50,7 +49,7 @@ const items = [
     },
     {
         title: "It's Jack Paul Christmas",
-        url: "#",
+        url: "Its-Jack-Paul-Christmas",
         icon: TvMinimalPlay,
     },
     {

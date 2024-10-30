@@ -15,6 +15,12 @@
         <priority>0.5</priority>
     </url>
     <url>
+        <loc>https://reactus.oceanbluestream.com/fries-up</loc>
+        <lastmod>2024-10-28</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
         <loc>https://reactus.oceanbluestream.com/movies</loc>
         <lastmod>2024-10-28</lastmod>
         <changefreq>always</changefreq>

@@ -5,6 +5,7 @@ import {Movies} from './pages/movies.tsx';
 import {Contactus} from "./pages/contactus.tsx";
 import {Privacy} from "@/pages/privacypolicy.tsx";
 import {Movieratings} from "@/pages/movieratings.tsx";
+import {Friesup} from "@/pages/fries-UPPP.tsx";
 import {ThemeProvider} from "@/components/theme-provider.tsx";
 import {Cailloumovie} from "@/pages/cailloumovie.tsx";
 import {Cftwcftl123} from "@/pages/cftwcftl123.tsx";
@@ -26,6 +27,7 @@ function App() {
                         <Route path="/Contact-Us" element={<Contactus/>}/>
                         <Route path="/Movie-ratings" element={<Movieratings/>}/>
                         <Route path="/Privacy-policy" element={<Privacy/>}/>
+                        <Route path="/Fries-UP" element={<Friesup/>}/>
                         <Route path="/Caillou-the-movie" element={<Cailloumovie/>}/>
                         <Route path="/Cftwcftl-the-movie-123" element={<Cftwcftl123/>}/>
                         <Route path="/Cftwcftl-the-movie-4" element={<Cftwcftl4/>}/>

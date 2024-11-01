@@ -15,6 +15,7 @@ import {Gabricks} from "@/pages/gabricks.tsx";
 import {Goofus1} from "@/pages/goofus1.tsx";
 import {Goofus2} from "@/pages/goofus2.tsx";
 import {Jpchristmas} from "@/pages/jpchristmas.tsx";
+import {Jpspooktacular} from "@/pages/jpspooktacular.tsx";
 
 function App() {
     return (
@@ -36,6 +37,7 @@ function App() {
                         <Route path="/Goofus-and-Doofus-1" element={<Goofus1/>}/>
                         <Route path="/Goofus-and-Doofus-2" element={<Goofus2/>}/>
                         <Route path="/Its-Jack-Paul-Christmas" element={<Jpchristmas/>}/>
+                        <Route path="/Jack-Paul-Spooktacular" element={<Jpspooktacular/>}/>
                     </Route>
                 </Routes>
             </Router>

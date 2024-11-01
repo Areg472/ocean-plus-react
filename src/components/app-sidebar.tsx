@@ -54,7 +54,7 @@ const items = [
     },
     {
         title: "Jack Paul Spooktacular",
-        url: "#",
+        url: "/Jack-Paul-Spooktacular",
         icon: TvMinimalPlay,
     },
     {

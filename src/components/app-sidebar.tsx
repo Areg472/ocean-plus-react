@@ -59,7 +59,7 @@ const items = [
     },
     {
         title: "Jack Paul The Movie",
-        url: "#",
+        url: "/Jack-Paul-The-Movie",
         icon: TvMinimalPlay,
     },
     {

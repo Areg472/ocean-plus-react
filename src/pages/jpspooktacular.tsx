@@ -34,7 +34,7 @@ export function Jpspooktacular()
                 <SidebarTrigger/>
             </SidebarProvider>
             <div>
-                <h1 className="leading-normal issue">It's Jack Paul Christmas</h1>
+                <h1 className="leading-normal issue">Jack Paul Spooktacular</h1>
                 <Accordion type="single" collapsible>
                     <AccordionItem value="item-1">
                         <AccordionTrigger>Who is the creator of this movie?</AccordionTrigger>

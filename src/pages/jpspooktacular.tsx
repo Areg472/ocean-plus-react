@@ -55,8 +55,8 @@ export function Jpspooktacular()
                         </AccordionContent>
                     </AccordionItem>
                 </Accordion>
-                <div className="flex flex-col items-center space-y-4 p-4">
-                    <div className="flex items-center space-x-2">
+                <div className="flex flex-col items-center space-y-4">
+                    <div className="flex items-center space-x-2 p-4">
                         <Label htmlFor="iframe-switch" className="text-sm font-medium">
                             2D
                         </Label>

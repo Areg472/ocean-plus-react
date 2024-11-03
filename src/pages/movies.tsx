@@ -34,7 +34,7 @@ export function Movies() {
                     <Carousel className="dark mt-4 carousel"
                               plugins={[
                                   Autoplay({
-                                      delay: 7000,
+                                      delay: 7500,
                                   }),
                               ]}
                               opts={{
@@ -44,10 +44,10 @@ export function Movies() {
                     >
                         <CarouselContent>
                             <CarouselItem className="md:basis-full lg:basis-1/3"><Link to="/Rosie-gets-grounded-the-movie"><img src="https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/Rosie-Movie-Poster00086400.png" alt="rosie"/></Link></CarouselItem>
-                            <CarouselItem className="md:basis-full lg:basis-1/3"><Link to="/Caillou-the-movie"><img src="https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/Cailou-the-movie-thumbnail00086400.png" alt="caillou"/></Link></CarouselItem>
                             <CarouselItem className="md:basis-full lg:basis-1/3"><Link to="/The-vyond-cinema-movie"><img src="https://raw.githubusercontent.com/Areg472/ocean-plus-react/2af654d3dc827c1b17668c26ec853121b9f4ad32/src/pictures/The-Vyond-Cinema-Movie-ocean-poster-with-the-template00086400.png" alt="Vyond cinema"/></Link></CarouselItem>
                             <CarouselItem className="md:basis-full lg:basis-1/3"><Link to="/Ga-bricks-the-movie"><img src="https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/GA-bricks-the-movie-poster-ocean00086400.png" alt="gabricks"/></Link></CarouselItem>
                             <CarouselItem className="md:basis-full lg:basis-1/3"><Link to="/The-comedy-world-movie"><img src="https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/Comedy-World-The-Movie-Ocean-Poster00086400.png" alt="Comedy world"/></Link></CarouselItem>
+                            <CarouselItem className="md:basis-full lg:basis-1/3"><Link to="/Caillou-the-movie"><img src="https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/Cailou-the-movie-thumbnail00086400.png" alt="caillou"/></Link></CarouselItem>
                             <CarouselItem className="md:basis-full lg:basis-1/3"><Link to="/Little-bills-valendies-movie"><img src="https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/Littles-Bill-Valendies-Day-Movie-poster-ocean00086400.png" alt="Little bill"/></Link></CarouselItem>
                         </CarouselContent>
                         <CarouselPrevious />

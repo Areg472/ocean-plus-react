@@ -136,7 +136,7 @@ const footer = [
 const shorts = [
     {
         title: "Carlos Birthday Gone Wrong",
-        url: "#",
+        url: "/Carlos-Birthday-Gone-Wrong",
         icon: Clapperboard,
     },
     {

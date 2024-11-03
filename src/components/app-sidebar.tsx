@@ -69,7 +69,7 @@ const items = [
     },
     {
         title: "Nightshift Survival",
-        url: "#",
+        url: "/Nightshift-Survival",
         icon: TvMinimalPlay,
     },
     {

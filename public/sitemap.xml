@@ -1,105 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<!--  created with sitemap generator https://octopus.do  -->
-
     <url>
-        <loc>https://reactus.oceanbluestream.com</loc>
+        <loc>https://oceanbluestream.com</loc>
         <lastmod>2024-10-28</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://reactus.oceanbluestream.com/privacy-policy</loc>
+        <loc>https://oceanbluestream.com/privacy-policy</loc>
         <lastmod>2024-10-28</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://reactus.oceanbluestream.com/fries-up</loc>
+        <loc>https://oceanbluestream.com/fries-up</loc>
         <lastmod>2024-10-28</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://reactus.oceanbluestream.com/movies</loc>
+        <loc>https://oceanbluestream.com/movies</loc>
         <lastmod>2024-10-28</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://reactus.oceanbluestream.com/contact-us</loc>
+        <loc>https://oceanbluestream.com/contact-us</loc>
         <lastmod>2024-10-28</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://reactus.oceanbluestream.com/movie-ratings</loc>
+        <loc>https://oceanbluestream.com/movie-ratings</loc>
         <lastmod>2024-10-28</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://reactus.oceanbluestream.com/caillou-the-movie</loc>
+        <loc>https://oceanbluestream.com/caillou-the-movie</loc>
         <lastmod>2024-10-28</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://reactus.oceanbluestream.com/cftwcftl-the-movie-123</loc>
+        <loc>https://oceanbluestream.com/cftwcftl-the-movie-123</loc>
         <lastmod>2024-10-28</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://reactus.oceanbluestream.com/cftwcftl-the-movie-4</loc>
+        <loc>https://oceanbluestream.com/cftwcftl-the-movie-4</loc>
         <lastmod>2024-10-28</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://reactus.oceanbluestream.com/cftwcftl-the-movie-5</loc>
+        <loc>https://oceanbluestream.com/cftwcftl-the-movie-5</loc>
         <lastmod>2024-10-28</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://reactus.oceanbluestream.com/ga-bricks-the-movie</loc>
+        <loc>https://oceanbluestream.com/ga-bricks-the-movie</loc>
         <lastmod>2024-10-28</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://reactus.oceanbluestream.com/goofus-and-Doofus-1</loc>
+        <loc>https://oceanbluestream.com/goofus-and-Doofus-1</loc>
         <lastmod>2024-10-28</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://reactus.oceanbluestream.com/goofus-and-Doofus-2</loc>
+        <loc>https://oceanbluestream.com/goofus-and-Doofus-2</loc>
         <lastmod>2024-10-28</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://reactus.oceanbluestream.com/its-jack-paul-christmas</loc>
+        <loc>https://oceanbluestream.com/its-jack-paul-christmas</loc>
         <lastmod>2024-10-28</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://reactus.oceanbluestream.com/jack-paul-spooktacular</loc>
+        <loc>https://oceanbluestream.com/jack-paul-spooktacular</loc>
         <lastmod>2024-10-28</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://reactus.oceanbluestream.com/jack-paul-the-movie</loc>
+        <loc>https://oceanbluestream.com/jack-paul-the-movie</loc>
         <lastmod>2024-10-28</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://reactus.oceanbluestream.com/little-bills-valendies-movie</loc>
+        <loc>https://oceanbluestream.com/little-bills-valendies-movie</loc>
+        <lastmod>2024-10-28</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://oceanbluestream.com/nightshift-survival</loc>
+        <lastmod>2024-10-28</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://oceanbluestream.com/rosie-gets-grounded-the-movie</loc>
         <lastmod>2024-10-28</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>

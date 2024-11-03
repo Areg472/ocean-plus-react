@@ -17,6 +17,7 @@ import {Goofus2} from "@/pages/goofus2.tsx";
 import {Jpchristmas} from "@/pages/jpchristmas.tsx";
 import {Jpspooktacular} from "@/pages/jpspooktacular.tsx";
 import {Jackpaul} from "@/pages/jackpaul.tsx";
+import {Littlevalendies} from "@/pages/littlevalendies.tsx";
 
 function App() {
     return (
@@ -40,6 +41,7 @@ function App() {
                         <Route path="/Its-Jack-Paul-Christmas" element={<Jpchristmas/>}/>
                         <Route path="/Jack-Paul-Spooktacular" element={<Jpspooktacular/>}/>
                         <Route path="/Jack-Paul-The-Movie" element={<Jackpaul/>}/>
+                        <Route path="/Little-Bills-Valendies-Movie" element={<Littlevalendies/>}/>
                     </Route>
                 </Routes>
             </Router>

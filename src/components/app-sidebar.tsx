@@ -84,7 +84,7 @@ const items = [
     },
     {
         title: "The Vyond Cinema Movie",
-        url: "#",
+        url: "/The-Vyond-Cinema-Movie",
         icon: TvMinimalPlay,
     },
 ]

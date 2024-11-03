@@ -79,7 +79,7 @@ const items = [
     },
     {
         title: "The Comedy World Movie",
-        url: "#",
+        url: "/The-Comedy-World-Movie",
         icon: TvMinimalPlay,
     },
     {

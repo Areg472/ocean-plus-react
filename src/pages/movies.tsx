@@ -53,6 +53,29 @@ export function Movies() {
                         <CarouselPrevious />
                         <CarouselNext />
                     </Carousel>
+                    <h3 className="text-4xl leading-normal mt-4">Adventure</h3>
+                    <Carousel className="dark mt-4 carousel"
+                              plugins={[
+                                  Autoplay({
+                                      delay: 7000,
+                                  }),
+                              ]}
+                              opts={{
+                                  align: "start",
+                                  loop: true,
+                              }}
+                    >
+                        <CarouselContent>
+                            <CarouselItem className="md:basis-full lg:basis-1/3"><Link to="/Goofus-and-Doofus-1"><img src="https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/Goofus-Doofus-ocean-poster-with-the-template00086400.png" alt="goofusdoofus1"/></Link></CarouselItem>
+                            <CarouselItem className="md:basis-full lg:basis-1/3"><Link to="/Caillou-the-movie"><img src="https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/Cailou-the-movie-thumbnail00086400.png" alt="caillou"/></Link></CarouselItem>
+                            <CarouselItem className="md:basis-full lg:basis-1/3"><Link to="/Its-Jack-Paul-Christmas"><img src="https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/Its-Jack-Paul-Christmas-ocean-poster-with-the-template00086400.png" alt="jpxmas"/></Link></CarouselItem>
+                            <CarouselItem className="md:basis-full lg:basis-1/3"><Link to="/Cftwcftl-the-movie-4"><img src="https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/CFTWCFTL-The-Movie-4-ocean-poster-with-the-template00086400.png" alt="cft4"/></Link></CarouselItem>
+                            <CarouselItem className="md:basis-full lg:basis-1/3"><Link to="/Goofus-and-Doofus-2"><img src="https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/Goofus-Doofus-2-ocean-poster-with-the-template00086400.png" alt="goofusdoofus2"/></Link></CarouselItem>
+                            <CarouselItem className="md:basis-full lg:basis-1/3"><Link to="/Jack-Paul-Spooktacular"><img src="https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/Jack-Paul-Spooktacular-ocean-poster-with-the-template00086400.png" alt="jpspooky"/></Link></CarouselItem>
+                        </CarouselContent>
+                        <CarouselPrevious />
+                        <CarouselNext />
+                    </Carousel>
                     <Link to="/Movie-ratings">
                         <button className="button mt-10 w-[180px] h-[30px]">
                             Movie age ratings

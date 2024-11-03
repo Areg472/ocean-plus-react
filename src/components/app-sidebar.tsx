@@ -141,12 +141,12 @@ const shorts = [
     },
     {
         title: "Maskmas",
-        url: "#",
+        url: "/Maskmas",
         icon: Clapperboard,
     },
     {
         title: "Steamboat Willie",
-        url: "#",
+        url: "/Steamboat-Willie",
         icon: Clapperboard,
     },
 ]

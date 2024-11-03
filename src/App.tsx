@@ -24,6 +24,8 @@ import {Comedyworld} from "@/pages/comedyworld.tsx";
 import {Fourofour} from "@/pages/404.tsx";
 import {Vyondcinema} from "@/pages/vyondcinema.tsx";
 import {Carlosbday} from "@/pages/carlosbday.tsx";
+import {Maskmas} from "@/pages/maskmas.tsx";
+import {Steamboatwillie} from "@/pages/steamboatwillie.tsx";
 
 function App() {
     return (
@@ -54,6 +56,8 @@ function App() {
                         <Route path="/The-Comedy-World-Movie" element={<Comedyworld/>}/>
                         <Route path="/The-Vyond-Cinema-Movie" element={<Vyondcinema/>}/>
                         <Route path="/Carlos-Birthday-Gone-Wrong" element={<Carlosbday/>}/>
+                        <Route path="/Maskmas" element={<Maskmas/>}/>
+                        <Route path="/Steamboat-Willie" element={<Steamboatwillie/>}/>
                     </Route>
                 </Routes>
             </Router>

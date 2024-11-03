@@ -74,7 +74,7 @@ const items = [
     },
     {
         title: "Rosie Gets Grounded Movie",
-        url: "#",
+        url: "/Rosie-Gets-Grounded-The-Movie",
         icon: TvMinimalPlay,
     },
     {

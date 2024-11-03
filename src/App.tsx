@@ -21,6 +21,7 @@ import {Littlevalendies} from "@/pages/littlevalendies.tsx";
 import {Nightshiftsurvival} from "@/pages/nightshiftsurvival.tsx";
 import {Rosiegetsgrounded} from "@/pages/rosiegetsgrounded.tsx";
 import {Comedyworld} from "@/pages/comedyworld.tsx";
+import {Fourofour} from "@/pages/404.tsx";
 
 function App() {
     return (
@@ -28,6 +29,7 @@ function App() {
             <Router>
                 <Routes>
                     <Route>
+                        <Route path="*" element={<Fourofour/>}/>
                         <Route path="/" element={<Homepage/>}/>
                         <Route path="/Movies" element={<Movies/>}/>
                         <Route path="/Contact-Us" element={<Contactus/>}/>

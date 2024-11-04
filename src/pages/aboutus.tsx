@@ -5,11 +5,18 @@ import {Avatar, AvatarFallback, AvatarImage} from "@/components/ui/avatar.tsx";
 import {Cardleon, CardleonContent, CardleonHeader} from "@/components/ui/cardleon.tsx";
 import {Cardveyshal, CardveyshalContent, CardveyshalHeader} from "@/components/ui/cardveyshal";
 import {Cardcarlo, CardcarloContent, CardcarloHeader } from "@/components/ui/cardcarlo";
+import MetaTags from "@/components/MetaTags.tsx";
 
 export function Aboutus() {
     return(
         <>
             <Navbar/>
+            <MetaTags
+                title='Ocean+ - About Us'
+                description='About the Ocean+ team and its contributors'
+                image='https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/logo.jpg'
+                name='Ocean+'
+            />
 
             <body>
                 <div className="container">

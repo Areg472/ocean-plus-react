@@ -46,7 +46,7 @@
     flex: 33%;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 769px) {
 
     .row
     {
@@ -76,7 +76,7 @@
 }
 
 @media only screen
-and (max-device-width: 1023px)
+and (max-device-width: 768px)
 {
     .buttons
     {

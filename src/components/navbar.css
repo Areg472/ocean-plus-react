@@ -1,6 +1,4 @@
-
-
-@media (min-width: 1024px) {
+@media (min-width: 769px) {
     .button {
         border: 1px solid black;
         background-color: black;
@@ -10,7 +8,7 @@
         text-align: center;
         transition: .4s;
         margin-top: 10px;
-        flex: 33%;
+        flex: 25%;
         margin-right: 20px;
     }
 }
@@ -21,7 +19,7 @@
 }
 
 @media only screen
-and (max-device-width: 1023px) {
+and (max-device-width: 768px) {
     .button {
         border: 1px solid black;
         background-color: black;

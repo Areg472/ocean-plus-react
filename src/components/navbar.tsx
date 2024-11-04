@@ -15,6 +15,9 @@ export function Navbar() {
                 <Link to="/Contact-Us">
                     <button className="button leading-loose">Contact Us</button>
                 </Link>
+                <Link to="/About-Us">
+                    <button className="button leading-loose">About Us</button>
+                </Link>
             </div>
         </>
     )

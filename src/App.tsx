@@ -26,6 +26,7 @@ import {Vyondcinema} from "@/pages/vyondcinema.tsx";
 import {Carlosbday} from "@/pages/carlosbday.tsx";
 import {Maskmas} from "@/pages/maskmas.tsx";
 import {Steamboatwillie} from "@/pages/steamboatwillie.tsx";
+import {Aboutus} from "@/pages/aboutus.tsx";
 
 function App() {
     return (
@@ -40,6 +41,7 @@ function App() {
                         <Route path="/Movie-ratings" element={<Movieratings/>}/>
                         <Route path="/Privacy-policy" element={<Privacy/>}/>
                         <Route path="/Fries-UP" element={<Friesup/>}/>
+                        <Route path="/About-Us" element={<Aboutus/>}/>
                         <Route path="/Caillou-the-movie" element={<Cailloumovie/>}/>
                         <Route path="/Cftwcftl-the-movie-123" element={<Cftwcftl123/>}/>
                         <Route path="/Cftwcftl-the-movie-4" element={<Cftwcftl4/>}/>

@@ -1,4 +1,15 @@
-import {Home, TvMinimalPlay, Film, SquareUser, MessageSquareCode, SquareActivity, ShieldEllipsis, Video, Clapperboard} from "lucide-react"
+import {
+    Home,
+    TvMinimalPlay,
+    Film,
+    SquareUser,
+    MessageSquareCode,
+    SquareActivity,
+    ShieldEllipsis,
+    Video,
+    Clapperboard,
+    BookUser,
+} from "lucide-react"
 
 import {
     Sidebar,
@@ -104,6 +115,11 @@ const header = [
         title: "Contact Us",
         url: "/Contact-Us",
         icon: SquareUser,
+    },
+    {
+        title: "Contact Us",
+        url: "/About-Us",
+        icon: BookUser,
     }
 ]
 

@@ -6,6 +6,7 @@ import {Cardleon, CardleonContent, CardleonHeader} from "@/components/ui/cardleo
 import {Cardveyshal, CardveyshalContent, CardveyshalHeader} from "@/components/ui/cardveyshal";
 import {Cardcarlo, CardcarloContent, CardcarloHeader } from "@/components/ui/cardcarlo";
 import MetaTags from "@/components/MetaTags.tsx";
+import {GithubLanguages} from "@/components/githublanguages.tsx";
 
 export function Aboutus() {
     return(
@@ -96,6 +97,7 @@ export function Aboutus() {
                             </CardcarloContent>
                         </Cardcarlo>
                     </div>
+                    <GithubLanguages/>
                 </div>
             </body>
 

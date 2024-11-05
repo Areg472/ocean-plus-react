@@ -8,7 +8,7 @@ import {
     ShieldEllipsis,
     Video,
     Clapperboard,
-    BookUser,
+    SquareCode,
 } from "lucide-react"
 
 import {
@@ -117,9 +117,9 @@ const header = [
         icon: SquareUser,
     },
     {
-        title: "Contact Us",
+        title: "About Us",
         url: "/About-Us",
-        icon: BookUser,
+        icon: SquareCode,
     }
 ]
 

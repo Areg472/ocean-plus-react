@@ -41,6 +41,7 @@
     "tailwind-merge": "^2.5.4",
     "tailwindcss-animate": "^1.0.7",
     "vike": "^0.4.200",
+    "vike-cloudflare": "^0.1.4",
     "yarn": "^1.22.22"
   },
   "devDependencies": {

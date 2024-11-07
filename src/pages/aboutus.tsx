@@ -11,14 +11,13 @@ import {GithubLanguages} from "@/components/githublanguages.tsx";
 export function Aboutus() {
     return(
         <>
-            <Navbar/>
             <MetaTags
                 title='Ocean+ - About Us'
                 description='About the Ocean+ team and its contributors'
                 image='https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/logo.jpg'
                 name='Ocean+'
             />
-
+            <Navbar/>
             <body>
                 <div className="container">
                     <h1 className="text-3xl mt-6">

@@ -16,7 +16,7 @@ export function Homepage() {
             <Navbar/>
             <body className="body">
             <div className="Headings">
-                <h1 className="mb-4 leading-normal">Vyond movies and shows.</h1>
+                <h1 className="mb-4 leading-normal">Vyond movies and show.</h1>
                 <h2 className="mb-1.5 leading-normal">Anywhere, anytime, for free, no restrictions.</h2>
                 <div className="buttonscont space-x-3">
                     <Link to="/Movies"><input className="oplusbuttons leading-loose mt-4" type="button" value="Access the website"/></Link>

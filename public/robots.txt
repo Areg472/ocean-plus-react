@@ -5,3 +5,5 @@ Disallow: /*.png$
 Disallow: /*.jpg$
 
 Sitemap: https://reactus.oceanbluestream.com/sitemap.xml
+
+# Algolia-Crawler-Verif: 35EC1B5E51C68264

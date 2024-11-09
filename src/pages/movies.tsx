@@ -12,7 +12,6 @@ import {Link} from "react-router-dom"
 import {SidebarProvider, SidebarTrigger} from "@/components/ui/sidebar.tsx";
 import {AppSidebar} from "@/components/app-sidebar.tsx";
 
-
 export function Movies() {
     return (
         <>

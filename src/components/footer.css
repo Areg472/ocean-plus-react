@@ -43,10 +43,10 @@
 }
 
 .column {
-    flex: 33%;
+    flex: 25%;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1024px) {
 
     .row
     {
@@ -76,7 +76,7 @@
 }
 
 @media only screen
-and (max-device-width: 768px)
+and (max-device-width: 1024px)
 {
     .buttons
     {

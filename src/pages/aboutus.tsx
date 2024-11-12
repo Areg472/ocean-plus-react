@@ -37,9 +37,9 @@ export function Aboutus() {
                                 <p>Main developer</p>
                             </CardaregHeader>
                             <CardaregContent>
-                                <a href="https://www.youtube.com/@aregthevideoeditor" className="ml-0 md:ml-4" target="_blank">
+                                <a href="https://areg.oceanbluestream.com/" className="ml-0 md:ml-4" target="_blank">
                                     <button className="button w-24">
-                                        Youtube
+                                        My page
                                     </button>
                                 </a>
                             </CardaregContent>

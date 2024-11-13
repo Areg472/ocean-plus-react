@@ -13,7 +13,7 @@ export function Aboutus() {
         <>
             <MetaTags
                 title='Ocean+ - About Us'
-                description='About the Ocean+ team and its contributor'
+                description='About the Ocean+ team and its contributors'
                 image='https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/logo.jpg'
                 name='Ocean+'
             />

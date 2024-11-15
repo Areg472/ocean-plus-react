@@ -111,7 +111,6 @@ export function GlitchText({
     };
 
     React.useEffect(() => {
-        // Add styles to head only once
         if (!document.getElementById('glitch-styles')) {
             const styleSheet = document.createElement('style');
             styleSheet.id = 'glitch-styles';

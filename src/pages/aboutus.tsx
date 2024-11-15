@@ -7,6 +7,7 @@ import {Cardveyshal, CardveyshalContent, CardveyshalHeader} from "@/components/u
 import {Cardcarlo, CardcarloContent, CardcarloHeader } from "@/components/ui/cardcarlo";
 import MetaTags from "@/components/MetaTags.tsx";
 import {GithubLanguages} from "@/components/githublanguages.tsx";
+import {GlitchText} from "@/components/glitch.tsx";
 
 export function Aboutus() {
     return(
@@ -20,9 +21,11 @@ export function Aboutus() {
             <Navbar/>
             <body>
                 <div className="container">
-                    <h1 className="text-3xl mt-6">
-                        About Us
-                    </h1>
+                    <GlitchText
+                        size="normal"
+                        text='About Us'
+                        className="mt-14"
+                    />
                     <h3 className="text-xl mt-3">
                         Here is our team who develops Ocean+
                     </h3>

@@ -23,9 +23,13 @@
 
     .image {
         border: 1px solid black;
-        background-color: black;
+        position: relative;
+        background-color: #0259c0;
         border-radius: 20px;
         width: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         height: 30px;
         text-align: center;
         transition: .4s;
@@ -33,6 +37,14 @@
         flex: 25%;
         margin-right: 20px;
     }
+
+    .actualimage {
+        max-width: 80%;
+    }
+}
+
+.actualimage {
+    max-width: 80%;
 }
 
 .button:hover, .image:hover {
@@ -56,10 +68,13 @@ and (max-device-width: 768px) {
 
     .image {
         border: 0.2px solid black;
-        background-color: black;
+        background-color: #0259c0;
         border-radius: 20px;
         width: 150px;
         height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         text-align: center;
         transition: .4s;
         margin-top: 10px;

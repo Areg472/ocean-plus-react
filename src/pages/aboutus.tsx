@@ -116,7 +116,7 @@ export function Aboutus() {
                             <p>Designer</p>
                         </CardamonHeader>
                         <CardamonContent>
-                            <a href="https://www.youtube.com/@CarloBear" className="ml-0 md:ml-6" target="_blank">
+                            <a href="https://www.youtube.com/@Vino_Mikhail" className="ml-0 md:ml-6" target="_blank">
                                 <button className="button w-24">
                                     Youtube
                                 </button>

@@ -8,7 +8,7 @@ export function Navbar() {
             <div className="navbar">
                 <Link to="/">
                     <div className="leading-loose image">
-                        <img src="/src/pictures/oplus.svg" className="actualimage" alt="logo"/>
+                        <img src="https://raw.githubusercontent.com/Areg472/ocean-plus-react/a863e032ec9b272e293f8e4a779f49ce9f6feafa/src/pictures/oplus.svg" className="actualimage" alt="logo"/>
                     </div>
                 </Link>
                 <Link to="/Movies">

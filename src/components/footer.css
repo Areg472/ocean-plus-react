@@ -43,7 +43,7 @@
 }
 
 .column {
-    flex: 25%;
+    flex: 33%;
 }
 
 @media (min-width: 1024px) {

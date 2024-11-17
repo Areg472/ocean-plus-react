@@ -10,7 +10,7 @@ import {
     Clapperboard,
     SquareCode,
 } from "lucide-react"
-
+import { motion } from "motion/react"
 import {
     Sidebar,
     SidebarContent, SidebarFooter,
@@ -21,6 +21,7 @@ import {
     SidebarMenuButton,
     SidebarMenuItem,
 } from "@/components/ui/sidebar"
+import {useRef} from "react";
 
 const items = [
     {
@@ -168,6 +169,7 @@ const shorts = [
 ]
 
 export function AppSidebar() {
+    const scrollRef = useRef(null)
     return (
         <Sidebar>
             <SidebarHeader>
@@ -176,6 +178,7 @@ export function AppSidebar() {
                 </SidebarGroupLabel>
                 <SidebarMenu>
                     {header.map((header) => (
+                        <motion.div whileHover={{ scale: 1.05}}>
                         <SidebarMenuItem key={header.title}>
                             <SidebarMenuButton asChild>
                                 <a href={header.url}>
@@ -184,6 +187,7 @@ export function AppSidebar() {
                                 </a>
                             </SidebarMenuButton>
                         </SidebarMenuItem>
+                        </motion.div>
                     ))}
                 </SidebarMenu>
                 <SidebarGroupLabel>Movies & Shorts</SidebarGroupLabel>
@@ -195,6 +199,10 @@ export function AppSidebar() {
                     <SidebarGroupContent>
                         <SidebarMenu>
                             {items.map((item) => (
+                                <motion.div initial={{opacity: 0}}
+                                            whileInView={{opacity: 1, transition: { duration: 1}}}
+                                            viewport={{ root: scrollRef, margin: "40px 0px 0px 0px", once: true}}
+                                            whileHover={{ scale: 1.05}}>
                                 <SidebarMenuItem key={item.title}>
                                     <SidebarMenuButton asChild>
                                         <a href={item.url}>
@@ -203,6 +211,7 @@ export function AppSidebar() {
                                         </a>
                                     </SidebarMenuButton>
                                 </SidebarMenuItem>
+                                </motion.div>
                             ))}
                         </SidebarMenu>
                     </SidebarGroupContent>
@@ -212,14 +221,19 @@ export function AppSidebar() {
                     <SidebarGroupContent>
                         <SidebarMenu>
                             {shorts.map((shorts) => (
+                                <motion.div initial={{opacity: 0}}
+                                            whileInView={{opacity: 1, transition: { duration: 1}}}
+                                            viewport={{ root: scrollRef, margin: "40px 0px 0px 0px", once: true}}
+                                            whileHover={{ scale: 1.05}}>
                                 <SidebarMenuItem key={shorts.title}>
                                     <SidebarMenuButton asChild>
                                         <a href={shorts.url}>
-                                            <shorts.icon />
+                                            <shorts.icon/>
                                             <span>{shorts.title}</span>
                                         </a>
                                     </SidebarMenuButton>
                                 </SidebarMenuItem>
+                                </motion.div>
                             ))}
                         </SidebarMenu>
                     </SidebarGroupContent>
@@ -231,17 +245,19 @@ export function AppSidebar() {
                 </SidebarGroupLabel>
                 <SidebarMenu>
                     {footer.map((footer) => (
-                        <SidebarMenuItem key={footer.title}>
-                            <SidebarMenuButton asChild>
-                                <a href={footer.url}>
-                                    <footer.icon />
-                                    <span>{footer.title}</span>
-                                </a>
-                            </SidebarMenuButton>
-                        </SidebarMenuItem>
-                    ))}
-                </SidebarMenu>
-            </SidebarFooter>
-        </Sidebar>
-    )
-}
+                        <motion.div whileHover={{scale: 1.05}}>
+                            <SidebarMenuItem key={footer.title}>
+                                <SidebarMenuButton asChild>
+                                    <a href={footer.url}>
+                                        <footer.icon/>
+                                        <span>{footer.title}</span>
+                                    </a>
+                                </SidebarMenuButton>
+                            </SidebarMenuItem>
+                        </motion.div>
+                            ))}
+                        </SidebarMenu>
+                        </SidebarFooter>
+                        </Sidebar>
+                        )
+                    }

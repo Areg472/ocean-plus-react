@@ -11,6 +11,7 @@ import "./moviepage.css";
 import { Switch } from "@/components/ui/switch"
 import { Label } from "@/components/ui/label"
 import {useState} from "react";
+import {motion} from "motion/react";
 
 export function Jpspooktacular()
 {
@@ -36,24 +37,33 @@ export function Jpspooktacular()
             <div>
                 <h1 className="leading-normal issue">Jack Paul Spooktacular</h1>
                 <Accordion type="single" collapsible>
-                    <AccordionItem value="item-1">
-                        <AccordionTrigger>Who is the creator of this movie?</AccordionTrigger>
-                        <AccordionContent className="accord">
-                            Created by Rosie Bros Studios
-                        </AccordionContent>
-                    </AccordionItem>
-                    <AccordionItem value="item-2">
-                        <AccordionTrigger>When was it released?</AccordionTrigger>
-                        <AccordionContent className="accord">
-                            It was released in 2023
-                        </AccordionContent>
-                    </AccordionItem>
-                    <AccordionItem value="item-3">
-                        <AccordionTrigger>What are the genres?</AccordionTrigger>
-                        <AccordionContent className="accord">
-                            The genres are: Adventure/Horror/Comedy/Crossover
-                        </AccordionContent>
-                    </AccordionItem>
+                    <motion.div whileHover={{scale: 1.045}}
+                                transition={{ease: ["circInOut"]}}>
+                        <AccordionItem value="item-1">
+                            <AccordionTrigger>Who is the creator of this movie?</AccordionTrigger>
+                            <AccordionContent className="accord">
+                                Created by Rosie Bros Studios
+                            </AccordionContent>
+                        </AccordionItem>
+                    </motion.div>
+                    <motion.div whileHover={{scale: 1.045}}
+                                transition={{ease: ["circInOut"]}}>
+                        <AccordionItem value="item-2">
+                            <AccordionTrigger>When was it released?</AccordionTrigger>
+                            <AccordionContent className="accord">
+                                It was released in 2023
+                            </AccordionContent>
+                        </AccordionItem>
+                    </motion.div>
+                    <motion.div whileHover={{scale: 1.045}}
+                                transition={{ease: ["circInOut"]}}>
+                        <AccordionItem value="item-3">
+                            <AccordionTrigger>What are the genres?</AccordionTrigger>
+                            <AccordionContent className="accord">
+                                The genres are: Adventure/Horror/Comedy/Crossover
+                            </AccordionContent>
+                        </AccordionItem>
+                    </motion.div>
                 </Accordion>
                 <div className="flex flex-col items-center space-y-4">
                     <div className="flex items-center space-x-2 p-4">

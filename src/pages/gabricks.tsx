@@ -8,6 +8,7 @@ import {
     AccordionTrigger,
 } from "@/components/ui/accordion"
 import "./moviepage.css";
+import {motion} from "motion/react";
 
 export function Gabricks()
 {
@@ -27,24 +28,33 @@ export function Gabricks()
             <div>
                 <h1 className="leading-normal issue">GA Bricks The Movie</h1>
                 <Accordion type="single" collapsible>
-                    <AccordionItem value="item-1">
-                        <AccordionTrigger>Who are the creators of this movie?</AccordionTrigger>
-                        <AccordionContent className="accord">
-                            Created by JoJuanJohnson
-                        </AccordionContent>
-                    </AccordionItem>
-                    <AccordionItem value="item-2">
-                        <AccordionTrigger>When was it released?</AccordionTrigger>
-                        <AccordionContent className="accord">
-                            It was released in 2022
-                        </AccordionContent>
-                    </AccordionItem>
-                    <AccordionItem value="item-3">
-                        <AccordionTrigger>What are the genres?</AccordionTrigger>
-                        <AccordionContent className="accord">
-                            The genres are: Animation/Action/Thriller/Adventure/Crime
-                        </AccordionContent>
-                    </AccordionItem>
+                    <motion.div whileHover={{scale: 1.045}}
+                                transition={{ease: ["circInOut"]}}>
+                        <AccordionItem value="item-1">
+                            <AccordionTrigger>Who are the creators of this movie?</AccordionTrigger>
+                            <AccordionContent className="accord">
+                                Created by JoJuanJohnson
+                            </AccordionContent>
+                        </AccordionItem>
+                    </motion.div>
+                    <motion.div whileHover={{scale: 1.045}}
+                                transition={{ease: ["circInOut"]}}>
+                        <AccordionItem value="item-2">
+                            <AccordionTrigger>When was it released?</AccordionTrigger>
+                            <AccordionContent className="accord">
+                                It was released in 2022
+                            </AccordionContent>
+                        </AccordionItem>
+                    </motion.div>
+                    <motion.div whileHover={{scale: 1.045}}
+                                transition={{ease: ["circInOut"]}}>
+                        <AccordionItem value="item-3">
+                            <AccordionTrigger>What are the genres?</AccordionTrigger>
+                            <AccordionContent className="accord">
+                                The genres are: Animation/Action/Thriller/Adventure/Crime
+                            </AccordionContent>
+                        </AccordionItem>
+                    </motion.div>
                 </Accordion>
                 <iframe frameBorder="0"
                         className="mt-14 theframe"

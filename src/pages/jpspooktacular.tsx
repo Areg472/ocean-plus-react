@@ -67,11 +67,11 @@ export function Jpspooktacular()
                 </Accordion>
                 <div className="flex flex-col items-center space-y-4">
                     <div className="flex items-center space-x-2 p-4">
-                        <Label htmlFor="iframe-switch" className="text-sm font-medium">
+                        <Label htmlFor="iframe-switch" className="text-sm mb-1 font-medium">
                             2D
                         </Label>
-                        <Switch id="iframe-switch" checked={isChecked} onCheckedChange={handleSwitchChange}/>
-                        <Label htmlFor="iframe-switch" className="text-sm font-medium">
+                        <motion.div whileHover={{scale: 1.15}} whileTap={{scale: 0.9}}><Switch id="iframe-switch" checked={isChecked} onCheckedChange={handleSwitchChange}/></motion.div>
+                        <Label htmlFor="iframe-switch" className="text-sm mb-1 font-medium">
                             3D
                         </Label>
                     </div>

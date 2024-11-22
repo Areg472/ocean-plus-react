@@ -14,11 +14,15 @@ The current domain is: https://oceanbluestream.com
 
 First download the source code, open the folder in the terminal, then run:
 
-```vite build```
+```
+vite build
+```
 
 After building, run:
 
-```vite preview```
+```
+vite preview
+```
 
 And Ocean+ is good to go locally, self-hosted!
 If you're willing to set up your analytics scripts, edit the root index.html file.

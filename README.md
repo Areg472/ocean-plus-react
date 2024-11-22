@@ -1,6 +1,6 @@
 # Ocean plus
 
-[![Better Stack Badge](https://uptime.betterstack.com/status-badges/v3/monitor/1lozq.svg)](https://uptime.betterstack.com/?utm_source=status_badge)
+[![Better Stack Badge](https://uptime.betterstack.com/status-badges/v3/monitor/1lozq.svg)](https://status.oceanbluestream.com/)
 
 The website for Vyond & GoAnimate movies
 

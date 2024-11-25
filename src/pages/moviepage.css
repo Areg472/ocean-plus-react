@@ -21,6 +21,19 @@ and (max-device-width: 1023px)
 
 @media (min-width:1024px) {
     .issue {
+        width: 500px;
+    }
+
+    .theframe
+    {
+        margin-left: 17%;
+        width: 320px;
+        height: 180px;
+    }
+}
+
+@media (min-width:1280px) {
+    .issue {
         width: 950px;
     }
 

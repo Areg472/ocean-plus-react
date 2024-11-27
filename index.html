@@ -5,31 +5,28 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ocean+</title>
+    <script
+            src="https://www.datadoghq-browser-agent.com/us5/v5/datadog-rum.js"
+            type="text/javascript">
+    </script>
     <script>
-      (function(h,o,u,n,d) {
-        h=h[d]=h[d]||{q:[],onReady:function(c){h.q.push(c)}}
-        d=o.createElement(u);d.async=1;d.src=n
-        n=o.getElementsByTagName(u)[0];n.parentNode.insertBefore(d,n)
-      })(window,document,'script','https://www.datadoghq-browser-agent.com/us5/v5/datadog-rum.js','DD_RUM')
-      window.DD_RUM.onReady(function() {
-        window.DD_RUM.init({
-          clientToken: 'pub3e03f9bd1cdf625b4ceab085b08e8deb',
-          applicationId: '9fa250e8-f84d-4c4f-9ff9-f133d769e322',
-          // `site` refers to the Datadog site parameter of your organization
-          // see https://docs.datadoghq.com/getting_started/site/
-          site: 'us5.datadoghq.com',
-          service: 'ocean+',
-          env: '<ENV_NAME>',
-          // Specify a version number to identify the deployed version of your application in Datadog
-          // version: '1.0.0',
-          sessionSampleRate: 100,
-          sessionReplaySampleRate: 20,
-          trackUserInteractions: true,
-          trackResources: true,
-          trackLongTasks: true,
-          defaultPrivacyLevel: 'mask-user-input',
-        });
-      })
+      window.DD_RUM && window.DD_RUM.init({
+        clientToken: 'pubc4cb461ac227a5e253ab7e14dc7fbcb9',
+        applicationId: '3f9b2ca1-012c-4913-92dd-cc584a066f82',
+        // `site` refers to the Datadog site parameter of your organization
+        // see https://docs.datadoghq.com/getting_started/site/
+        site: 'us5.datadoghq.com',
+        service: 'ocean-plus',
+        env: '<ENV_NAME>',
+        // Specify a version number to identify the deployed version of your application in Datadog
+        // version: '1.0.0',
+        sessionSampleRate: 100,
+        sessionReplaySampleRate: 20,
+        trackUserInteractions: true,
+        trackResources: true,
+        trackLongTasks: true,
+        defaultPrivacyLevel: 'mask-user-input',
+      });
     </script>
     <script type="text/javascript">
       window.heapReadyCb=window.heapReadyCb||[],window.heap=window.heap||[],heap.load=function(e,t){window.heap.envId=e,window.heap.clientConfig=t=t||{},window.heap.clientConfig.shouldFetchServerConfig=!1;var a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src="https://cdn.us.heap-api.com/config/"+e+"/heap_config.js";var r=document.getElementsByTagName("script")[0];r.parentNode.insertBefore(a,r);var n=["init","startTracking","stopTracking","track","resetIdentity","identify","getSessionId","getUserId","getIdentity","addUserProperties","addEventProperties","removeEventProperty","clearEventProperties","addAccountProperties","addAdapter","addTransformer","addTransformerFn","onReady","addPageviewProperties","removePageviewProperty","clearPageviewProperties","trackPageview"],i=function(e){return function(){var t=Array.prototype.slice.call(arguments,0);window.heapReadyCb.push({name:e,fn:function(){heap[e]&&heap[e].apply(heap,t)}})}};for(var p=0;p<n.length;p++)heap[n[p]]=i(n[p])};

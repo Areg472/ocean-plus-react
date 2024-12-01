@@ -23,15 +23,13 @@ export function Contactus() {
         const email = formData.get('email') as string;
         const name = formData.get('name') as string;
 
-        // Identify user in Heap
         if (typeof window.heap !== 'undefined') {
-            window.heap.identify(email, {
+            window.heap.identify(name, {
                 name: name,
                 email: email
             });
         }
 
-        // Submit form
         e.currentTarget.submit();
     };
 

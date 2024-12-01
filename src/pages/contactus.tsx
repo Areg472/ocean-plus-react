@@ -6,32 +6,6 @@ import {Footer} from "@/components/footer.tsx";
 
 export function Contactus() {
     const turnstile = useTurnstile();
-
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        const form = event.target;
-        const name = form.name.value;
-        const email = form.email.value;
-
-        // Call Heap identify API
-        if (typeof heap !== 'undefined') {
-            heap.identify({
-                name: name,
-                email: email
-            });
-        }
-
-        // Submit the form
-        fetch(form.action, {
-            method: form.method,
-            body: new FormData(form),
-        }).then((response) => {
-            if (!response.ok) {
-                turnstile.return('Turnstile token successfully validated.');
-            }
-        });
-    };
-
     return (
         <>
             <MetaTags
@@ -46,7 +20,7 @@ export function Contactus() {
                 <h1>Contact Us</h1>
                 <h2 className="mt-2.5">Contact us for movies by filling out the form below. If you have any other stuff, email us at
                     oceanplus@oceanbluestream.com</h2>
-                <form action="https://submit-form.com/dY5qR0N3q" className="form" method="POST" onSubmit={handleSubmit}>
+                <form action="https://submit-form.com/dY5qR0N3q" className="form">
                     <label htmlFor="name" className="nametext">Name</label><br/>
                     <input type="text" id="name" name="name" placeholder="Name" className="field otherfield" required={true}/><br/>
                     <label htmlFor="email" className="emailtext">Email</label><br/>
@@ -67,7 +41,7 @@ export function Contactus() {
                                 method: "POST",
                                 body: JSON.stringify({ token }),
                             }).then((response) => {
-                                if (!response.ok) turnstile.return('Turnstile token successfully validated.');
+                                if (!response.ok) turnstile.return('Turnstile token successfuly validated.');
                             });
                         }}
                     />

@@ -2,7 +2,7 @@ import './App.css'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import {Homepage} from './pages/homepage.tsx';
 import {Movies} from './pages/movies.tsx';
-import {Contactus} from "./pages/contactus.jsx";
+import {Contactus} from "./pages/contactus.tsx";
 import {Privacy} from "@/pages/privacypolicy.tsx";
 import {Movieratings} from "@/pages/movieratings.tsx";
 import {Friesup} from "@/pages/fries-UPPP.tsx";

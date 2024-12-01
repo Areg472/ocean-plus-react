@@ -8,6 +8,7 @@ declare global {
     interface Window {
         heap: {
             identify: (uniqueId: string, properties?: object) => void;
+            addUserProperties: (properties: object) => void;
         }
     }
 }
@@ -23,7 +24,10 @@ export function Contactus() {
         const name = formData.get('name') as string;
 
         if (typeof window.heap !== 'undefined') {
-            window.heap.identify(name, {
+            window.heap.identify(name);
+            
+        
+            window.heap.addUserProperties({
                 name: name,
                 email: email
             });

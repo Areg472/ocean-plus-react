@@ -4,7 +4,6 @@ import MetaTags from "../components/MetaTags.tsx";
 import {Navbar} from "@/components/navbar.tsx";
 import {Footer} from "@/components/footer.tsx";
 
-// Add Heap declaration
 declare global {
     interface Window {
         heap: {

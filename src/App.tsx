@@ -27,6 +27,7 @@ import {Carlosbday} from "@/pages/carlosbday.tsx";
 import {Maskmas} from "@/pages/maskmas.tsx";
 import {Steamboatwillie} from "@/pages/steamboatwillie.tsx";
 import {Aboutus} from "@/pages/aboutus.tsx";
+import {TermsOfService} from "@/pages/terms-of-service.tsx";
 
 function App() {
     return (
@@ -40,6 +41,7 @@ function App() {
                         <Route path="/Contact-Us" element={<Contactus/>}/>
                         <Route path="/Movie-ratings" element={<Movieratings/>}/>
                         <Route path="/Privacy-policy" element={<Privacy/>}/>
+                        <Route path="Terms-Of-Service" element={<TermsOfService/>}/>
                         <Route path="/Fries-UP" element={<Friesup/>}/>
                         <Route path="/About-Us" element={<Aboutus/>}/>
                         <Route path="/Caillou-the-movie" element={<Cailloumovie/>}/>

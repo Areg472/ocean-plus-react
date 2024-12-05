@@ -21,7 +21,7 @@ export function Privacy() {
                     We don't sell your data to third party companies.
                 </p>
                 <p className="text-2xl leading-loose">
-                    B visiting any Ocean+ page your request info, Network service provider, Postal code(in some
+                    By visiting any Ocean+ page your request info, Network service provider, Postal code(in some
                     countries), User Agent, IP address and request codes will be stored on a logging service for 3
                     days before deleted.
                 </p>

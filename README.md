@@ -27,4 +27,4 @@ If you're willing to set up your analytics scripts, edit the root index.html fil
 
 ## Made with
 
-[![My Skills](https://skillicons.dev/icons?i=github,git,npm,nodejs,typescript,react,vite,tailwind,webstorm,pycharm,netlify,discord,workers,vscode&perline=7)](https://oceanbluestream.com)
+[![My Skills](https://skillicons.dev/icons?i=github,git,npm,nodejs,typescript,react,vite,tailwind,webstorm,pycharm,netlify,discord,workers,vscode&perline=7)](https://www.jetbrains.com/ides/)

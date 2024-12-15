@@ -26,7 +26,7 @@ export function Mathwarfare()
                 <SidebarTrigger/>
             </SidebarProvider>
             <div>
-                <h1 className="leading-normal issue">Nightshift Survival</h1>
+                <h1 className="leading-normal issue">Math Warfare</h1>
                 <Accordion type="single" collapsible>
                     <motion.div whileHover={{scale: 1.045}}
                                 transition={{ease: ["circInOut"]}}>

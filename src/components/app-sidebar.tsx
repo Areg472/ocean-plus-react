@@ -80,6 +80,11 @@ const items = [
         icon: TvMinimalPlay,
     },
     {
+        title: "Math Warfare",
+        url: "/Math-Warfare",
+        icon: TvMinimalPlay,
+    },
+    {
         title: "Nightshift Survival",
         url: "/Nightshift-Survival",
         icon: TvMinimalPlay,

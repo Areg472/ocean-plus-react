@@ -29,6 +29,7 @@ import {Steamboatwillie} from "@/pages/steamboatwillie.tsx";
 import {Aboutus} from "@/pages/aboutus.tsx";
 import {TermsOfService} from "@/pages/terms-of-service.tsx";
 import {Mathwarfare} from "@/pages/mathwarfare.tsx";
+import {Unhappy} from "@/pages/unhappy.tsx";
 
 function App() {
     return (
@@ -64,6 +65,7 @@ function App() {
                         <Route path="/Maskmas" element={<Maskmas/>}/>
                         <Route path="/Steamboat-Willie" element={<Steamboatwillie/>}/>
                         <Route path="/Math-Warfare" element={<Mathwarfare/>}/>
+                        <Route path="/Unhappy-25-Years-Little-Brat" element={<Unhappy/>}/>
                     </Route>
                 </Routes>
             </Router>

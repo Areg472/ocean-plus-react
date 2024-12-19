@@ -105,7 +105,7 @@ const items = [
         icon: TvMinimalPlay,
     },
     {
-        title: "Unhappy-25-Years-Little-Brat",
+        title: "Unhappy 25 Years Little Brat",
         url: "/Unhappy-25-Years-Little-Brat",
         icon: TvMinimalPlay,
     },

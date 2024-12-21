@@ -34,6 +34,7 @@ import {
   CardamonContent,
   CardamonHeader,
 } from "@/components/ui/cardamon";
+import { motion } from "motion/react";
 
 export function Aboutus() {
   return (
@@ -45,15 +46,23 @@ export function Aboutus() {
         name="Ocean+"
       />
       <Navbar />
-      <body>
+      <motion.div
+        initial={{ opacity: 0, x: 100 }}
+        transition={{ duration: 0.75, type: "spring", bounce: 0.3 }}
+        animate={{ opacity: 1, x: 0 }}
+        exit={{ opacity: 0, x: 100 }}
+      >
+        <body>
         <div className="container">
           <GlitchText size="normal" text="About Us" className="mt-14" />
           <h3 className="mt-3 text-xl">Here is our team who develops Ocean+</h3>
-          <div className="row mb-10 mt-4 flex-col justify-center space-y-6 md:mt-6 md:flex-row md:space-x-2 md:space-y-0 lg:space-x-14">
+          <div
+            className="row mb-10 mt-4 flex-col justify-center space-y-6 md:mt-6 md:flex-row md:space-x-2 md:space-y-0 lg:space-x-14">
             <Cardareg className="card w-52 basis-full lg:basis-1/4">
               <CardaregHeader>
                 <Avatar className="ml-[38px] md:ml-[22px] lg:ml-[38px]">
-                  <AvatarImage src="https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/uwuuu%20duck.png" />
+                  <AvatarImage
+                    src="https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/uwuuu%20duck.png" />
                   <AvatarFallback>AR</AvatarFallback>
                 </Avatar>
                 <h3 className="mr-1 text-xl">Areg</h3>
@@ -72,7 +81,8 @@ export function Aboutus() {
             <Cardleon className="card w-52 basis-full lg:basis-1/4">
               <CardleonHeader>
                 <Avatar className="ml-[38px] md:ml-[22px] lg:ml-[38px]">
-                  <AvatarImage src="https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/leon%20profile%20icon.jpg" />
+                  <AvatarImage
+                    src="https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/leon%20profile%20icon.jpg" />
                   <AvatarFallback>LE</AvatarFallback>
                 </Avatar>
                 <h3 className="mr-1 text-xl">Leon</h3>
@@ -91,7 +101,8 @@ export function Aboutus() {
             <Cardveyshal className="card w-52 basis-full lg:basis-1/4">
               <CardveyshalHeader>
                 <Avatar className="ml-[38px] md:ml-[22px] lg:ml-[38px]">
-                  <AvatarImage src="https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/veysshal%20profile%20icon.jpg" />
+                  <AvatarImage
+                    src="https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/veysshal%20profile%20icon.jpg" />
                   <AvatarFallback>VE</AvatarFallback>
                 </Avatar>
                 <h3 className="mr-1 text-xl">Veyshal</h3>
@@ -110,7 +121,8 @@ export function Aboutus() {
             <Cardcarlo className="card w-52 basis-full lg:basis-1/4">
               <CardcarloHeader>
                 <Avatar className="ml-[38px] md:ml-[22px] lg:ml-[38px]">
-                  <AvatarImage src="https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/carlo%20pfp.jpg" />
+                  <AvatarImage
+                    src="https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/carlo%20pfp.jpg" />
                   <AvatarFallback>CR</AvatarFallback>
                 </Avatar>
                 <h3 className="mr-1 text-xl">Carlo</h3>
@@ -127,7 +139,8 @@ export function Aboutus() {
               </CardcarloContent>
             </Cardcarlo>
           </div>
-          <div className="row mb-10 mt-4 flex-col justify-center space-y-6 md:mt-6 md:flex-row md:space-x-2 md:space-y-0 lg:space-x-14">
+          <div
+            className="row mb-10 mt-4 flex-col justify-center space-y-6 md:mt-6 md:flex-row md:space-x-2 md:space-y-0 lg:space-x-14">
             <Cardamon className="card w-52 basis-full md:basis-1/4">
               <CardamonHeader>
                 <Avatar className="ml-[36px] md:ml-[28px] lg:ml-[60px]">
@@ -149,9 +162,10 @@ export function Aboutus() {
           </div>
           <GithubLanguages />
         </div>
-      </body>
+        </body>
+      </motion.div>
 
-      <Footer />
-    </>
-  );
-}
+        <Footer />
+      </>
+      );
+      }

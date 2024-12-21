@@ -11,6 +11,7 @@ import Autoplay from "embla-carousel-autoplay";
 import { Link } from "react-router-dom";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar.tsx";
 import { AppSidebar } from "@/components/app-sidebar.tsx";
+import { motion } from "motion/react";
 
 export function Movies() {
   return (
@@ -22,10 +23,16 @@ export function Movies() {
         name="Ocean+"
       />
       <body>
-        <SidebarProvider>
-          <AppSidebar />
-          <SidebarTrigger />
-        </SidebarProvider>
+      <SidebarProvider>
+        <AppSidebar />
+        <SidebarTrigger />
+      </SidebarProvider>
+      <motion.div
+        initial={{ opacity: 0, x: 100 }}
+        transition={{ duration: 0.75, type: "spring", bounce: 0.3 }}
+        animate={{ opacity: 1, x: 0 }}
+        exit={{ opacity: 0, x: -100 }}
+      >
         <div className="Headings">
           <h1 className="mb-16 leading-normal">Movies and shows!</h1>
           <h3 className="text-4xl leading-normal">Most Popular</h3>
@@ -166,6 +173,7 @@ export function Movies() {
             </button>
           </Link>
         </div>
+      </motion.div>
       </body>
     </>
   );

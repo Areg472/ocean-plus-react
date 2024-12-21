@@ -24,6 +24,7 @@ import {
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 
 const items = [
   {
@@ -63,7 +64,7 @@ const items = [
   },
   {
     title: "It's Jack Paul Christmas",
-    url: "Its-Jack-Paul-Christmas",
+    url: "/Its-Jack-Paul-Christmas",
     icon: TvMinimalPlay,
   },
   {
@@ -191,10 +192,10 @@ export function AppSidebar() {
             <motion.div whileHover={{ scale: 1.05 }}>
               <SidebarMenuItem key={header.title}>
                 <SidebarMenuButton asChild>
-                  <a href={header.url}>
+                  <Link to={header.url}>
                     <header.icon />
                     <span>{header.title}</span>
-                  </a>
+                  </Link>
                 </SidebarMenuButton>
               </SidebarMenuItem>
             </motion.div>
@@ -221,10 +222,10 @@ export function AppSidebar() {
                 >
                   <SidebarMenuItem key={item.title}>
                     <SidebarMenuButton asChild>
-                      <a href={item.url}>
+                      <Link to={item.url}>
                         <item.icon />
                         <span>{item.title}</span>
-                      </a>
+                      </Link>
                     </SidebarMenuButton>
                   </SidebarMenuItem>
                 </motion.div>
@@ -249,10 +250,10 @@ export function AppSidebar() {
                 >
                   <SidebarMenuItem key={shorts.title}>
                     <SidebarMenuButton asChild>
-                      <a href={shorts.url}>
+                      <Link to={shorts.url}>
                         <shorts.icon />
                         <span>{shorts.title}</span>
-                      </a>
+                      </Link>
                     </SidebarMenuButton>
                   </SidebarMenuItem>
                 </motion.div>

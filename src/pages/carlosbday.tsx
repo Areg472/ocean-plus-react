@@ -20,10 +20,16 @@ export function Carlosbday() {
         name="Ocean+"
       />
       <body>
-        <SidebarProvider>
-          <AppSidebar />
-          <SidebarTrigger />
-        </SidebarProvider>
+      <SidebarProvider>
+        <AppSidebar />
+        <SidebarTrigger />
+      </SidebarProvider>
+      <motion.div
+        initial={{ opacity: 0, y: -100 }}
+        transition={{ duration: 0.75, type: "spring", bounce: 0.3 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -100 }}
+      >
         <div>
           <h1 className="issue leading-normal">Carlo's Birthday Gone Wrong</h1>
           <Accordion type="single" collapsible>
@@ -59,7 +65,8 @@ export function Carlosbday() {
             allowFullScreen
           ></iframe>
         </div>
+      </motion.div>
       </body>
     </>
-  );
+);
 }

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import MetaTags from "../components/MetaTags.tsx";
 import { Navbar } from "@/components/navbar.tsx";
 import { Footer } from "@/components/footer.tsx";
+import { motion } from "motion/react";
 
 export function Homepage() {
   return (
@@ -14,7 +15,13 @@ export function Homepage() {
         name="Ocean+"
       />
       <Navbar />
-      <body className="body">
+      <motion.div
+        initial={{ opacity: 0, x: -100 }}
+        transition={{ duration: 0.75, type: "spring", bounce: 0.3 }}
+        animate={{ opacity: 1, x: 0 }}
+        exit={{ opacity: 0, x: -100 }}
+      >
+        <body className="body">
         <div className="Headings">
           <h1 className="mb-4 leading-normal">Vyond movies and shows.</h1>
           <h2 className="mb-1.5 leading-normal">
@@ -37,8 +44,9 @@ export function Homepage() {
             </Link>
           </div>
         </div>
-      </body>
-      <Footer />
-    </>
-  );
-}
+        </body>
+      </motion.div>
+        <Footer />
+      </>
+      );
+      }

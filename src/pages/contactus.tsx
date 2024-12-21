@@ -3,6 +3,7 @@ import Turnstile, { useTurnstile } from "react-turnstile";
 import MetaTags from "../components/MetaTags.tsx";
 import { Navbar } from "@/components/navbar.tsx";
 import { Footer } from "@/components/footer.tsx";
+import { motion } from "motion/react";
 
 declare global {
   interface Window {
@@ -44,7 +45,13 @@ export function Contactus() {
         name="Ocean+"
       />
       <Navbar />
-      <body>
+      <motion.div
+        initial={{ opacity: 0, x: 100 }}
+        transition={{ duration: 0.75, type: "spring", bounce: 0.3 }}
+        animate={{ opacity: 1, x: 0 }}
+        exit={{ opacity: 0, x: -100 }}
+      >
+        <body>
         <div className="contact">
           <h1>Contact Us</h1>
           <h2 className="mt-2.5">
@@ -111,8 +118,9 @@ export function Contactus() {
             </button>
           </form>
         </div>
-      </body>
-      <Footer />
-    </>
-  );
-}
+        </body>
+      </motion.div>
+        <Footer />
+      </>
+      );
+      }

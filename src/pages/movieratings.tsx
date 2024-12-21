@@ -18,6 +18,7 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 import { Navbar } from "@/components/navbar.tsx";
 import { Footer } from "@/components/footer.tsx";
+import { motion } from "motion/react";
 
 export function Movieratings() {
   return (
@@ -29,7 +30,13 @@ export function Movieratings() {
         name="Ocean+"
       />
       <Navbar />
-      <body>
+      <motion.div
+        initial={{ opacity: 0, scale: 0.3 }}
+        transition={{ duration: 0.75, type: "spring", bounce: 0.3 }}
+        animate={{ opacity: 1, scale: 1 }}
+        exit={{ opacity: 0, scale: 0.3 }}
+      >
+        <body>
         <div className="dark">
           <Card className="w-[320px] lg:w-[442px]">
             <CardHeader>
@@ -114,8 +121,9 @@ export function Movieratings() {
             </CardFooter>
           </Card>
         </div>
-      </body>
-      <Footer />
-    </>
-  );
-}
+        </body>
+      </motion.div>
+        <Footer />
+      </>
+      );
+      }

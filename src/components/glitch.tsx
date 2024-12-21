@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
 interface GlitchTextProps {
-    text: string;
-    className?: string;
-    size?: 'small' | 'medium' | 'normal' | 'large' | 'huge';
+  text: string;
+  className?: string;
+  size?: "small" | "medium" | "normal" | "large" | "huge";
 }
 
 const glitchStyles = `
@@ -98,50 +98,50 @@ const glitchStyles = `
 `;
 
 export function GlitchText({
-                               text,
-                               className = '',
-                               size = 'normal'
-                           }: GlitchTextProps) {
-    const sizeClasses = {
-        small: 'text-lg md:text-xl',
-        medium: 'text-2xl md:text-3xl',
-        normal: 'text-4xl md:text-6xl',
-        large: 'text-5xl md:text-7xl',
-        huge: 'text-6xl md:text-9xl'
-    };
+  text,
+  className = "",
+  size = "normal",
+}: GlitchTextProps) {
+  const sizeClasses = {
+    small: "text-lg md:text-xl",
+    medium: "text-2xl md:text-3xl",
+    normal: "text-4xl md:text-6xl",
+    large: "text-5xl md:text-7xl",
+    huge: "text-6xl md:text-9xl",
+  };
 
-    React.useEffect(() => {
-        if (!document.getElementById('glitch-styles')) {
-            const styleSheet = document.createElement('style');
-            styleSheet.id = 'glitch-styles';
-            styleSheet.textContent = glitchStyles;
-            document.head.appendChild(styleSheet);
-        }
-    }, []);
+  React.useEffect(() => {
+    if (!document.getElementById("glitch-styles")) {
+      const styleSheet = document.createElement("style");
+      styleSheet.id = "glitch-styles";
+      styleSheet.textContent = glitchStyles;
+      document.head.appendChild(styleSheet);
+    }
+  }, []);
 
-    return (
-        <div className={`relative inline-block ${sizeClasses[size]} ${className}`}>
-      <span className="relative inline-block text-white font-black tracking-wider glitch-base">
+  return (
+    <div className={`relative inline-block ${sizeClasses[size]} ${className}`}>
+      <span className="glitch-base relative inline-block font-black tracking-wider text-white">
         {text}
       </span>
-            <span
-                className="absolute top-0 left-0 inline-block text-[#0ff] font-black tracking-wider glitch-layer"
-                aria-hidden="true"
-            >
+      <span
+        className="glitch-layer absolute left-0 top-0 inline-block font-black tracking-wider text-[#0ff]"
+        aria-hidden="true"
+      >
         {text}
       </span>
-            <span
-                className="absolute top-0 left-0 inline-block text-[#f0f] font-black tracking-wider glitch-layer2"
-                aria-hidden="true"
-            >
+      <span
+        className="glitch-layer2 absolute left-0 top-0 inline-block font-black tracking-wider text-[#f0f]"
+        aria-hidden="true"
+      >
         {text}
       </span>
-            <span
-                className="absolute top-0 left-0 inline-block text-[#ff0] font-black tracking-wider glitch-layer3"
-                aria-hidden="true"
-            >
+      <span
+        className="glitch-layer3 absolute left-0 top-0 inline-block font-black tracking-wider text-[#ff0]"
+        aria-hidden="true"
+      >
         {text}
       </span>
-        </div>
-    );
+    </div>
+  );
 }

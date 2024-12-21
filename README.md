@@ -8,7 +8,7 @@ The current domain is: https://oceanbluestream.com
 
 ### Prerequisites
 
-* [Node.js](https://nodejs.org/en)
+- [Node.js](https://nodejs.org/en)
 
 First download the source code, open the folder in the terminal, then run:
 

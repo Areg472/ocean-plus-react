@@ -1,47 +1,39 @@
-.accord
-{
-    text-align: left;
+.accord {
+  text-align: left;
 }
 
-@media only screen
-and (max-device-width: 1023px)
-{
-    .issue
-    {
-        width: 90%;
-    }
+@media only screen and (max-device-width: 1023px) {
+  .issue {
+    width: 90%;
+  }
 
-    .theframe
-    {
-        margin-left: auto;
-        width: 320px;
-        height: 180px;
-    }
+  .theframe {
+    margin-left: auto;
+    width: 320px;
+    height: 180px;
+  }
 }
 
-@media (min-width:1024px) {
-    .issue {
-        width: 500px;
-    }
+@media (min-width: 1024px) {
+  .issue {
+    width: 500px;
+  }
 
-    .theframe
-    {
-        margin-left: 17%;
-        width: 320px;
-        height: 180px;
-    }
+  .theframe {
+    margin-left: 17%;
+    width: 320px;
+    height: 180px;
+  }
 }
 
-@media (min-width:1280px) {
-    .issue {
-        width: 950px;
-    }
+@media (min-width: 1280px) {
+  .issue {
+    width: 950px;
+  }
 
-    .theframe
-    {
-        margin-left: 16%;
-        width: 640px;
-        height: 360px;
-    }
+  .theframe {
+    margin-left: 16%;
+    width: 640px;
+    height: 360px;
+  }
 }
-

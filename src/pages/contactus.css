@@ -1,121 +1,112 @@
-.submit{
-    border: 1px solid black;
-    background-color: black;
-    border-radius: 20px;
-    width: 100px;
-    height: 30px;
-    text-align: center;
+.submit {
+  border: 1px solid black;
+  background-color: black;
+  border-radius: 20px;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  margin-top: 10px;
+  transition: 0.4s;
+}
+
+.submit:hover {
+  box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5);
+  transition: 0.4s;
+}
+
+.field {
+  border: 1px solid black;
+  border-radius: 7px;
+  background-color: white;
+  color: black;
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+  .movietext {
+    margin-right: 160px;
+  }
+
+  .nametext {
+    margin-right: 189px;
+  }
+
+  .emailtext {
+    margin-right: 193px;
+  }
+
+  .textarea {
+    max-height: 100px;
+    min-height: 35px;
+    width: 235px;
+  }
+
+  .otherfield {
+    margin-right: 2px;
+    width: 235px;
+  }
+
+  .form {
     margin-top: 10px;
-    transition: .4s;
-}
+  }
 
-.submit:hover
-{
-    box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5);
-    transition: .4s;
-}
-
-.field
-{
-    border: 1px solid black;
-    border-radius: 7px;
-    background-color: white;
-    color: black;
-}
-
-@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+  @media only screen and (max-device-width: 1000px) {
     .movietext {
-        margin-right: 160px;
+      margin-right: 157px;
     }
 
     .nametext {
-        margin-right: 189px;
+      margin-right: 186px;
     }
 
     .emailtext {
-        margin-right: 193px;
+      margin-right: 190px;
     }
-
-    .textarea {
-        max-height: 100px;
-        min-height: 35px;
-        width: 235px;
-    }
-
-    .otherfield
-    {
-        margin-right: 2px;
-        width: 235px;
-    }
-
-    .form {
-        margin-top: 10px;
-    }
-
-    @media only screen and (max-device-width: 1000px)
-    {
-        .movietext {
-            margin-right: 157px;
-        }
-
-        .nametext {
-            margin-right: 186px;
-        }
-
-        .emailtext {
-            margin-right: 190px;
-        }
-    }
+  }
 }
 
 @-moz-document url-prefix() {
+  .movietext {
+    margin-right: 160px;
+  }
 
+  .nametext {
+    margin-right: 191px;
+  }
+
+  .emailtext {
+    margin-right: 194px;
+  }
+
+  .textarea {
+    max-height: 100px;
+    min-height: 35px;
+    width: 235px;
+  }
+
+  .form {
+    margin-top: 10px;
+  }
+
+  @media only screen and (max-device-width: 1000px) {
     .movietext {
-        margin-right: 160px;
+      margin-right: 154px;
     }
 
     .nametext {
-        margin-right: 191px;
+      margin-right: 183px;
     }
 
     .emailtext {
-        margin-right: 194px;
+      margin-right: 187px;
+    }
+
+    .otherfield {
+      width: 223px;
     }
 
     .textarea {
-        max-height: 100px;
-        min-height: 35px;
-        width: 235px;
+      width: 225px;
+      margin-right: 2px;
     }
-
-    .form {
-        margin-top: 10px;
-    }
-
-    @media only screen and (max-device-width: 1000px)
-    {
-
-        .movietext {
-            margin-right: 154px;
-        }
-
-        .nametext {
-            margin-right: 183px;
-        }
-
-        .emailtext {
-            margin-right: 187px;
-        }
-
-        .otherfield
-        {
-            width: 223px;
-        }
-
-        .textarea
-        {
-            width: 225px;
-            margin-right: 2px;
-        }
-    }
+  }
 }

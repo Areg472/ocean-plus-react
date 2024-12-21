@@ -51,7 +51,7 @@ export function Unhappy()
                         <AccordionItem value="item-3">
                             <AccordionTrigger>What are the genres?</AccordionTrigger>
                             <AccordionContent className="accord">
-                                The genres are: Action/Adventure/Animation/Drama
+                                The genres are: Animation/Adventure/Comedy
                             </AccordionContent>
                         </AccordionItem>
                     </motion.div>

@@ -11,9 +11,9 @@ export function Fourofour() {
         image="https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/logo.jpg"
         name="Ocean+"
       />
-      <div className="min-h-screen flex flex-col">
+      <div className="min-h-screen flex flex-col justify-between">
         <Navbar />
-        <div className="flex-grow flex items-center justify-center">
+        <div className="flex-1 flex items-center justify-center py-8">
           <div className="Headings text-center">
             <h1 className="text-3xl">
               Hello, alien. Click on the button below to go back.

@@ -51,9 +51,9 @@ export function Contactus() {
           transition={{ duration: 0.75, type: "spring", bounce: 0.3 }}
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -100 }}
-          className="flex-grow flex-col flex items-center justify-center"
+          className="flex-1 flex items-center justify-center px-4 sm:px-6 lg:px-8 py-8"
         >
-          <div className="contact text-center">
+          <div className="contact text-center w-full max-w-md mx-auto">
             <h1>Contact Us</h1>
             <h2 className="mt-2.5">
               Contact us for movies by filling out the form below. If you have any

@@ -14,14 +14,14 @@ export function Homepage() {
         image="https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/logo.jpg"
         name="Ocean+"
       />
-      <div className="min-h-screen flex flex-col">
+      <div className="min-h-screen flex flex-col justify-between">
         <Navbar />
         <motion.div
           initial={{ opacity: 0, x: -100 }}
           transition={{ duration: 0.75, type: "spring", bounce: 0.3 }}
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -100 }}
-          className="flex-grow flex-col flex items-center justify-center"
+          className="flex-1 flex items-center justify-center py-8"
         >
           <div className="Headings text-center">
             <h1 className="mb-4 leading-normal">Vyond movies and shows.</h1>

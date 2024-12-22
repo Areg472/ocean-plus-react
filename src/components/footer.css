@@ -78,7 +78,7 @@
   display: flex;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .row {
     display: flex;
     flex-direction: row;

@@ -1,6 +1,4 @@
 import MetaTags from "@/components/MetaTags.tsx";
-import { AppSidebar } from "@/components/app-sidebar.tsx";
-import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar.tsx";
 import {
   Accordion,
   AccordionContent,
@@ -20,10 +18,6 @@ export function Comedyworld() {
         name="Ocean+"
       />
       <body>
-        <SidebarProvider>
-          <AppSidebar />
-          <SidebarTrigger />
-        </SidebarProvider>
         <div>
           <h1 className="issue leading-normal">The Comedy World Movie</h1>
           <Accordion type="single" collapsible>

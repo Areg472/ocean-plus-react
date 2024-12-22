@@ -1,6 +1,4 @@
 import MetaTags from "@/components/MetaTags.tsx";
-import { AppSidebar } from "@/components/app-sidebar.tsx";
-import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar.tsx";
 import {
   Accordion,
   AccordionContent,
@@ -20,10 +18,6 @@ export function Jpchristmas() {
         name="Ocean+"
       />
       <body>
-      <SidebarProvider>
-        <AppSidebar />
-        <SidebarTrigger />
-      </SidebarProvider>
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         transition={{ duration: 0.75, type: "spring", bounce: 0.3 }}

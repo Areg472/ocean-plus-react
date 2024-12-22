@@ -11,22 +11,24 @@ export function TermsOfService() {
         image="https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/logo.jpg"
         name="Ocean+"
       />
-      <Navbar />
-      <body>
-        <div className="container">
-          <p className="text-2xl leading-loose">
-            This is the TOS for the Ocean+ discord bot
-          </p>
-          <p className="text-2xl leading-loose">
-            Don't use the bot to break rules in a server, don't use the bot to
-            do stuff against Discord's TOS.
-          </p>
-          <p className="text-2xl leading-loose">
-            Don't use the bot to create NSFW content.
-          </p>
+      <div className="min-h-screen flex flex-col">
+        <Navbar />
+        <div className="flex-grow flex items-center justify-center">
+          <div className="container text-center">
+            <p className="text-2xl leading-loose">
+              This is the TOS for the Ocean+ discord bot
+            </p>
+            <p className="text-2xl leading-loose">
+              Don't use the bot to break rules in a server, don't use the bot to
+              do stuff against Discord's TOS.
+            </p>
+            <p className="text-2xl leading-loose">
+              Don't use the bot to create NSFW content.
+            </p>
+          </div>
         </div>
-      </body>
-      <Footer />
+        <Footer />
+      </div>
     </>
   );
 }

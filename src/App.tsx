@@ -35,7 +35,6 @@ import { SidebarProvider, SidebarTrigger, useSidebar } from "@/components/ui/sid
 import { AppSidebar } from "@/components/app-sidebar.tsx";
 import { Veyshalmovie } from "@/pages/veyshalmovie.tsx";
 
-// New component for sidebar content
 function SidebarContent() {
   const { state } = useSidebar();
 
@@ -77,7 +76,7 @@ function AppContent() {
     "/Steamboat-Willie",
     "/Math-Warfare",
     "/Unhappy-25-Years-Little-Brat",
-    "/The-Veyshal-Movie",
+    "/Veyshal-The-Movie",
   ];
 
   const shouldShowSidebar = sidebarPaths.includes(location.pathname);
@@ -116,7 +115,7 @@ function AppContent() {
             <Route path="/Maskmas" element={<Maskmas />} />
             <Route path="/Steamboat-Willie" element={<Steamboatwillie />} />
             <Route path="/Math-Warfare" element={<Mathwarfare />} />
-            <Route path="/The-Veyshal-Movie" element={<Veyshalmovie />} />
+            <Route path="/Veyshal-The-Movie" element={<Veyshalmovie />} />
             <Route path="/Unhappy-25-Years-Little-Brat" element={<Unhappy />} />
           </Routes>
         </AnimatePresence>

@@ -79,7 +79,11 @@ function AppContent() {
     "/Veyshal-The-Movie",
   ];
 
-  const shouldShowSidebar = sidebarPaths.includes(location.pathname);
+  const isValidPath = (path: string): boolean => {
+    return sidebarPaths.some(p => p.toLowerCase() === path.toLowerCase());
+  };
+
+  const shouldShowSidebar = isValidPath(location.pathname);
 
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">

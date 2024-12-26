@@ -52,7 +52,7 @@ export function Movies() {
                   </Link>
                 </CarouselItem>
                 <CarouselItem className="md:basis-full lg:basis-1/3">
-                  <Link to="/Veyshal-the-movie">
+                  <Link to="/The-veyshal-movie">
                     <img
                       src="https://utfs.io/f/thKihuQxhYcPULaG6TMKZeI96M7cYWXw5LuFxkzjOQmv0ghA"
                       alt="Veyshal movie"

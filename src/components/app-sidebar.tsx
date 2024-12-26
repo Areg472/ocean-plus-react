@@ -108,6 +108,11 @@ const items = [
     icon: TvMinimalPlay,
   },
   {
+    title: "The Veyshal Movie",
+    url: "/The-Veyshal-Movie",
+    icon: TvMinimalPlay,
+  },
+  {
     title: "Unhappy 25 Years Little Brat",
     url: "/Unhappy-25-Years-Little-Brat",
     icon: TvMinimalPlay,

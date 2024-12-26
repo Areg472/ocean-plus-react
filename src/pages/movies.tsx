@@ -52,10 +52,10 @@ export function Movies() {
                   </Link>
                 </CarouselItem>
                 <CarouselItem className="md:basis-full lg:basis-1/3">
-                  <Link to="/The-vyond-cinema-movie">
+                  <Link to="/Veyshal-the-movie">
                     <img
-                      src="https://raw.githubusercontent.com/Areg472/ocean-plus-react/2af654d3dc827c1b17668c26ec853121b9f4ad32/src/pictures/The-Vyond-Cinema-Movie-ocean-poster-with-the-template00086400.png"
-                      alt="Vyond cinema"
+                      src="https://utfs.io/f/thKihuQxhYcPULaG6TMKZeI96M7cYWXw5LuFxkzjOQmv0ghA"
+                      alt="Veyshal movie"
                     />
                   </Link>
                 </CarouselItem>

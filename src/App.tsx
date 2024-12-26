@@ -33,6 +33,7 @@ import { Unhappy } from "@/pages/unhappy.tsx";
 import { AnimatePresence } from "motion/react";
 import { SidebarProvider, SidebarTrigger, useSidebar } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/app-sidebar.tsx";
+import { Veyshalmovie } from "@/pages/veyshalmovie.tsx";
 
 // New component for sidebar content
 function SidebarContent() {
@@ -75,7 +76,8 @@ function AppContent() {
     "/Maskmas",
     "/Steamboat-Willie",
     "/Math-Warfare",
-    "/Unhappy-25-Years-Little-Brat"
+    "/Unhappy-25-Years-Little-Brat",
+    "/The-Veyshal-Movie",
   ];
 
   const shouldShowSidebar = sidebarPaths.includes(location.pathname);
@@ -114,6 +116,7 @@ function AppContent() {
             <Route path="/Maskmas" element={<Maskmas />} />
             <Route path="/Steamboat-Willie" element={<Steamboatwillie />} />
             <Route path="/Math-Warfare" element={<Mathwarfare />} />
+            <Route path="/The-Veyshal-Movie" element={<Veyshalmovie />} />
             <Route path="/Unhappy-25-Years-Little-Brat" element={<Unhappy />} />
           </Routes>
         </AnimatePresence>

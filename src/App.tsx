@@ -76,7 +76,7 @@ function AppContent() {
     "/Steamboat-Willie",
     "/Math-Warfare",
     "/Unhappy-25-Years-Little-Brat",
-    "/Veyshal-The-Movie",
+    "/The-Veyshal-Movie",
   ];
 
   const isValidPath = (path: string): boolean => {
@@ -119,7 +119,7 @@ function AppContent() {
             <Route path="/Maskmas" element={<Maskmas />} />
             <Route path="/Steamboat-Willie" element={<Steamboatwillie />} />
             <Route path="/Math-Warfare" element={<Mathwarfare />} />
-            <Route path="/Veyshal-The-Movie" element={<Veyshalmovie />} />
+            <Route path="/The-Veyshal-Movie" element={<Veyshalmovie />} />
             <Route path="/Unhappy-25-Years-Little-Brat" element={<Unhappy />} />
           </Routes>
         </AnimatePresence>

@@ -58,7 +58,7 @@ export function Veyshalmovie() {
               <AccordionItem value="item-3">
                 <AccordionTrigger>What are the genres?</AccordionTrigger>
                 <AccordionContent className="accord">
-                  The genres are: Animation/Action/Adventure/Crime
+                  The genres are: Animation/Action/Comedy/Drama/Thriller/Crime
                 </AccordionContent>
               </AccordionItem>
             </motion.div>

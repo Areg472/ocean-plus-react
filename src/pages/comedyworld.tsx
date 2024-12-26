@@ -18,6 +18,12 @@ export function Comedyworld() {
         name="Ocean+"
       />
       <body>
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        transition={{ duration: 0.75, type: "spring", bounce: 0.3 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -100 }}
+      >
         <div>
           <h1 className="issue leading-normal">The Comedy World Movie</h1>
           <Accordion type="single" collapsible>
@@ -64,7 +70,8 @@ export function Comedyworld() {
             allowFullScreen
           ></iframe>
         </div>
+      </motion.div>
       </body>
     </>
-  );
+);
 }

@@ -79,6 +79,26 @@ export function Aboutus() {
                   </a>
                 </CardaregContent>
               </Cardareg>
+              <Cardcarlo className="card w-52 basis-full lg:basis-1/4">
+                <CardcarloHeader>
+                  <Avatar className="ml-[38px] md:ml-[22px] lg:ml-[38px]">
+                    <AvatarImage
+                      src="https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/carlo%20pfp.jpg" />
+                    <AvatarFallback>CR</AvatarFallback>
+                  </Avatar>
+                  <h3 className="mr-1 text-xl">Carlo</h3>
+                  <p>Editor</p>
+                </CardcarloHeader>
+                <CardcarloContent>
+                  <a
+                    href="https://www.youtube.com/@CarloBear"
+                    className="ml-0 md:ml-4"
+                    target="_blank"
+                  >
+                    <button className="button w-24">Youtube</button>
+                  </a>
+                </CardcarloContent>
+              </Cardcarlo>
               <Cardleon className="card w-52 basis-full lg:basis-1/4">
                 <CardleonHeader>
                   <Avatar className="ml-[38px] md:ml-[22px] lg:ml-[38px]">
@@ -119,26 +139,6 @@ export function Aboutus() {
                   </a>
                 </CardveyshalContent>
               </Cardveyshal>
-              <Cardcarlo className="card w-52 basis-full lg:basis-1/4">
-                <CardcarloHeader>
-                  <Avatar className="ml-[38px] md:ml-[22px] lg:ml-[38px]">
-                    <AvatarImage
-                      src="https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/carlo%20pfp.jpg" />
-                    <AvatarFallback>CR</AvatarFallback>
-                  </Avatar>
-                  <h3 className="mr-1 text-xl">Carlo</h3>
-                  <p>Editor</p>
-                </CardcarloHeader>
-                <CardcarloContent>
-                  <a
-                    href="https://www.youtube.com/@CarloBear"
-                    className="ml-0 md:ml-4"
-                    target="_blank"
-                  >
-                    <button className="button w-24">Youtube</button>
-                  </a>
-                </CardcarloContent>
-              </Cardcarlo>
             </div>
             <div
               className="row mb-10 mt-4 flex-col justify-center space-y-6 md:mt-6 md:flex-row md:space-x-2 md:space-y-0 lg:space-x-14">

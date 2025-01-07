@@ -5,10 +5,10 @@ export function Footer() {
     <>
       <div className="row lg:space-x-40">
         <div className="column left">
-          <a target="_blank" href="https://oceanbluestream.com/discord/">
+          <a target="_blank" href="https://link.oceanbluestream.com/discord">
             <button className="buttons2 mb-1.5">Discord</button>
           </a>
-          <a target="_blank" href="https://status.oceanbluestream.com/">
+          <a target="_blank" href="https://link.oceanbluestream.com/status">
             <button className="buttons2">Status</button>
           </a>
         </div>
@@ -26,7 +26,7 @@ export function Footer() {
         <div className="column">
           <a
             target="_blank"
-            href="https://www.youtube.com/@RosieBrosEntertainment"
+            href="https://link.oceanbluestream.com/oceanbluepictures"
           >
             <button className="buttons right ml-6 lg:ml-0">
               © Ocean Blue Studios, 2024

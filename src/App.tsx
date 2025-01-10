@@ -123,7 +123,7 @@ function AppContent() {
             <Route path="/Goofus-and-Doofus-1" element={<Goofus1 />} />
             <Route path="/Goofus-and-Doofus-2" element={<Goofus2 />} />
             <Route path="/Its-Jack-Paul-Christmas" element={<Jpchristmas />} />
-            <Route path="/The-Surfs-And-The-Preasant" element={<Serbs />} />
+            <Route path="/The-Surfs-and-the-Preasant" element={<Serbs />} />
             <Route
               path="/Jack-Paul-Spooktacular"
               element={<Jpspooktacular />}

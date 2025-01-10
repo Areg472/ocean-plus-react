@@ -104,7 +104,7 @@ const items = [
   },
   {
     title: "The Surfs And The Preasant",
-    url: "/The-Surfs-And-The-Preasant",
+    url: "/The-Surfs-and-the-Preasant",
     icon: TvMinimalPlay,
   },
   {

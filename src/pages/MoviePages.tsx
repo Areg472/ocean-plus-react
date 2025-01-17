@@ -233,7 +233,7 @@ export function Serbs() {
       year={2024}
       movieLink="https://mega.nz/embed/l4pXDAQR#eLIxGPgqifScOoJZYiOzSkDIQou1q-9QAmkWBG4rpeA"
       creator="BraxtonTheVyonder2009"
-      title="The Surfs and the Preasant"
+      title="The Surfs and the Peasants"
       genres="Historical Fiction/Adventure/Drama"
     />
   );

@@ -167,8 +167,8 @@ const footer = [
   },
 
   {
-    title: "Ocean Blue Studios",
-    url: "https://www.youtube.com/@RosieBrosEntertainment",
+    title: "Ocean Blue Pictures",
+    url: "https://link.oceanbluestream.com/oceanbluepictures",
     icon: Video,
   },
 ];

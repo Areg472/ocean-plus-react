@@ -20,8 +20,8 @@ export function MoviePage({
 }) {
   const movieTitleLow = title?.toLowerCase();
 
-  const top = "Caillou The Movie" == title;
-  const bottom = "Unhappy 25 Years Little Brat" == title;
+  const top = title == "Caillou The Movie";
+  const bottom = title == "Unhappy 25 Years Little Brat";
 
   {
     /*
@@ -44,7 +44,7 @@ export function MoviePage({
     setIsChecked(!isChecked);
   };
 
-  const isSpooky = "Jack Paul Spooktacular" == title;
+  const isSpooky = title == "Jack Paul Spooktacular";
 
   return (
     <>

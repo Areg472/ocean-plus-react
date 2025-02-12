@@ -284,7 +284,7 @@ const SidebarTrigger = React.forwardRef<
       size="icon"
       className={cn(
         "h-8 w-8 rounded-md hover:bg-accent hover:text-accent-foreground transition-transform",
-        className
+        className,
       )}
       onClick={(event) => {
         onClick?.(event);

@@ -17,7 +17,7 @@ export function Maskmas() {
       year={2023}
       shortLink="https://mega.nz/embed/xthEiQ6T#T6jlQuNTGN654eahZut1wT30tdzPKBhdSFaYr-eFhu8"
       creator="Carlo Bear"
-      title="Maskmas" 
+      title="Maskmas"
     />
   );
 }

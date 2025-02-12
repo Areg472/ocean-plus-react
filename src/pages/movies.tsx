@@ -162,7 +162,10 @@ export function Movies() {
               <CarouselNext className="absolute right-2 md:right-2 md:top-1/2 lg:-right-8" />
             </Carousel>
             <div className="flex justify-center w-full">
-              <Link to="/Movie-ratings" className="flex w-[250px] items-center justify-center">
+              <Link
+                to="/Movie-ratings"
+                className="flex w-[250px] items-center justify-center"
+              >
                 <button className="button mt-10 justify-center h-[30px]">
                   Movie age ratings
                 </button>

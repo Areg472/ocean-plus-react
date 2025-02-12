@@ -56,8 +56,8 @@ export function Contactus() {
           <div className="contact text-center w-full max-w-md mx-auto">
             <h1>Contact Us</h1>
             <h2 className="mt-2.5">
-              Contact us for movies by filling out the form below. If you have any
-              other stuff, email us at oceanplus@oceanbluestream.com
+              Contact us for movies by filling out the form below. If you have
+              any other stuff, email us at oceanplus@oceanbluestream.com
             </h2>
             <form
               onSubmit={handleSubmit}
@@ -110,7 +110,9 @@ export function Contactus() {
                     body: JSON.stringify({ token }),
                   }).then((response) => {
                     if (!response.ok)
-                      turnstile.return("Turnstile token successfuly validated.");
+                      turnstile.return(
+                        "Turnstile token successfuly validated.",
+                      );
                   });
                 }}
               />
@@ -119,7 +121,6 @@ export function Contactus() {
               </button>
             </form>
           </div>
-
         </motion.div>
         <Footer />
       </div>

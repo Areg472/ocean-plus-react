@@ -4,7 +4,7 @@
 
 @media (min-width: 1000px) {
   :root {
-    font-family: 'Raleway', serif;
+    font-family: "Raleway", serif;
     font-optical-sizing: auto;
     font-style: normal;
 
@@ -24,7 +24,7 @@
 
 @media (min-width: 320px) and (max-width: 999px) {
   :root {
-    font-family: 'Raleway', serif;
+    font-family: "Raleway", serif;
     font-optical-sizing: auto;
     font-style: normal;
 

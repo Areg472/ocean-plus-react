@@ -9,7 +9,7 @@ const Cardleon = React.forwardRef<
   <div
     ref={ref}
     className={cn(
-      "rounded-xl border border-gray-200 bg-white text-gray-950 shadow dark:border-gray-800 dark:bg-[#a90b0a] dark:text-gray-50",
+      "rounded-xl border border-gray-200 bg-white text-gray-950 shadow-sm dark:border-gray-800 dark:bg-[#a90b0a] dark:text-gray-50",
       className,
     )}
     {...props}

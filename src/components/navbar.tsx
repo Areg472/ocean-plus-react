@@ -16,13 +16,19 @@ export function Navbar() {
           </div>
         </Link>
         <Link to="/Movies">
-          <button className="button leading-loose">Movies</button>
+          <button className="button cursor-pointer leading-loose">
+            Movies
+          </button>
         </Link>
         <Link to="/Contact-Us">
-          <button className="button leading-loose">Contact Us</button>
+          <button className="button cursor-pointer leading-loose">
+            Contact Us
+          </button>
         </Link>
         <Link to="/About-Us">
-          <button className="button leading-loose">About Us</button>
+          <button className="button cursor-pointer leading-loose">
+            About Us
+          </button>
         </Link>
       </div>
     </>

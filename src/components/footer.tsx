@@ -6,15 +6,15 @@ export function Footer() {
       <div className="row lg:space-x-40">
         <div className="column left">
           <a target="_blank" href="https://link.oceanbluestream.com/discord">
-            <button className="buttons2 mb-1.5">Discord</button>
+            <button className="buttons2 mb-1.5 cursor-pointer">Discord</button>
           </a>
           <a target="_blank" href="https://link.oceanbluestream.com/status">
             <button className="buttons2">Status</button>
           </a>
         </div>
-        <div className="column middle ml-10 lg:ml-0">
+        <div className="column">
           <a target="_blank" href="https://uptime.betterstack.com">
-            <button className="buttons middle">
+            <button className="buttons middle cursor-pointer">
               <img
                 className="uptimebutton"
                 alt="Better Stack Website Monitoring"
@@ -28,7 +28,7 @@ export function Footer() {
             target="_blank"
             href="https://link.oceanbluestream.com/oceanbluepictures"
           >
-            <button className="buttons right ml-6 lg:ml-0">
+            <button className="buttons ml-6 cursor-pointer lg:ml-0">
               © Ocean Blue Studios, 2024
             </button>
           </a>

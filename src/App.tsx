@@ -47,6 +47,7 @@ import {
   Carlosbirthdaygonewrong,
   Maskmas,
   Steamboatwillie,
+  Turkey,
 } from "@/pages/ShortPages.tsx";
 
 function SidebarContent() {
@@ -56,7 +57,7 @@ function SidebarContent() {
     <>
       <AppSidebar />
       <div
-        className="fixed left-6 top-6 z-50 transition-all duration-200 ease-linear lg:left-[calc(var(--sidebar-width)+1rem)] lg:top-6 lg:data-[state=collapsed]:left-6"
+        className="fixed top-6 left-6 z-50 transition-all duration-200 ease-linear lg:top-6 lg:left-[calc(var(--sidebar-width)+1rem)] lg:data-[state=collapsed]:left-6"
         data-state={state}
       >
         <SidebarTrigger />
@@ -92,6 +93,7 @@ function AppContent() {
     "/Unhappy-25-Years-Little-Brat",
     "/The-Veyshal-Movie",
     "/The-Surfs-And-The-Preasant",
+    "/New-Turkey-Eve",
   ];
 
   const isValidPath = (path: string): boolean => {
@@ -152,6 +154,7 @@ function AppContent() {
             <Route path="/Math-Warfare" element={<Mathwarfare />} />
             <Route path="/The-Veyshal-Movie" element={<Veyshalmovie />} />
             <Route path="/Unhappy-25-Years-Little-Brat" element={<Unhappy />} />
+            <Route path="/New-Turkey-Eve" element={<Turkey />} />
           </Routes>
         </AnimatePresence>
       </SidebarProvider>

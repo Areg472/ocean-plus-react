@@ -185,6 +185,11 @@ const shorts = [
     icon: Clapperboard,
   },
   {
+    title: "New Turkey Eve",
+    url: "/New-Turkey-Eve",
+    icon: Clapperboard,
+  },
+  {
     title: "Steamboat Willie",
     url: "/Steamboat-Willie",
     icon: Clapperboard,

@@ -52,7 +52,7 @@ export function Aboutus() {
           transition={{ duration: 0.75, type: "spring", bounce: 0.3 }}
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: 100 }}
-          className="flex-grow"
+          className="grow"
         >
           <div className="container">
             <GlitchText size="normal" text="About Us" className="mt-14" />

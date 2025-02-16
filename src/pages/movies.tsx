@@ -31,7 +31,7 @@ export function Movies() {
             <h1 className="mb-16 leading-normal">Movies and shows!</h1>
             <h3 className="text-4xl leading-normal">Most Popular</h3>
             <Carousel
-              className="carousel dark mt-4 px-4 md:px-12 lg:px-10 relative"
+              className="carousel dark relative mt-4 px-4 md:px-12 lg:px-10"
               plugins={[
                 Autoplay({
                   delay: 7500,
@@ -92,12 +92,12 @@ export function Movies() {
                   </Link>
                 </CarouselItem>
               </CarouselContent>
-              <CarouselPrevious className="absolute left-2 md:left-2 md:top-1/2 lg:-left-8" />
-              <CarouselNext className="absolute right-2 md:right-2 md:top-1/2 lg:-right-8" />
+              <CarouselPrevious className="absolute left-2 md:top-1/2 md:left-2 lg:-left-8" />
+              <CarouselNext className="absolute right-2 md:top-1/2 md:right-2 lg:-right-8" />
             </Carousel>
             <h3 className="mt-4 text-4xl leading-normal">Adventure</h3>
             <Carousel
-              className="carousel dark mt-4 px-4 md:px-12 lg:px-10 relative"
+              className="carousel dark relative mt-4 px-4 md:px-12 lg:px-10"
               plugins={[
                 Autoplay({
                   delay: 7000,
@@ -158,12 +158,15 @@ export function Movies() {
                   </Link>
                 </CarouselItem>
               </CarouselContent>
-              <CarouselPrevious className="absolute left-2 md:left-2 md:top-1/2 lg:-left-8" />
-              <CarouselNext className="absolute right-2 md:right-2 md:top-1/2 lg:-right-8" />
+              <CarouselPrevious className="absolute left-2 md:top-1/2 md:left-2 lg:-left-8" />
+              <CarouselNext className="absolute right-2 md:top-1/2 md:right-2 lg:-right-8" />
             </Carousel>
-            <div className="flex justify-center w-full">
-              <Link to="/Movie-ratings" className="flex w-[250px] items-center justify-center">
-                <button className="button mt-10 justify-center h-[30px]">
+            <div className="flex w-full justify-center">
+              <Link
+                to="/Movie-ratings"
+                className="flex w-[250px] items-center justify-center"
+              >
+                <button className="button mt-10 h-[30px] cursor-pointer justify-center">
                   Movie age ratings
                 </button>
               </Link>

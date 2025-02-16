@@ -14,14 +14,14 @@ export function Homepage() {
         image="https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/logo.jpg"
         name="Ocean+"
       />
-      <div className="min-h-screen flex flex-col justify-between">
+      <div className="flex min-h-screen flex-col justify-between">
         <Navbar />
         <motion.div
           initial={{ opacity: 0, x: -100 }}
           transition={{ duration: 0.75, type: "spring", bounce: 0.3 }}
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -100 }}
-          className="flex-1 flex items-center justify-center py-8"
+          className="flex flex-1 items-center justify-center py-8"
         >
           <div className="Headings text-center">
             <h1 className="mb-4 leading-normal">Vyond movies and shows.</h1>
@@ -31,14 +31,14 @@ export function Homepage() {
             <div className="buttonscont space-x-3">
               <Link to="/Movies">
                 <input
-                  className="oplusbuttons mt-4 leading-loose"
+                  className="oplusbuttons text-white; mt-4 rounded-full bg-blue-400 px-4 py-2 leading-loose"
                   type="button"
                   value="Access the website"
                 />
               </Link>
               <Link to="/Privacy-policy">
                 <input
-                  className="oplusbuttons mt-4 leading-loose"
+                  className="oplusbuttons text-white; mt-4 rounded-full bg-blue-400 px-4 py-2 leading-loose"
                   type="button"
                   value="Privacy Policy"
                 />

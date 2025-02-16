@@ -17,7 +17,18 @@ export function Maskmas() {
       year={2023}
       shortLink="https://mega.nz/embed/xthEiQ6T#T6jlQuNTGN654eahZut1wT30tdzPKBhdSFaYr-eFhu8"
       creator="Carlo Bear"
-      title="Maskmas" 
+      title="Maskmas"
+    />
+  );
+}
+
+export function Turkey() {
+  return (
+    <ShortPage
+      year={2024}
+      shortLink="https://mega.nz/embed/h8AhibzK#SvdF-pMQNBDoEHSvuqScyEihEztVV3s7iHoXgs4ZiaU"
+      creator="Carlo Bear"
+      title="New Turkey Eve"
     />
   );
 }

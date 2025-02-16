@@ -59,14 +59,6 @@
   margin-bottom: 20px;
 }
 
-.middle {
-  margin-right: 18.5px;
-}
-
-.right {
-  margin-right: 18.5px;
-}
-
 .row {
   display: flex;
   flex-direction: column;

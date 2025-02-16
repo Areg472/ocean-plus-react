@@ -1,5 +1,4 @@
 .oplusbuttons {
-  @apply rounded-full bg-blue-400 px-4 py-2 text-white;
   cursor: pointer;
   transition: 0.4s;
   width: 200px;

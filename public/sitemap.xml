@@ -169,7 +169,13 @@
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://the-surfs-and-the-peasants</loc>
+        <loc>https://oceanbluestream.com/the-surfs-and-the-peasants</loc>
+        <lastmod>2024-10-28</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://oceanbluestream.com/new-turkey-eve</loc>
         <lastmod>2024-10-28</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>

@@ -14,8 +14,8 @@ export function ShortPage({
   title = "",
   shortLink = "",
 }) {
-  const top = "Carlos Birthday Gone Wrong" == title;
-  const bottom = "Steamboat Willie" == title;
+  const top = title == "Carlos Birthday Gone Wrong";
+  const bottom = title == "Steamboat Willie";
   const shortTitleLow = title?.toLowerCase();
   return (
     <>

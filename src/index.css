@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @plugin 'tailwindcss-animate';
 @plugin '@tailwindcss/forms';
@@ -64,7 +64,7 @@
 @layer utilities {
   @media (min-width: 1000px) {
     :root {
-      font-family: 'Raleway', serif;
+      font-family: "Raleway", serif;
       font-optical-sizing: auto;
       font-style: normal;
 
@@ -75,7 +75,7 @@
       text-rendering: optimizeLegibility;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      background: url('./pictures/background.jpg') center center fixed no-repeat;
+      background: url("./pictures/background.jpg") center center fixed no-repeat;
       object-fit: fill;
       overflow-x: hidden;
       background-size: 130% 400%;
@@ -84,7 +84,7 @@
 
   @media (min-width: 320px) and (max-width: 999px) {
     :root {
-      font-family: 'Raleway', serif;
+      font-family: "Raleway", serif;
       font-optical-sizing: auto;
       font-style: normal;
 
@@ -97,7 +97,7 @@
       -moz-osx-font-smoothing: grayscale;
       background-size: 200% 300%;
       overflow-x: hidden;
-      background: url('./pictures/background.jpg') fixed center center;
+      background: url("./pictures/background.jpg") fixed center center;
     }
   }
 

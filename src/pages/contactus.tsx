@@ -44,16 +44,16 @@ export function Contactus() {
         image="https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/logo.jpg"
         name="Ocean+"
       />
-      <div className="min-h-screen flex flex-col">
+      <div className="flex min-h-screen flex-col">
         <Navbar />
         <motion.div
           initial={{ opacity: 0, x: 100 }}
           transition={{ duration: 0.75, type: "spring", bounce: 0.3 }}
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -100 }}
-          className="flex-1 flex items-center justify-center px-4 sm:px-6 lg:px-8 py-8"
+          className="flex flex-1 items-center justify-center px-4 py-8 sm:px-6 lg:px-8"
         >
-          <div className="contact text-center w-full max-w-md mx-auto">
+          <div className="contact mx-auto w-full max-w-md text-center">
             <h1>Contact Us</h1>
             <h2 className="mt-2.5">
               Contact us for movies by filling out the form below. If you have
@@ -116,7 +116,7 @@ export function Contactus() {
                   });
                 }}
               />
-              <button type="submit" className="submit">
+              <button type="submit" className="submit cursor-pointer">
                 Send
               </button>
             </form>

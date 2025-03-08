@@ -44,6 +44,7 @@ import {
   Serbs,
 } from "@/pages/MoviePages.tsx";
 import {
+  BlaBla,
   Carlosbirthdaygonewrong,
   Maskmas,
   Steamboatwillie,
@@ -94,6 +95,7 @@ function AppContent() {
     "/The-Veyshal-Movie",
     "/The-Surfs-And-The-Preasant",
     "/New-Turkey-Eve",
+    "/The-Random-Green-Blah-Blah-Thing",
   ];
 
   const isValidPath = (path: string): boolean => {
@@ -155,6 +157,10 @@ function AppContent() {
             <Route path="/The-Veyshal-Movie" element={<Veyshalmovie />} />
             <Route path="/Unhappy-25-Years-Little-Brat" element={<Unhappy />} />
             <Route path="/New-Turkey-Eve" element={<Turkey />} />
+            <Route
+              path="/The-Random-Green-Blah-Blah-Thing"
+              element={<BlaBla />}
+            />
           </Routes>
         </AnimatePresence>
       </SidebarProvider>

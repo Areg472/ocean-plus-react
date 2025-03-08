@@ -43,3 +43,14 @@ export function Steamboatwillie() {
     />
   );
 }
+
+export function BlaBla() {
+  return (
+    <ShortPage
+      year={2025}
+      shortLink="https://mega.nz/embed/FhZVxLzL#_7-NbP_GeEMe3oN90wf2TQX9SlD8ilXaRPl5wNtn8zs"
+      creator="Carlo Bear"
+      title="The Random Green Blah Blah Thing"
+    />
+  );
+}

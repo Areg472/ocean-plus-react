@@ -9,6 +9,7 @@ import {
   Video,
   Clapperboard,
   SquareCode,
+  Star,
 } from "lucide-react";
 import { motion } from "motion/react";
 import {
@@ -25,6 +26,14 @@ import {
 } from "@/components/ui/sidebar";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
+
+const originals = [
+  {
+    title: "The Random Green Blah Blah Thing",
+    url: "/The-Random-Green-Blah-Blah-Thing",
+    icon: Star,
+  },
+];
 
 const items = [
   {
@@ -216,10 +225,38 @@ export function AppSidebar() {
             </motion.div>
           ))}
         </SidebarMenu>
-        <SidebarGroupLabel>Movies & Shorts</SidebarGroupLabel>
+        <SidebarGroupLabel>The Content</SidebarGroupLabel>
       </SidebarHeader>
 
       <SidebarContent>
+        <SidebarGroup>
+          <SidebarGroupLabel>O+ Originals</SidebarGroupLabel>
+          <SidebarGroupContent>
+            <SidebarMenu>
+              {originals.map((originals) => (
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1, transition: { duration: 1 } }}
+                  viewport={{
+                    root: scrollRef,
+                    margin: "40px 0px 0px 0px",
+                    once: true,
+                  }}
+                  whileHover={{ scale: 1.05 }}
+                >
+                  <SidebarMenuItem key={originals.title}>
+                    <SidebarMenuButton asChild>
+                      <Link to={originals.url}>
+                        <originals.icon />
+                        <span>{originals.title}</span>
+                      </Link>
+                    </SidebarMenuButton>
+                  </SidebarMenuItem>
+                </motion.div>
+              ))}
+            </SidebarMenu>
+          </SidebarGroupContent>
+        </SidebarGroup>
         <SidebarGroup>
           <SidebarGroupLabel>Movies</SidebarGroupLabel>
           <SidebarGroupContent>

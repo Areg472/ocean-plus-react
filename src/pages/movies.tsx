@@ -17,9 +17,9 @@ export function Movies() {
       link: "/The-veyshal-movie",
     },
     {
-      src: "https://utfs.io/f/thKihuQxhYcPLxIb067sUfwWMR5jlKuYe27zh6kLtx3rGyTm",
-      alt: "unhappybrat",
-      link: "/Unhappy-25-Years-Little-Brat",
+      src: "https://gr5mutu1hr.ufs.sh/f/thKihuQxhYcPnZKj7BJqSrG7F3ilObYXHjDPRupZ6a15IhtQ",
+      alt: "Bla bla thing",
+      link: "/The-random-green-blah-blah-thing",
     },
     {
       src: "https://raw.githubusercontent.com/Areg472/ocean-plus-react/refs/heads/main/src/pictures/Comedy-World-The-Movie-Ocean-Poster00086400.png",

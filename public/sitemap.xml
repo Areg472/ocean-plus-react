@@ -180,4 +180,10 @@
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
+    <url>
+        <loc>https://oceanbluestream.com/the-random-green-blah-blah-thing</loc>
+        <lastmod>2024-10-28</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
 </urlset>

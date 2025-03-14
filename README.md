@@ -10,13 +10,19 @@ The current domain is: https://oceanbluestream.com
 
 - [Node.js](https://nodejs.org/en)
 
-First download the source code, open the folder in the terminal, then run:
+First, download the source code and install all required packages
+
+```
+npm install
+```
+
+Then, run the following command to build the website:
 
 ```
 vite build
 ```
 
-After building, run:
+After building, run the server:
 
 ```
 vite preview

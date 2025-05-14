@@ -22,7 +22,7 @@ import { motion } from "motion/react";
 
 export function Movieratings() {
   return (
-    <>
+    <div className="flex min-h-screen flex-col">
       <MetaTags
         title="Ocean+ - Movie Ratings"
         description="Our movie ratings for Ocean+"
@@ -30,13 +30,13 @@ export function Movieratings() {
         name="Ocean+"
       />
       <Navbar />
-      <motion.div
-        initial={{ opacity: 0, scale: 0.3 }}
-        transition={{ duration: 0.75, type: "spring", bounce: 0.3 }}
-        animate={{ opacity: 1, scale: 1 }}
-        exit={{ opacity: 0, scale: 0.3 }}
-      >
-        <body>
+      <main className="my-8 flex flex-grow items-center justify-center">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.3 }}
+          transition={{ duration: 0.75, type: "spring", bounce: 0.3 }}
+          animate={{ opacity: 1, scale: 1 }}
+          exit={{ opacity: 0, scale: 0.3 }}
+        >
           <div className="dark">
             <Card className="w-[320px] lg:w-[442px]">
               <CardHeader>
@@ -121,9 +121,9 @@ export function Movieratings() {
               </CardFooter>
             </Card>
           </div>
-        </body>
-      </motion.div>
+        </motion.div>
+      </main>
       <Footer />
-    </>
+    </div>
   );
 }

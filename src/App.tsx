@@ -42,6 +42,7 @@ import {
   Veyshalmovie,
   Vyondcinema,
   Serbs,
+  HorridJames,
 } from "@/pages/MoviePages.tsx";
 import {
   BlaBla,
@@ -96,6 +97,7 @@ function AppContent() {
     "/The-Surfs-And-The-Preasant",
     "/New-Turkey-Eve",
     "/The-Random-Green-Blah-Blah-Thing",
+    "/The-Horrid-James-Movie",
   ];
 
   const isValidPath = (path: string): boolean => {
@@ -128,6 +130,7 @@ function AppContent() {
             <Route path="/Goofus-and-Doofus-2" element={<Goofus2 />} />
             <Route path="/Its-Jack-Paul-Christmas" element={<Jpchristmas />} />
             <Route path="/The-Surfs-and-the-Peasants" element={<Serbs />} />
+            <Route path="/The-Horrid-James-Movie" element={<HorridJames />} />
             <Route
               path="/Jack-Paul-Spooktacular"
               element={<Jpspooktacular />}

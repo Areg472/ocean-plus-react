@@ -112,6 +112,11 @@ const items = [
     icon: TvMinimalPlay,
   },
   {
+    title: "The Horrid James Movie",
+    url: "/The-Horrid-James-Movie",
+    icon: TvMinimalPlay,
+  },
+  {
     title: "The Surfs And The Peasants",
     url: "/The-Surfs-and-the-Peasants",
     icon: TvMinimalPlay,

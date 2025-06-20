@@ -238,3 +238,15 @@ export function Serbs() {
     />
   );
 }
+
+export function HorridJames() {
+  return (
+    <MoviePage
+      year={2025}
+      movieLink="https://mega.nz/embed/Z8gGTTAb#CtOIRwpK2maA69TwRb3wYHphlhn9_G1j04cs0wXTtZ4"
+      creator="BraxtonTheVyonder2009"
+      title="The Horrid James Movie"
+      genres="Animation/Action/Drama/Romance"
+    />
+  );
+}

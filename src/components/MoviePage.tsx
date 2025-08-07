@@ -32,6 +32,8 @@ export function MoviePage({
 
   const isSpooky = title == "Jack Paul Spooktacular";
   const isCaillou = title == "Caillou The Movie";
+  const isVyondCinema = title == "The Vyond Cinema Movie";
+  const isLittleBill = title == "Little Bill's Valendies Movie";
 
   return (
     <>
@@ -141,7 +143,7 @@ export function MoviePage({
                       )}
                     </div>
                   </div>
-                ) : isCaillou ? (
+                ) : isCaillou || isVyondCinema || isLittleBill ? (
                   <div className="relative pt-[56.25%]">
                     <iframe
                       src={movieLink}

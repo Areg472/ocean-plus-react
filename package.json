@@ -29,6 +29,8 @@
     "algoliasearch": "^5.13.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "cross-spawn": "^7.0.6",
+    "dotenv": "^17.2.1",
     "embla-carousel-autoplay": "^8.3.0",
     "embla-carousel-react": "^8.3.0",
     "lucide-react": "^0.453.0",
@@ -64,6 +66,6 @@
     "tailwindcss": "^4.0.0",
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.0.1",
-    "vite": "^5.4.1"
+    "vite": "^6.3.4"
   }
 }

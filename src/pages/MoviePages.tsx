@@ -6,7 +6,7 @@ export function Cailloumovie() {
         year={2022}
         movieLink={import.meta.env.VITE_MOVIE_LINK_CAILLOU}
         creator="Anti-Animations"
-        genres="Animation/Action/Adventure/Comedy/Drama/Thriller/Crime"
+        genres="Animation/Action/Adventure/Comedy"
         title="Caillou The Movie"
       />
     </>
@@ -34,7 +34,7 @@ export function Cftwcftl4() {
         year={2022}
         movieLink={import.meta.env.VITE_MOVIE_LINK_CFTWCFTL4}
         creator="Veyshal & 1Leon"
-        genres="Animation/Action/Adventure/Comedy/Political"
+        genres="Animation/Action/Adventure/Comedy"
         title="CFTWCFTL The Movie 4"
       />
     </>
@@ -48,7 +48,7 @@ export function Cftwcftl5() {
         year={2022}
         movieLink={import.meta.env.VITE_MOVIE_LINK_CFTWCFTL5}
         creator="Veyshal & 1Leon"
-        genres="Animation/Action/Adventure/Comedy/Drama/Thriller/Crime"
+        genres="Animation/Action/Adventure/Comedy"
         title="CFTWCFTL The Movie 5"
       />
     </>
@@ -62,7 +62,7 @@ export function Jackpaul() {
         year={2022}
         movieLink={import.meta.env.VITE_MOVIE_LINK_JACKPAUL}
         creator="Rosie Bros Studios"
-        genres="Animation/Adventure/Comedy/Dramedy/Drama"
+        genres="Animation/Adventure/Comedy/Dramedy"
         title="Jack Paul The Movie"
       />
     </>
@@ -77,7 +77,7 @@ export function Jpspooktacular() {
         movieLink={import.meta.env.VITE_MOVIE_LINK_JPSPOOKTACULAR}
         movieLink_2={import.meta.env.VITE_MOVIE_LINK_JPSPOOKTACULAR_3D}
         creator="Rosie Bros Studios"
-        genres="Animation/Action/Adventure/Comedy/Drama"
+        genres="Animation/Action/Adventure/Comedy"
         title="Jack Paul Spooktacular"
       />
     </>
@@ -102,7 +102,7 @@ export function Gabricks() {
       year={2022}
       movieLink={import.meta.env.VITE_MOVIE_LINK_GABRICKS}
       creator="JoJuanJohnson"
-      genres="Animation/Action/Thriller/Adventure/Crime"
+      genres="Animation/Action/Thriller/Adventure"
       title="GA Bricks The Movie"
     />
   );
@@ -126,7 +126,7 @@ export function Goofus2() {
       year={2023}
       movieLink={import.meta.env.VITE_MOVIE_LINK_GOOFUS2}
       creator="Veyshal & 1Leon"
-      genres="Animation/Crossover/Fantasy/Adventure/Comedy/Drama"
+      genres="Animation/Crossover/Fantasy/Adventure"
       title="Goofus & Doofus 2"
     />
   );
@@ -138,7 +138,7 @@ export function Littlevalendies() {
       year={2022}
       movieLink={import.meta.env.VITE_MOVIE_LINK_LITTLEVALENDIES}
       creator="ClassicCaillouX645Grounded"
-      genres="Animation/Action/Adventure/Comedy/Drama"
+      genres="Animation/Action/Adventure/Comedy"
       title="Little Bill's Valendies Movie"
     />
   );

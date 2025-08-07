@@ -28,7 +28,7 @@ export function Footer() {
             target="_blank"
             href="https://link.oceanbluestream.com/oceanbluepictures"
           >
-            <button className="buttons ml-6 cursor-pointer lg:ml-0">
+            <button className="buttons ml-0 cursor-pointer">
               © Ocean Blue Studios, 2024
             </button>
           </a>

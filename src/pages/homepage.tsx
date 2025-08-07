@@ -28,7 +28,7 @@ export function Homepage() {
             <h2 className="mb-1.5 leading-normal">
               Anywhere, anytime, for free, no restrictions.
             </h2>
-            <div className="buttonscont space-x-3">
+            <div className="lg:space-x-3">
               <Link to="/Movies">
                 <input
                   className="oplusbuttons text-white; mt-4 rounded-full bg-blue-400 px-4 py-2 leading-loose"

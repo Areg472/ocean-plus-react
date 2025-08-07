@@ -149,19 +149,13 @@ export function MoviePage({
                 </div>
               </div>
             ) : isCaillou ? (
-              <div className="relative pt-[56.25%]">
+              <div className="relative mt-14 w-full pt-[56.25%]">
                 <iframe
-                  src={movieLink}
+                  src="https://iframe.mediadelivery.net/embed/477846/1075686c-0836-40d9-8877-d6a7a08fd686?autoplay=true&loop=false&muted=false&preload=true&responsive=true"
                   loading="lazy"
-                  style={{
-                    border: 0,
-                    position: "absolute",
-                    top: 0,
-                    height: "100%",
-                    width: "100%",
-                  }}
+                  className="absolute inset-0 h-full w-full border-0"
                   allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;"
-                  allowFullScreen={true}
+                  allowFullScreen
                 ></iframe>
               </div>
             ) : (

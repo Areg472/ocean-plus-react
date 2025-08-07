@@ -75,6 +75,7 @@ export function Jpspooktacular() {
       <MoviePage
         year={2023}
         movieLink={import.meta.env.VITE_MOVIE_LINK_JPSPOOKTACULAR}
+        movieLink_2={import.meta.env.VITE_MOVIE_LINK_JPSPOOKTACULAR_3D}
         creator="Rosie Bros Studios"
         genres="Animation/Action/Adventure/Comedy/Drama"
         title="Jack Paul Spooktacular"

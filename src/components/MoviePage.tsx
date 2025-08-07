@@ -17,6 +17,7 @@ export function MoviePage({
   year = 0,
   genres = "",
   movieLink = "",
+  movieLink_2 = "",
 }) {
   const movieTitleLow = title?.toLowerCase();
 
@@ -45,6 +46,7 @@ export function MoviePage({
   };
 
   const isSpooky = title == "Jack Paul Spooktacular";
+  const isCaillou = title == "Caillou The Movie";
 
   return (
     <>
@@ -133,18 +135,34 @@ export function MoviePage({
                     <iframe
                       frameBorder="0"
                       className="theframe"
-                      src="https://mega.nz/embed/ttBH1A5K#Oi2Zpd-Wq4S05rc3HFUmGbIXLSJ6jvwbyD7ON9pzYCE"
+                      src={movieLink}
                       allowFullScreen
                     ></iframe>
                   ) : (
                     <iframe
                       frameBorder="0"
                       className="theframe"
-                      src="https://mega.nz/embed/c8pUBbxA#c8Rc9M8EPOzmltE6xyg26b_H65zzF1E-0ZC9MPsht-E"
+                      src={movieLink_2}
                       allowFullScreen
                     ></iframe>
                   )}
                 </div>
+              </div>
+            ) : isCaillou ? (
+              <div className="relative pt-[56.25%]">
+                <iframe
+                  src={movieLink}
+                  loading="lazy"
+                  style={{
+                    border: 0,
+                    position: "absolute",
+                    top: 0,
+                    height: "100%",
+                    width: "100%",
+                  }}
+                  allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;"
+                  allowFullScreen={true}
+                ></iframe>
               </div>
             ) : (
               <iframe

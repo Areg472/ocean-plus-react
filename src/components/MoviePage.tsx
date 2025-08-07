@@ -147,7 +147,7 @@ export function MoviePage({
                       src={movieLink}
                       loading="lazy"
                       className="absolute top-0 h-full w-full border-0"
-                      allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
+                      allow="accelerometer; gyroscope; encrypted-media; picture-in-picture;"
                       allowFullScreen
                     ></iframe>
                   </div>

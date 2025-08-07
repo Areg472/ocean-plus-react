@@ -24,21 +24,6 @@ export function MoviePage({
   const top = title == "Caillou The Movie";
   const bottom = title == "Unhappy 25 Years Little Brat";
 
-  {
-    /*
-  let motionEnter = 100;
-  let motionExit = -100;
-
-  if (title == "Caillou The Movie" || title == "Carlos Birthday Gone Wrong") {
-    motionEnter = -100;
-  }
-
-  if (title == "Unhappy 25 Years Little Brat" || title == "Steamboat Willie") {
-    motionExit = 100;
-  }
-*/
-  }
-
   const [isChecked, setIsChecked] = useState(false);
 
   const handleSwitchChange = () => {
@@ -67,105 +52,117 @@ export function MoviePage({
             <h1 className="issue text-center leading-normal lg:text-left">
               {title}
             </h1>
-            <Accordion type="single" collapsible>
-              <motion.div
-                whileHover={{ scale: 1.045 }}
-                transition={{ ease: ["circInOut"] }}
-              >
-                <AccordionItem value="item-1">
-                  <AccordionTrigger>
-                    Who is the creator of this movie?
-                  </AccordionTrigger>
-                  <AccordionContent className="accord">
-                    Created by {creator}
-                  </AccordionContent>
-                </AccordionItem>
-              </motion.div>
-              <motion.div
-                whileHover={{ scale: 1.045 }}
-                transition={{ ease: ["circInOut"] }}
-              >
-                <AccordionItem value="item-2">
-                  <AccordionTrigger>When was it released?</AccordionTrigger>
-                  <AccordionContent className="accord">
-                    It was released in {year}
-                  </AccordionContent>
-                </AccordionItem>
-              </motion.div>
-              <motion.div
-                whileHover={{ scale: 1.045 }}
-                transition={{ ease: ["circInOut"] }}
-              >
-                <AccordionItem value="item-3">
-                  <AccordionTrigger>What are the genres?</AccordionTrigger>
-                  <AccordionContent className="accord">
-                    The genres are: {genres}
-                  </AccordionContent>
-                </AccordionItem>
-              </motion.div>
-            </Accordion>
-            {isSpooky ? (
-              <div className="flex flex-col items-center space-y-4">
-                <div className="flex items-center space-x-2 p-4">
-                  <Label
-                    htmlFor="iframe-switch"
-                    className="mb-1 text-sm font-medium"
-                  >
-                    2D
-                  </Label>
+            <div className="grid grid-cols-1 gap-4">
+              <div className="w-full">
+                <Accordion type="single" collapsible>
                   <motion.div
-                    whileHover={{ scale: 1.15 }}
-                    whileTap={{ scale: 0.9 }}
+                    whileHover={{ scale: 1.045 }}
+                    transition={{ ease: ["circInOut"] }}
                   >
-                    <Switch
-                      id="iframe-switch"
-                      checked={isChecked}
-                      onCheckedChange={handleSwitchChange}
-                    />
+                    <AccordionItem value="item-1">
+                      <AccordionTrigger>
+                        Who is the creator of this movie?
+                      </AccordionTrigger>
+                      <AccordionContent className="accord">
+                        Created by {creator}
+                      </AccordionContent>
+                    </AccordionItem>
                   </motion.div>
-                  <Label
-                    htmlFor="iframe-switch"
-                    className="mb-1 text-sm font-medium"
+                  <motion.div
+                    whileHover={{ scale: 1.045 }}
+                    transition={{ ease: ["circInOut"] }}
                   >
-                    3D
-                  </Label>
-                </div>
-                <div className="w-full">
-                  {isChecked ? (
+                    <AccordionItem value="item-2">
+                      <AccordionTrigger>When was it released?</AccordionTrigger>
+                      <AccordionContent className="accord">
+                        It was released in {year}
+                      </AccordionContent>
+                    </AccordionItem>
+                  </motion.div>
+                  <motion.div
+                    whileHover={{ scale: 1.045 }}
+                    transition={{ ease: ["circInOut"] }}
+                  >
+                    <AccordionItem value="item-3">
+                      <AccordionTrigger>What are the genres?</AccordionTrigger>
+                      <AccordionContent className="accord">
+                        The genres are: {genres}
+                      </AccordionContent>
+                    </AccordionItem>
+                  </motion.div>
+                </Accordion>
+              </div>
+              <div className="w-full">
+                {isSpooky ? (
+                  <div className="flex flex-col items-center space-y-4">
+                    <div className="flex items-center space-x-2 p-4">
+                      <Label
+                        htmlFor="iframe-switch"
+                        className="mb-1 text-sm font-medium"
+                      >
+                        2D
+                      </Label>
+                      <motion.div
+                        whileHover={{ scale: 1.15 }}
+                        whileTap={{ scale: 0.9 }}
+                      >
+                        <Switch
+                          id="iframe-switch"
+                          checked={isChecked}
+                          onCheckedChange={handleSwitchChange}
+                        />
+                      </motion.div>
+                      <Label
+                        htmlFor="iframe-switch"
+                        className="mb-1 text-sm font-medium"
+                      >
+                        3D
+                      </Label>
+                    </div>
+                    <div className="w-full">
+                      {isChecked ? (
+                        <div className="relative pt-[56.25%]">
+                          <iframe
+                            frameBorder="0"
+                            className="absolute top-0 h-full w-full border-0"
+                            src={movieLink}
+                            allowFullScreen
+                          ></iframe>
+                        </div>
+                      ) : (
+                        <div className="relative pt-[56.25%]">
+                          <iframe
+                            frameBorder="0"
+                            className="absolute top-0 h-full w-full border-0"
+                            src={movieLink_2}
+                            allowFullScreen
+                          ></iframe>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                ) : isCaillou ? (
+                  <div className="relative pt-[56.25%]">
+                    <iframe
+                      src={movieLink}
+                      loading="lazy"
+                      className="absolute top-0 h-full w-full border-0"
+                      allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
+                      allowFullScreen
+                    ></iframe>
+                  </div>
+                ) : (
+                  <div className="relative pt-[56.25%]">
                     <iframe
                       frameBorder="0"
-                      className="theframe"
+                      className="absolute top-0 h-full w-full border-0"
                       src={movieLink}
                       allowFullScreen
                     ></iframe>
-                  ) : (
-                    <iframe
-                      frameBorder="0"
-                      className="theframe"
-                      src={movieLink_2}
-                      allowFullScreen
-                    ></iframe>
-                  )}
-                </div>
+                  </div>
+                )}
               </div>
-            ) : isCaillou ? (
-              <div className="relative mt-14 w-full pt-[56.25%]">
-                <iframe
-                  src="https://iframe.mediadelivery.net/embed/477846/1075686c-0836-40d9-8877-d6a7a08fd686?autoplay=true&loop=false&muted=false&preload=true&responsive=true"
-                  loading="lazy"
-                  className="absolute inset-0 h-full w-full border-0"
-                  allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;"
-                  allowFullScreen
-                ></iframe>
-              </div>
-            ) : (
-              <iframe
-                frameBorder="0"
-                className="theframe mt-14"
-                src={movieLink}
-                allowFullScreen
-              ></iframe>
-            )}
+            </div>
           </div>
         </motion.div>
       </body>

@@ -100,12 +100,43 @@ const items = [
   { title: "Steamboat Willie", type: "short", route: "/Steamboat-willie" },
 ];
 
+// Simple fuzzy search function
+function fuzzySearch(query: string, text: string): number {
+  const queryLower = query.toLowerCase();
+  const textLower = text.toLowerCase();
+
+  // Exact match gets highest score
+  if (textLower.includes(queryLower)) {
+    return 100;
+  }
+
+  // Calculate fuzzy match score
+  let score = 0;
+  let queryIndex = 0;
+
+  for (let i = 0; i < textLower.length && queryIndex < queryLower.length; i++) {
+    if (textLower[i] === queryLower[queryIndex]) {
+      score += 1;
+      queryIndex++;
+    }
+  }
+
+  // Return score as percentage of query length matched
+  return queryIndex === queryLower.length
+    ? (score / queryLower.length) * 80
+    : 0;
+}
+
 export default function SearchPage() {
   const [query, setQuery] = useState("");
 
   const filtered = items
-    .filter((item) => item.title.toLowerCase().includes(query.toLowerCase()))
-    .slice(0, 3); // Limit to 3 suggestions
+    .map((item) => ({
+      ...item,
+      score: fuzzySearch(query, item.title),
+    }))
+    .filter((item) => item.score > 0)
+    .sort((a, b) => b.score - a.score);
 
   const showSuggestions = query.trim().length > 0 && filtered.length > 0;
 
@@ -121,7 +152,7 @@ export default function SearchPage() {
         />
 
         {showSuggestions && (
-          <div className="absolute top-full right-0 left-0 z-50 mt-1 overflow-hidden rounded-lg border border-gray-200 bg-white shadow-lg">
+          <div className="absolute top-full right-0 left-0 z-50 mt-1 max-h-[218px] overflow-y-auto rounded-lg border border-gray-200 bg-white shadow-lg">
             {filtered.map((item, index) => (
               <Link
                 key={item.route}

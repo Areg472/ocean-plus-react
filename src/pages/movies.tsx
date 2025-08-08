@@ -89,7 +89,6 @@ export function Movies() {
         <div className="Headings text-center">
           <h1 className="mb-16 leading-normal">Movies and shows!</h1>
 
-          {/* Updated search component with better positioning */}
           <div className="mb-16 flex justify-center">
             <SearchPage />
           </div>

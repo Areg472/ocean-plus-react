@@ -36,6 +36,11 @@ export function MoviePage({
   const isVyondCinema = title == "The Vyond Cinema Movie";
   const isLittleBill = title == "Little Bill's Valendies Movie";
   const isJPChristmas = title == "It's Jack Paul Christmas";
+  const isCarlo = title == "Carlos Birthday Gone Wrong";
+  const isCFT123 = title == "CFTWCFTL The Movie 123";
+  const isCFT4 = title == "CFTWCFTL The Movie 4";
+  const isCFT5 = title == "CFTWCFTL The Movie 5";
+  const isGABRICKS = title == "GA Bricks The Movie";
 
   return (
     <>
@@ -153,6 +158,11 @@ export function MoviePage({
                 ) : isCaillou ||
                   isVyondCinema ||
                   isLittleBill ||
+                  isCarlo ||
+                  isCFT123 ||
+                  isCFT4 ||
+                  isCFT5 ||
+                  isGABRICKS ||
                   isJPChristmas ? (
                   <div className="relative pt-[56.25%]">
                     <iframe

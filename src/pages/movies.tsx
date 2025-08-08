@@ -3,6 +3,7 @@ import MetaTags from "../components/MetaTags.tsx";
 import CarouselSection from "@/components/carousel";
 import { Link } from "react-router-dom";
 import { motion } from "motion/react";
+import SearchPage from "@/components/SearchPage";
 
 export function Movies() {
   const popularMovies = [
@@ -87,6 +88,11 @@ export function Movies() {
       >
         <div className="Headings text-center">
           <h1 className="mb-16 leading-normal">Movies and shows!</h1>
+
+          {/* Updated search component with better positioning */}
+          <div className="mb-16 flex justify-center">
+            <SearchPage />
+          </div>
 
           <CarouselSection
             title="Most Popular"

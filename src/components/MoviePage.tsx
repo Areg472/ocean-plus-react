@@ -10,6 +10,7 @@ import { motion } from "motion/react";
 import { useState } from "react";
 import { Label } from "@/components/ui/label";
 import { Switch } from "@/components/ui/switch";
+import SearchPage from "@/components/SearchPage.tsx";
 
 export function MoviePage({
   creator = "",
@@ -54,6 +55,9 @@ export function MoviePage({
             <h1 className="issue text-center leading-normal lg:text-left">
               {title}
             </h1>
+            <div className="mt-2 mb-2 flex justify-center">
+              <SearchPage />
+            </div>
             <div className="grid grid-cols-1 gap-4">
               <div className="w-full">
                 <Accordion type="single" collapsible>
@@ -127,7 +131,7 @@ export function MoviePage({
                           <iframe
                             frameBorder="0"
                             className="absolute top-0 h-full w-full border-0"
-                            src={movieLink}
+                            src={movieLink_2}
                             allowFullScreen
                           ></iframe>
                         </div>
@@ -136,7 +140,7 @@ export function MoviePage({
                           <iframe
                             frameBorder="0"
                             className="absolute top-0 h-full w-full border-0"
-                            src={movieLink_2}
+                            src={movieLink}
                             allowFullScreen
                           ></iframe>
                         </div>

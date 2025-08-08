@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const items = [
   // Movies
@@ -129,6 +129,8 @@ function fuzzySearch(query: string, text: string): number {
 
 export default function SearchPage() {
   const [query, setQuery] = useState("");
+  const [selectedIndex, setSelectedIndex] = useState(0);
+  const navigate = useNavigate();
 
   const filtered = items
     .map((item) => ({
@@ -140,6 +142,30 @@ export default function SearchPage() {
 
   const showSuggestions = query.trim().length > 0 && filtered.length > 0;
 
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (!showSuggestions) return;
+
+    if (e.key === "ArrowDown") {
+      e.preventDefault();
+      setSelectedIndex((prev) => (prev < filtered.length - 1 ? prev + 1 : 0));
+    } else if (e.key === "ArrowUp") {
+      e.preventDefault();
+      setSelectedIndex((prev) => (prev > 0 ? prev - 1 : filtered.length - 1));
+    } else if (e.key === "Enter") {
+      e.preventDefault();
+      if (filtered.length > 0) {
+        setQuery("");
+        setSelectedIndex(0);
+        navigate(filtered[selectedIndex].route);
+      }
+    }
+  };
+
+  const handleQueryChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setQuery(e.target.value);
+    setSelectedIndex(0); // Reset selection when query changes
+  };
+
   return (
     <div className="relative mx-auto w-full max-w-md">
       <div className="relative">
@@ -147,7 +173,8 @@ export default function SearchPage() {
           type="text"
           placeholder="Search movies & shorts..."
           value={query}
-          onChange={(e) => setQuery(e.target.value)}
+          onChange={handleQueryChange}
+          onKeyDown={handleKeyDown}
           className="w-full rounded-lg border-2 border-gray-300 px-4 py-3 text-lg text-gray-900 placeholder-gray-500 shadow-sm transition-colors duration-200 focus:border-blue-500 focus:outline-none"
         />
 
@@ -157,11 +184,18 @@ export default function SearchPage() {
               <Link
                 key={item.route}
                 to={item.route}
-                onClick={() => setQuery("")}
-                className={`flex items-center justify-between px-4 py-3 transition-colors duration-150 hover:bg-blue-50 ${
+                onClick={() => {
+                  setQuery("");
+                  setSelectedIndex(0);
+                }}
+                className={`flex items-center justify-between px-4 py-3 transition-colors duration-150 ${
                   index !== filtered.length - 1
                     ? "border-b border-gray-100"
                     : ""
+                } ${
+                  index === selectedIndex
+                    ? "bg-blue-50 hover:bg-blue-100"
+                    : "hover:bg-blue-50"
                 }`}
               >
                 <div className="flex flex-col items-start">

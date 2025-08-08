@@ -35,6 +35,7 @@ export function MoviePage({
   const isCaillou = title == "Caillou The Movie";
   const isVyondCinema = title == "The Vyond Cinema Movie";
   const isLittleBill = title == "Little Bill's Valendies Movie";
+  const isJPChristmas = title == "It's Jack Paul Christmas";
 
   return (
     <>
@@ -129,25 +130,30 @@ export function MoviePage({
                       {isChecked ? (
                         <div className="relative pt-[56.25%]">
                           <iframe
-                            frameBorder="0"
-                            className="absolute top-0 h-full w-full border-0"
                             src={movieLink_2}
+                            loading="lazy"
+                            className="absolute top-0 h-full w-full border-0"
+                            allow="accelerometer; gyroscope; encrypted-media; picture-in-picture;"
                             allowFullScreen
                           ></iframe>
                         </div>
                       ) : (
                         <div className="relative pt-[56.25%]">
                           <iframe
-                            frameBorder="0"
-                            className="absolute top-0 h-full w-full border-0"
                             src={movieLink}
+                            loading="lazy"
+                            className="absolute top-0 h-full w-full border-0"
+                            allow="accelerometer; gyroscope; encrypted-media; picture-in-picture;"
                             allowFullScreen
                           ></iframe>
                         </div>
                       )}
                     </div>
                   </div>
-                ) : isCaillou || isVyondCinema || isLittleBill ? (
+                ) : isCaillou ||
+                  isVyondCinema ||
+                  isLittleBill ||
+                  isJPChristmas ? (
                   <div className="relative pt-[56.25%]">
                     <iframe
                       src={movieLink}

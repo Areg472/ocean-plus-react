@@ -41,6 +41,8 @@ export function MoviePage({
   const isCFT4 = title == "CFTWCFTL The Movie 4";
   const isCFT5 = title == "CFTWCFTL The Movie 5";
   const isGABRICKS = title == "GA Bricks The Movie";
+  const isGoofus = title == "Goofus & Doofus";
+  const isGoofus2 = title == "Goofus & Doofus 2";
 
   return (
     <>
@@ -163,6 +165,8 @@ export function MoviePage({
                   isCFT4 ||
                   isCFT5 ||
                   isGABRICKS ||
+                  isGoofus ||
+                  isGoofus2 ||
                   isJPChristmas ? (
                   <div className="relative pt-[56.25%]">
                     <iframe

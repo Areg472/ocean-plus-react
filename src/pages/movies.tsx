@@ -87,9 +87,9 @@ export function Movies() {
         exit={{ opacity: 0, x: -100 }}
       >
         <div className="Headings text-center">
-          <h1 className="mb-16 leading-normal">Movies and shows!</h1>
+          <h1 className="mt-6 mb-4 leading-normal">Movies and shows!</h1>
 
-          <div className="mb-16 flex justify-center">
+          <div className="mb-4 flex justify-center">
             <SearchPage />
           </div>
 

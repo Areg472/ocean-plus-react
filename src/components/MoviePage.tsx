@@ -43,6 +43,8 @@ export function MoviePage({
   const isGABRICKS = title == "GA Bricks The Movie";
   const isGoofus = title == "Goofus & Doofus";
   const isGoofus2 = title == "Goofus & Doofus 2";
+  const isJack = title == "Jack Paul The Movie";
+  const isVeyshal = title == "The Veyshal Movie";
 
   return (
     <>
@@ -167,6 +169,8 @@ export function MoviePage({
                   isGABRICKS ||
                   isGoofus ||
                   isGoofus2 ||
+                  isJack ||
+                  isVeyshal ||
                   isJPChristmas ? (
                   <div className="relative pt-[56.25%]">
                     <iframe

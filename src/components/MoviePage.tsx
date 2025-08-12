@@ -45,6 +45,8 @@ export function MoviePage({
   const isGoofus2 = title == "Goofus & Doofus 2";
   const isJack = title == "Jack Paul The Movie";
   const isVeyshal = title == "The Veyshal Movie";
+  const isMath = title == "Math Warfare";
+  const isComedyWorld = title == "The Comedy World Movie";
 
   return (
     <>
@@ -171,6 +173,8 @@ export function MoviePage({
                   isGoofus2 ||
                   isJack ||
                   isVeyshal ||
+                  isComedyWorld ||
+                  isMath ||
                   isJPChristmas ? (
                   <div className="relative pt-[56.25%]">
                     <iframe

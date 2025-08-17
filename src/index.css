@@ -75,7 +75,7 @@
       text-rendering: optimizeLegibility;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      background-image: url('./pictures/background.jpg') center center fixed no-repeat;
+      background: url('./pictures/background.jpg') center center fixed no-repeat;
       object-fit: fill;
       overflow-x: hidden;
       background-size: 130% 400%;
@@ -97,7 +97,7 @@
       -moz-osx-font-smoothing: grayscale;
       background-size: 200% 300%;
       overflow-x: hidden;
-      background-image: url('./pictures/background.jpg') fixed center center;
+      background: url('./pictures/background.jpg') fixed center center;
     }
   }
 

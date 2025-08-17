@@ -49,6 +49,7 @@ export function MoviePage({
   const isComedyWorld = title == "The Comedy World Movie";
   const isRosie = title == "Rosie Gets Grounded The Movie";
   const isBrat = title == "Unhappy 25 Years Little Brat";
+  const isJames = title == "The Horrid James Movie";
 
   return (
     <>
@@ -176,6 +177,7 @@ export function MoviePage({
                   isJack ||
                   isVeyshal ||
                   isComedyWorld ||
+                  isJames ||
                   isMath ||
                   isRosie ||
                   isBrat ||

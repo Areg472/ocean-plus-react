@@ -48,6 +48,7 @@ export function MoviePage({
   const isMath = title == "Math Warfare";
   const isComedyWorld = title == "The Comedy World Movie";
   const isRosie = title == "Rosie Gets Grounded The Movie";
+  const isBrat = title == "Unhappy 25 Years Little Brat";
 
   return (
     <>
@@ -177,6 +178,7 @@ export function MoviePage({
                   isComedyWorld ||
                   isMath ||
                   isRosie ||
+                  isBrat ||
                   isJPChristmas ? (
                   <div className="relative pt-[56.25%]">
                     <iframe

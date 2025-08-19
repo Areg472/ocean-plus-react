@@ -270,7 +270,7 @@ export function CaillouAcross() {
       year={2025}
       movieLink={import.meta.env.VITE_MOVIE_LINK_CAILLOU_ACROSS}
       creator="Akula BO"
-      title="Caillou Into the Caillouverse"
+      title="Caillou Across the Caillouverse"
       genres="Adventure/Action/Comedy/Sci Fi"
     />
   );

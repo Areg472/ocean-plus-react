@@ -29,7 +29,7 @@ export function Footer() {
             href="https://link.oceanbluestream.com/oceanbluepictures"
           >
             <button className="buttons ml-0 cursor-pointer">
-              © Ocean Blue Studios, 2024
+              © Ocean Blue Studios, 2025
             </button>
           </a>
         </div>

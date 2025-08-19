@@ -37,6 +37,16 @@ const originals = [
 
 const items = [
   {
+    title: "Caillou Across the Caillouverse",
+    url: "/Caillou-across-the-caillouverse",
+    icon: TvMinimalPlay,
+  },
+  {
+    title: "Caillou Into the Caillouverse",
+    url: "/Caillou-into-the-caillouverse",
+    icon: TvMinimalPlay,
+  },
+  {
     title: "Caillou The Movie",
     url: "/Caillou-the-movie",
     icon: TvMinimalPlay,

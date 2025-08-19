@@ -251,3 +251,27 @@ export function HorridJames() {
     />
   );
 }
+
+export function CaillouInto() {
+  return (
+    <MoviePage
+      year={2023}
+      movieLink={import.meta.env.VITE_MOVIE_LINK_CAILLOU_INTO}
+      creator="Akula BO"
+      title="Caillou Into the Caillouverse"
+      genres="Adventure/Action/Comedy"
+    />
+  );
+}
+
+export function CaillouAcross() {
+  return (
+    <MoviePage
+      year={2025}
+      movieLink={import.meta.env.VITE_MOVIE_LINK_CAILLOU_ACROSS}
+      creator="Akula BO"
+      title="Caillou Into the Caillouverse"
+      genres="Adventure/Action/Comedy/Sci Fi"
+    />
+  );
+}

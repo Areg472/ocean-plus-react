@@ -83,6 +83,16 @@ const items = [
     type: "movie",
     route: "/The-horrid-james-movie",
   },
+  {
+    title: "Caillou Into the Caillouverse",
+    type: "movie",
+    route: "/Caillou-into-the-caillouverse",
+  },
+  {
+    title: "Caillou Across the Caillouverse",
+    type: "movie",
+    route: "/Caillou-across-the-caillouverse",
+  },
 
   // Shorts
   {

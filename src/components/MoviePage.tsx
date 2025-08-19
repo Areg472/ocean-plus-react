@@ -32,24 +32,6 @@ export function MoviePage({
   };
 
   const isSpooky = title == "Jack Paul Spooktacular";
-  const isCaillou = title == "Caillou The Movie";
-  const isVyondCinema = title == "The Vyond Cinema Movie";
-  const isLittleBill = title == "Little Bill's Valendies Movie";
-  const isJPChristmas = title == "It's Jack Paul Christmas";
-  const isCarlo = title == "Carlos Birthday Gone Wrong";
-  const isCFT123 = title == "CFTWCFTL The Movie 123";
-  const isCFT4 = title == "CFTWCFTL The Movie 4";
-  const isCFT5 = title == "CFTWCFTL The Movie 5";
-  const isGABRICKS = title == "GA Bricks The Movie";
-  const isGoofus = title == "Goofus & Doofus";
-  const isGoofus2 = title == "Goofus & Doofus 2";
-  const isJack = title == "Jack Paul The Movie";
-  const isVeyshal = title == "The Veyshal Movie";
-  const isMath = title == "Math Warfare";
-  const isComedyWorld = title == "The Comedy World Movie";
-  const isRosie = title == "Rosie Gets Grounded The Movie";
-  const isBrat = title == "Unhappy 25 Years Little Brat";
-  const isJames = title == "The Horrid James Movie";
 
   return (
     <>
@@ -164,39 +146,13 @@ export function MoviePage({
                       )}
                     </div>
                   </div>
-                ) : isCaillou ||
-                  isVyondCinema ||
-                  isLittleBill ||
-                  isCarlo ||
-                  isCFT123 ||
-                  isCFT4 ||
-                  isCFT5 ||
-                  isGABRICKS ||
-                  isGoofus ||
-                  isGoofus2 ||
-                  isJack ||
-                  isVeyshal ||
-                  isComedyWorld ||
-                  isJames ||
-                  isMath ||
-                  isRosie ||
-                  isBrat ||
-                  isJPChristmas ? (
+                ) : (
                   <div className="relative pt-[56.25%]">
                     <iframe
                       src={movieLink}
                       loading="lazy"
                       className="absolute top-0 h-full w-full border-0"
                       allow="accelerometer; gyroscope; encrypted-media; picture-in-picture;"
-                      allowFullScreen
-                    ></iframe>
-                  </div>
-                ) : (
-                  <div className="relative pt-[56.25%]">
-                    <iframe
-                      frameBorder="0"
-                      className="absolute top-0 h-full w-full border-0"
-                      src={movieLink}
                       allowFullScreen
                     ></iframe>
                   </div>

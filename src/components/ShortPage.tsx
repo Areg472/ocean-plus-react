@@ -7,6 +7,7 @@ import {
 } from "@/components/ui/accordion.tsx";
 import "../pages/moviepage.css";
 import { motion } from "motion/react";
+import SearchPage from "@/components/SearchPage.tsx";
 
 export function ShortPage({
   creator = "",
@@ -32,42 +33,51 @@ export function ShortPage({
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: bottom ? -100 : 100 }}
         >
-          <div>
-            <h1 className="issue leading-normal">{title}</h1>
-            <Accordion type="single" collapsible>
-              <motion.div
-                whileHover={{ scale: 1.045 }}
-                transition={{ ease: ["circInOut"] }}
-              >
-                <AccordionItem value="item-1">
-                  <AccordionTrigger>
-                    Who is the creator of this movie?
-                  </AccordionTrigger>
-                  <AccordionContent className="accord">
-                    Created by {creator}
-                  </AccordionContent>
-                </AccordionItem>
-              </motion.div>
-              <motion.div
-                whileHover={{ scale: 1.045 }}
-                transition={{ ease: ["circInOut"] }}
-              >
-                <AccordionItem value="item-2">
-                  <AccordionTrigger>When was it released?</AccordionTrigger>
-                  <AccordionContent className="accord">
-                    It was released in {year}
-                  </AccordionContent>
-                </AccordionItem>
-              </motion.div>
-            </Accordion>
-            <div className="relative pt-[56.25%]">
-              <iframe
-                src={shortLink}
-                loading="lazy"
-                className="absolute top-0 h-full w-full border-0"
-                allow="accelerometer; gyroscope; encrypted-media; picture-in-picture;"
-                allowFullScreen
-              ></iframe>
+          <div className="px-4 md:px-6 lg:px-8">
+            <h1 className="issue text-center leading-normal lg:text-left">
+              {title}
+            </h1>
+            <div className="mt-2 mb-2 flex justify-center">
+              <SearchPage />
+            </div>
+            <div className="grid grid-cols-1 gap-4">
+              <div className="w-full">
+                <Accordion type="single" collapsible>
+                  <motion.div
+                    whileHover={{ scale: 1.045 }}
+                    transition={{ ease: ["circInOut"] }}
+                  >
+                    <AccordionItem value="item-1">
+                      <AccordionTrigger>
+                        Who is the creator of this movie?
+                      </AccordionTrigger>
+                      <AccordionContent className="accord">
+                        Created by {creator}
+                      </AccordionContent>
+                    </AccordionItem>
+                  </motion.div>
+                  <motion.div
+                    whileHover={{ scale: 1.045 }}
+                    transition={{ ease: ["circInOut"] }}
+                  >
+                    <AccordionItem value="item-2">
+                      <AccordionTrigger>When was it released?</AccordionTrigger>
+                      <AccordionContent className="accord">
+                        It was released in {year}
+                      </AccordionContent>
+                    </AccordionItem>
+                  </motion.div>
+                </Accordion>
+              </div>
+              <div className="relative pt-[56.25%]">
+                <iframe
+                  src={shortLink}
+                  loading="lazy"
+                  className="absolute top-0 h-full w-full border-0"
+                  allow="accelerometer; gyroscope; encrypted-media; picture-in-picture;"
+                  allowFullScreen
+                ></iframe>
+              </div>
             </div>
           </div>
         </motion.div>

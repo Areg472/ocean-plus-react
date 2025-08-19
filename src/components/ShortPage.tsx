@@ -60,12 +60,15 @@ export function ShortPage({
                 </AccordionItem>
               </motion.div>
             </Accordion>
-            <iframe
-              frameBorder="0"
-              className="theframe mt-14"
-              src={shortLink}
-              allowFullScreen
-            ></iframe>
+            <div className="relative pt-[56.25%]">
+              <iframe
+                src={shortLink}
+                loading="lazy"
+                className="absolute top-0 h-full w-full border-0"
+                allow="accelerometer; gyroscope; encrypted-media; picture-in-picture;"
+                allowFullScreen
+              ></iframe>
+            </div>
           </div>
         </motion.div>
       </body>

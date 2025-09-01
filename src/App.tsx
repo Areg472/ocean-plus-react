@@ -45,6 +45,9 @@ import {
   HorridJames,
   CaillouInto,
   CaillouAcross,
+  AndrewOrozco1,
+  AndrewOrozco2,
+  AndrewOrozco3,
 } from "@/pages/MoviePages.tsx";
 import {
   BlaBla,
@@ -102,6 +105,9 @@ function AppContent() {
     "/The-Horrid-James-Movie",
     "/Caillou-into-the-caillouverse",
     "/Caillou-across-the-caillouverse",
+    "/Andrew-Orozco-The-Movie",
+    "/Andrew-Orozco-The-Sequel",
+    "/Andrew-Orozco-3-Summers-Here",
   ];
 
   const isValidPath = (path: string): boolean => {
@@ -175,6 +181,18 @@ function AppContent() {
             <Route
               path="/Caillou-Across-The-Caillouverse"
               element={<CaillouAcross />}
+            />
+            <Route
+              path="/Andrew-Orozco-The-Movie"
+              element={<AndrewOrozco1 />}
+            />
+            <Route
+              path="/Andrew-Orozco-The-Sequel"
+              element={<AndrewOrozco2 />}
+            />
+            <Route
+              path="/Andrew-Orozco-3-Summers-Here"
+              element={<AndrewOrozco3 />}
             />
           </Routes>
         </AnimatePresence>

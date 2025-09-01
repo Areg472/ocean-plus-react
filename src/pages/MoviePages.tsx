@@ -3,7 +3,7 @@ export function Cailloumovie() {
   return (
     <>
       <MoviePage
-        year={2022}
+        year="October 2nd, 2022"
         movieLink={import.meta.env.VITE_MOVIE_LINK_CAILLOU}
         creator="Anti-Animations"
         genres="Animation/Action/Adventure/Comedy"
@@ -17,7 +17,7 @@ export function Cftwcftl123() {
   return (
     <>
       <MoviePage
-        year={2022}
+        year="2022"
         movieLink={import.meta.env.VITE_MOVIE_LINK_CFTWCFTL123}
         creator="Veyshal & 1Leon"
         genres="Animation/Action/Adventure/Comedy/Crime"
@@ -31,7 +31,7 @@ export function Cftwcftl4() {
   return (
     <>
       <MoviePage
-        year={2022}
+        year="August 24th, 2022"
         movieLink={import.meta.env.VITE_MOVIE_LINK_CFTWCFTL4}
         creator="Veyshal & 1Leon"
         genres="Animation/Action/Adventure/Comedy"
@@ -45,7 +45,7 @@ export function Cftwcftl5() {
   return (
     <>
       <MoviePage
-        year={2022}
+        year="December 2nd, 2022"
         movieLink={import.meta.env.VITE_MOVIE_LINK_CFTWCFTL5}
         creator="Veyshal & 1Leon"
         genres="Animation/Action/Adventure/Comedy"
@@ -59,7 +59,7 @@ export function Jackpaul() {
   return (
     <>
       <MoviePage
-        year={2022}
+        year="August 5th, 2022"
         movieLink={import.meta.env.VITE_MOVIE_LINK_JACKPAUL}
         creator="Rosie Bros Studios"
         genres="Animation/Adventure/Comedy/Dramedy"
@@ -73,7 +73,7 @@ export function Jpspooktacular() {
   return (
     <>
       <MoviePage
-        year={2023}
+        year="October 21st, 2023"
         movieLink={import.meta.env.VITE_MOVIE_LINK_JPSPOOKTACULAR}
         movieLink_2={import.meta.env.VITE_MOVIE_LINK_JPSPOOKTACULAR_3D}
         creator="Rosie Bros Studios"
@@ -87,7 +87,7 @@ export function Jpspooktacular() {
 export function Comedyworld() {
   return (
     <MoviePage
-      year={2022}
+      year="January 20th, 2023"
       movieLink={import.meta.env.VITE_MOVIE_LINK_COMEDYWORLD}
       creator="AllenGuy23"
       genres="Animation/Adventure/Comedy"
@@ -99,7 +99,7 @@ export function Comedyworld() {
 export function Gabricks() {
   return (
     <MoviePage
-      year={2022}
+      year="April 1st, 2022"
       movieLink={import.meta.env.VITE_MOVIE_LINK_GABRICKS}
       creator="JoJuanJohnson"
       genres="Animation/Action/Thriller/Adventure"
@@ -111,7 +111,7 @@ export function Gabricks() {
 export function Goofus1() {
   return (
     <MoviePage
-      year={2023}
+      year="March 2nd, 2023"
       movieLink={import.meta.env.VITE_MOVIE_LINK_GOOFUS1}
       creator="Veyshal & 1Leon"
       genres="Animation/Adventure/Comedy/Science-fiction/Fantasy"
@@ -123,7 +123,7 @@ export function Goofus1() {
 export function Goofus2() {
   return (
     <MoviePage
-      year={2023}
+      year="August 3, 2023"
       movieLink={import.meta.env.VITE_MOVIE_LINK_GOOFUS2}
       creator="Veyshal & 1Leon"
       genres="Animation/Crossover/Fantasy/Adventure"
@@ -135,7 +135,7 @@ export function Goofus2() {
 export function Littlevalendies() {
   return (
     <MoviePage
-      year={2022}
+      year="August 27th, 2022"
       movieLink={import.meta.env.VITE_MOVIE_LINK_LITTLEVALENDIES}
       creator="ClassicCaillouX645Grounded"
       genres="Animation/Action/Adventure/Comedy"
@@ -147,7 +147,7 @@ export function Littlevalendies() {
 export function Mathwarfare() {
   return (
     <MoviePage
-      year={2024}
+      year="December 12th, 2024"
       movieLink={import.meta.env.VITE_MOVIE_LINK_MATHWARFARE}
       creator="Xavier's GoAnimate Studios"
       genres="Animation/Action/Adventure"
@@ -159,7 +159,7 @@ export function Mathwarfare() {
 export function Unhappy() {
   return (
     <MoviePage
-      year={2024}
+      year="December 20th, 2024"
       movieLink={import.meta.env.VITE_MOVIE_LINK_UNHAPPY}
       creator="ClassicCaillouX645Grounded"
       genres="Animation/Adventure/Comedy"
@@ -171,7 +171,7 @@ export function Unhappy() {
 export function Veyshalmovie() {
   return (
     <MoviePage
-      year={2024}
+      year="December 25th, 2024"
       movieLink={import.meta.env.VITE_MOVIE_LINK_VEYSHALMOVIE}
       creator="Veyshal"
       genres="Animation/Action/Comedy/Drama/Thriller/Crime"
@@ -183,7 +183,7 @@ export function Veyshalmovie() {
 export function Vyondcinema() {
   return (
     <MoviePage
-      year={2023}
+      year="July 22, 2023"
       movieLink={import.meta.env.VITE_MOVIE_LINK_VYONDCINEMA}
       creator="AllenGuy23"
       genres="Animation/Crime/Adventure/Crossover"
@@ -195,7 +195,7 @@ export function Vyondcinema() {
 export function Nightshiftsurvival() {
   return (
     <MoviePage
-      year={2023}
+      year="December 21st, 2023"
       movieLink={import.meta.env.VITE_MOVIE_LINK_NIGHTSHIFTSURVIVAL}
       creator="RichsmondBlazer Studios"
       genres="Supernatural/Horror/Adventure/Thriller/Mystery"
@@ -207,7 +207,7 @@ export function Nightshiftsurvival() {
 export function Rosiegetsgrounded() {
   return (
     <MoviePage
-      year={2024}
+      year="January 23, 2024"
       movieLink={import.meta.env.VITE_MOVIE_LINK_ROSIEGETSGROUNDED}
       creator="Jett Kingston"
       genres="Crime/Comedy/Fantasy/Adventure"
@@ -219,7 +219,7 @@ export function Rosiegetsgrounded() {
 export function Jpchristmas() {
   return (
     <MoviePage
-      year={2022}
+      year="December 14th, 2022"
       movieLink={import.meta.env.VITE_MOVIE_LINK_JPCHRISTMAS}
       creator="Rosie Bros Studios"
       genres="Animation/Adventure/Comedy/Fantasy/Christmas"
@@ -231,7 +231,7 @@ export function Jpchristmas() {
 export function Serbs() {
   return (
     <MoviePage
-      year={2024}
+      year="August 23rd, 2024"
       movieLink={import.meta.env.VITE_MOVIE_LINK_SERBS}
       creator="BraxtonTheVyonder2009"
       title="The Surfs and the Peasants"
@@ -243,7 +243,7 @@ export function Serbs() {
 export function HorridJames() {
   return (
     <MoviePage
-      year={2025}
+      year="May 9th, 2025"
       movieLink={import.meta.env.VITE_MOVIE_LINK_HORRIDJAMES}
       creator="BraxtonTheVyonder2009"
       title="The Horrid James Movie"
@@ -255,7 +255,7 @@ export function HorridJames() {
 export function CaillouInto() {
   return (
     <MoviePage
-      year={2023}
+      year="December 2, 2023"
       movieLink={import.meta.env.VITE_MOVIE_LINK_CAILLOU_INTO}
       creator="Akula BO"
       title="Caillou Into the Caillouverse"
@@ -267,11 +267,47 @@ export function CaillouInto() {
 export function CaillouAcross() {
   return (
     <MoviePage
-      year={2025}
+      year="January 13 2025"
       movieLink={import.meta.env.VITE_MOVIE_LINK_CAILLOU_ACROSS}
       creator="Akula BO"
       title="Caillou Across the Caillouverse"
       genres="Adventure/Action/Comedy/Sci Fi"
+    />
+  );
+}
+
+export function AndrewOrozco1() {
+  return (
+    <MoviePage
+      year="January 19th 2018"
+      movieLink={import.meta.env.VITE_MOVIE_LINK_ANDREW_OROZCO_1}
+      creator="JoJuan Johnson"
+      title="Andrew Orozco The Movie"
+      genres="Action/Adventure/Comedy"
+    />
+  );
+}
+
+export function AndrewOrozco2() {
+  return (
+    <MoviePage
+      year="January 19th 2018"
+      movieLink={import.meta.env.VITE_MOVIE_LINK_ANDREW_OROZCO_2}
+      creator="JoJuan Johnson"
+      title="Andrew Orozco The Sequel"
+      genres="Action/Adventure/Comedy"
+    />
+  );
+}
+
+export function AndrewOrozco3() {
+  return (
+    <MoviePage
+      year="January 19th 2018"
+      movieLink={import.meta.env.VITE_MOVIE_LINK_ANDREW_OROZCO_3}
+      creator="JoJuan Johnson"
+      title="Andrew Orozco 3 Summer's Here"
+      genres="Action/Adventure/Comedy"
     />
   );
 }

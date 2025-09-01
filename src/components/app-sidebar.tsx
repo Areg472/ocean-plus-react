@@ -37,6 +37,21 @@ const originals = [
 
 const items = [
   {
+    title: "Andrew Orozco The Movie",
+    url: "/Andrew-orozco-the-movie",
+    icon: TvMinimalPlay,
+  },
+  {
+    title: "Andrew Orozco The Sequel",
+    url: "/Andrew-orozco-the-sequel",
+    icon: TvMinimalPlay,
+  },
+  {
+    title: "Andrew Orozco 3 Summers Here",
+    url: "/Andrew-orozco-3-summers-here",
+    icon: TvMinimalPlay,
+  },
+  {
     title: "Caillou The Movie",
     url: "/Caillou-the-movie",
     icon: TvMinimalPlay,

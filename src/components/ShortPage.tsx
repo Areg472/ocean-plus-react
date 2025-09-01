@@ -11,7 +11,7 @@ import SearchPage from "@/components/SearchPage.tsx";
 
 export function ShortPage({
   creator = "",
-  year = 0,
+  year = "",
   title = "",
   shortLink = "",
 }) {

@@ -3,6 +3,21 @@ import { Link, useNavigate } from "react-router-dom";
 
 const items = [
   // Movies
+  {
+    title: "Andrew Orozco The Movie",
+    type: "movie",
+    route: "/Andrew-orozco-the-movie",
+  },
+  {
+    title: "Andrew Orozco The Sequel",
+    type: "movie",
+    route: "/Andrew-orozco-the-sequel",
+  },
+  {
+    title: "Andrew Orozco 3 Summers Here",
+    type: "movie",
+    route: "/Andrew-orozco-3-summers-here",
+  },
   { title: "Math Warfare", type: "movie", route: "/Math-warfare" },
   { title: "The Veyshal Movie", type: "movie", route: "/The-veyshal-movie" },
   {

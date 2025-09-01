@@ -15,14 +15,14 @@ import SearchPage from "@/components/SearchPage.tsx";
 export function MoviePage({
   creator = "",
   title = "",
-  year = 0,
+  year = "",
   genres = "",
   movieLink = "",
   movieLink_2 = "",
 }) {
   const movieTitleLow = title?.toLowerCase();
 
-  const top = title == "Caillou The Movie";
+  const top = title == "Andrew Orozco The Movie";
   const bottom = title == "Unhappy 25 Years Little Brat";
 
   const [isChecked, setIsChecked] = useState(false);

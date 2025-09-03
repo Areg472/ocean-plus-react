@@ -108,6 +108,11 @@ const items = [
     type: "movie",
     route: "/Caillou-across-the-caillouverse",
   },
+  {
+    title: "I Now Pronounce You Retro and Ellie",
+    type: "movie",
+    route: "/I-now-pronounce-you-retro-and-ellie",
+  },
 
   // Shorts
   {

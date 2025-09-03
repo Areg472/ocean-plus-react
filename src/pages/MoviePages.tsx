@@ -311,3 +311,15 @@ export function AndrewOrozco3() {
     />
   );
 }
+
+export function RetroAndEllie() {
+  return (
+    <MoviePage
+      year="February 22nd 2025"
+      movieLink={import.meta.env.VITE_MOVIE_LINK_RETRO_AND_ELLIE}
+      creator="Retromiller1997"
+      title="I Now Pronounce You Retro and Ellie"
+      genres="Animation/Comedy/Musical"
+    />
+  );
+}

@@ -73,6 +73,7 @@
 
   .actualimage {
     max-width: 80%;
+      margin-bottom: 0.4px;
   }
 }
 
@@ -116,18 +117,17 @@
 
   .actualimage {
     max-width: 80%;
+      margin-bottom: 0.4px;
   }
 }
 
 .actualimage {
   max-width: 80%;
+    margin-bottom: 0.4px;
 }
 
 .button:hover,
 .image:hover {
   box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5);
   transition: 0.4s;
-}
-
-@media only screen and (max-device-width: 768px) {
 }

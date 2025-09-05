@@ -6,6 +6,7 @@ import { StrictMode } from "react";
 import { DevSupport } from "@react-buddy/ide-toolbox";
 import { ComponentPreviews, useInitial } from "@/dev";
 import { datadogRum } from "@datadog/browser-rum";
+import { PostHogProvider } from "posthog-js/react";
 
 datadogRum.init({
   applicationId: "37e3dcd2-6459-48f8-96c4-1292a1aab76a",
@@ -23,13 +24,22 @@ datadogRum.init({
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <HelmetProvider>
-      <DevSupport
-        ComponentPreviews={ComponentPreviews}
-        useInitialHook={useInitial}
-      >
-        <App />
-      </DevSupport>
-    </HelmetProvider>
+    <PostHogProvider
+      apiKey={import.meta.env.VITE_PUBLIC_POSTHOG_KEY}
+      options={{
+        api_host: import.meta.env.VITE_PUBLIC_POSTHOG_HOST,
+        defaults: "2025-05-24",
+        capture_exceptions: true,
+      }}
+    >
+      <HelmetProvider>
+        <DevSupport
+          ComponentPreviews={ComponentPreviews}
+          useInitialHook={useInitial}
+        >
+          <App />
+        </DevSupport>
+      </HelmetProvider>
+    </PostHogProvider>
   </StrictMode>,
 );

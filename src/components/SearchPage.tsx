@@ -113,6 +113,11 @@ const items = [
     type: "movie",
     route: "/I-now-pronounce-you-retro-and-ellie",
   },
+  {
+    title: "Vance Productions: The Movie",
+    type: "movie",
+    route: "/Vance-productions-the-movie",
+  },
 
   // Shorts
   {

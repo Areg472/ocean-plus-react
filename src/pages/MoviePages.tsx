@@ -323,3 +323,14 @@ export function RetroAndEllie() {
     />
   );
 }
+export function VanceProd() {
+  return (
+    <MoviePage
+      year="May 21st 2021"
+      movieLink={import.meta.env.VITE_MOVIE_LINK_VANCE_PROD}
+      creator="Ridenour Pictures"
+      title="Vance Productions: The Movie"
+      genres="Animation/Action/Adventure"
+    />
+  );
+}

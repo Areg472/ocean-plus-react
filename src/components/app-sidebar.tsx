@@ -166,6 +166,11 @@ const items = [
     url: "/Unhappy-25-Years-Little-Brat",
     icon: TvMinimalPlay,
   },
+  {
+    title: "Vance Productions: The Movie",
+    url: "/Vance-Productions-The-Movie",
+    icon: TvMinimalPlay,
+  },
 ];
 
 const header = [

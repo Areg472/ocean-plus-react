@@ -49,6 +49,7 @@ import {
   AndrewOrozco2,
   AndrewOrozco3,
   RetroAndEllie,
+  VanceProd,
 } from "@/pages/MoviePages.tsx";
 import {
   BlaBla,
@@ -110,6 +111,7 @@ function AppContent() {
     "/Andrew-Orozco-The-Sequel",
     "/Andrew-Orozco-3-Summers-Here",
     "/I-Now-Pronounce-You-Retro-And-Ellie",
+    "/Vance-Productions-The-Movie",
   ];
 
   const isValidPath = (path: string): boolean => {
@@ -199,6 +201,10 @@ function AppContent() {
             <Route
               path="/I-Now-Pronounce-You-Retro-And-Ellie"
               element={<RetroAndEllie />}
+            />
+            <Route
+              path="/Vance-Productions-The-Movie"
+              element={<VanceProd />}
             />
           </Routes>
         </AnimatePresence>

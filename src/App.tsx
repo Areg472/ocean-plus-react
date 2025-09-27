@@ -22,42 +22,10 @@ import {
   useSidebar,
 } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/app-sidebar.tsx";
-import {
-  Cailloumovie,
-  Cftwcftl123,
-  Cftwcftl4,
-  Cftwcftl5,
-  Comedyworld,
-  Gabricks,
-  Goofus1,
-  Goofus2,
-  Jackpaul,
-  Jpchristmas,
-  Jpspooktacular,
-  Littlevalendies,
-  Mathwarfare,
-  Nightshiftsurvival,
-  Rosiegetsgrounded,
-  Unhappy,
-  Veyshalmovie,
-  Vyondcinema,
-  Serbs,
-  HorridJames,
-  CaillouInto,
-  CaillouAcross,
-  AndrewOrozco1,
-  AndrewOrozco2,
-  AndrewOrozco3,
-  RetroAndEllie,
-  VanceProd,
-} from "@/pages/MoviePages.tsx";
-import {
-  BlaBla,
-  Carlosbirthdaygonewrong,
-  Maskmas,
-  Steamboatwillie,
-  Turkey,
-} from "@/pages/ShortPages.tsx";
+import { movieComponents } from "@/pages/MoviePages.tsx";
+import { shortComponents } from "@/pages/ShortPages.tsx";
+import { movies } from "@/data/movies.ts";
+import { shorts } from "@/data/shorts.ts";
 
 function SidebarContent() {
   const { state } = useSidebar();
@@ -80,38 +48,8 @@ function AppContent() {
 
   const sidebarPaths = [
     "/Movies",
-    "/Caillou-the-movie",
-    "/Cftwcftl-the-movie-123",
-    "/Cftwcftl-the-movie-4",
-    "/Cftwcftl-the-movie-5",
-    "/Ga-bricks-the-movie",
-    "/Goofus-and-Doofus-1",
-    "/Goofus-and-Doofus-2",
-    "/Its-Jack-Paul-Christmas",
-    "/Jack-Paul-Spooktacular",
-    "/Jack-Paul-The-Movie",
-    "/Little-Bills-Valendies-Movie",
-    "/Nightshift-Survival",
-    "/Rosie-Gets-Grounded-The-Movie",
-    "/The-Comedy-World-Movie",
-    "/The-Vyond-Cinema-Movie",
-    "/Carlos-Birthday-Gone-Wrong",
-    "/Maskmas",
-    "/Steamboat-Willie",
-    "/Math-Warfare",
-    "/Unhappy-25-Years-Little-Brat",
-    "/The-Veyshal-Movie",
-    "/The-Surfs-And-The-Preasant",
-    "/New-Turkey-Eve",
-    "/The-Random-Green-Blah-Blah-Thing",
-    "/The-Horrid-James-Movie",
-    "/Caillou-into-the-caillouverse",
-    "/Caillou-across-the-caillouverse",
-    "/Andrew-Orozco-The-Movie",
-    "/Andrew-Orozco-The-Sequel",
-    "/Andrew-Orozco-3-Summers-Here",
-    "/I-Now-Pronounce-You-Retro-And-Ellie",
-    "/Vance-Productions-The-Movie",
+    ...movies.map((movie) => movie.url),
+    ...shorts.map((short) => short.url),
   ];
 
   const isValidPath = (path: string): boolean => {
@@ -135,77 +73,28 @@ function AppContent() {
             <Route path="/Terms-Of-Service" element={<TermsOfService />} />
             <Route path="/Fries-UP" element={<Friesup />} />
             <Route path="/About-Us" element={<Aboutus />} />
-            <Route path="/Caillou-the-movie" element={<Cailloumovie />} />
-            <Route path="/Cftwcftl-the-movie-123" element={<Cftwcftl123 />} />
-            <Route path="/Cftwcftl-the-movie-4" element={<Cftwcftl4 />} />
-            <Route path="/Cftwcftl-the-movie-5" element={<Cftwcftl5 />} />
-            <Route path="/Ga-bricks-the-movie" element={<Gabricks />} />
-            <Route path="/Goofus-and-Doofus-1" element={<Goofus1 />} />
-            <Route path="/Goofus-and-Doofus-2" element={<Goofus2 />} />
-            <Route path="/Its-Jack-Paul-Christmas" element={<Jpchristmas />} />
-            <Route path="/The-Surfs-and-the-Peasants" element={<Serbs />} />
-            <Route path="/The-Horrid-James-Movie" element={<HorridJames />} />
-            <Route
-              path="/Jack-Paul-Spooktacular"
-              element={<Jpspooktacular />}
-            />
-            <Route path="/Jack-Paul-The-Movie" element={<Jackpaul />} />
-            <Route
-              path="/Little-Bills-Valendies-Movie"
-              element={<Littlevalendies />}
-            />
-            <Route
-              path="/Nightshift-Survival"
-              element={<Nightshiftsurvival />}
-            />
-            <Route
-              path="/Rosie-Gets-Grounded-The-Movie"
-              element={<Rosiegetsgrounded />}
-            />
-            <Route path="/The-Comedy-World-Movie" element={<Comedyworld />} />
-            <Route path="/The-Vyond-Cinema-Movie" element={<Vyondcinema />} />
-            <Route
-              path="/Carlos-Birthday-Gone-Wrong"
-              element={<Carlosbirthdaygonewrong />}
-            />
-            <Route path="/Maskmas" element={<Maskmas />} />
-            <Route path="/Steamboat-Willie" element={<Steamboatwillie />} />
-            <Route path="/Math-Warfare" element={<Mathwarfare />} />
-            <Route path="/The-Veyshal-Movie" element={<Veyshalmovie />} />
-            <Route path="/Unhappy-25-Years-Little-Brat" element={<Unhappy />} />
-            <Route path="/New-Turkey-Eve" element={<Turkey />} />
-            <Route
-              path="/The-Random-Green-Blah-Blah-Thing"
-              element={<BlaBla />}
-            />
-            <Route
-              path="/Caillou-Into-The-Caillouverse"
-              element={<CaillouInto />}
-            />
-            <Route
-              path="/Caillou-Across-The-Caillouverse"
-              element={<CaillouAcross />}
-            />
-            <Route
-              path="/Andrew-Orozco-The-Movie"
-              element={<AndrewOrozco1 />}
-            />
-            <Route
-              path="/Andrew-Orozco-The-Sequel"
-              element={<AndrewOrozco2 />}
-            />
-            <Route
-              path="/Andrew-Orozco-3-Summers-Here"
-              element={<AndrewOrozco3 />}
-            />
-            <Route
-              path="/I-Now-Pronounce-You-Retro-And-Ellie"
-              element={<RetroAndEllie />}
-            />
-            <Route
-              path="/Vance-Productions-The-Movie"
-              element={<VanceProd />}
-            />
+            
+            {movies.map((movie) => {
+              const Component = movieComponents[movie.functionName];
+              return (
+                <Route
+                  key={movie.id}
+                  path={movie.url}
+                  element={<Component />}
+                />
+              );
+            })}
+            
+            {shorts.map((short) => {
+              const Component = shortComponents[short.functionName];
+              return (
+                <Route
+                  key={short.id}
+                  path={short.url}
+                  element={<Component />}
+                />
+              );
+            })}
           </Routes>
         </AnimatePresence>
       </SidebarProvider>

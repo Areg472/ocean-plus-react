@@ -26,152 +26,22 @@ import {
 } from "@/components/ui/sidebar";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
+import { movies } from "@/data/movies.ts";
+import { shorts } from "@/data/shorts.ts";
 
-const originals = [
-  {
-    title: "The Random Green Blah Blah Thing",
-    url: "/The-Random-Green-Blah-Blah-Thing",
+const originals = shorts
+  .filter((short) => short.title === "The Random Green Blah Blah Thing")
+  .map((short) => ({
+    title: short.title,
+    url: short.url,
     icon: Star,
-  },
-];
+  }));
 
-const items = [
-  {
-    title: "Andrew Orozco The Movie",
-    url: "/Andrew-orozco-the-movie",
-    icon: TvMinimalPlay,
-  },
-  {
-    title: "Andrew Orozco The Sequel",
-    url: "/Andrew-orozco-the-sequel",
-    icon: TvMinimalPlay,
-  },
-  {
-    title: "Andrew Orozco 3 Summers Here",
-    url: "/Andrew-orozco-3-summers-here",
-    icon: TvMinimalPlay,
-  },
-  {
-    title: "Caillou The Movie",
-    url: "/Caillou-the-movie",
-    icon: TvMinimalPlay,
-  },
-  {
-    title: "Caillou Across the Caillouverse",
-    url: "/Caillou-across-the-caillouverse",
-    icon: TvMinimalPlay,
-  },
-  {
-    title: "Caillou Into the Caillouverse",
-    url: "/Caillou-into-the-caillouverse",
-    icon: TvMinimalPlay,
-  },
-  {
-    title: "CFTWCFTL The Movie 1-3",
-    url: "/Cftwcftl-the-movie-123",
-    icon: TvMinimalPlay,
-  },
-  {
-    title: "CFTWCFTL The Movie 4",
-    url: "/Cftwcftl-the-movie-4",
-    icon: TvMinimalPlay,
-  },
-  {
-    title: "CFTWCFTL The Movie 5",
-    url: "/Cftwcftl-the-movie-5",
-    icon: TvMinimalPlay,
-  },
-  {
-    title: "GA Bricks The Movie",
-    url: "/Ga-bricks-the-movie",
-    icon: TvMinimalPlay,
-  },
-  {
-    title: "Goofus & Doofus",
-    url: "/Goofus-and-Doofus-1",
-    icon: TvMinimalPlay,
-  },
-  {
-    title: "Goofus & Doofus 2",
-    url: "/Goofus-and-Doofus-2",
-    icon: TvMinimalPlay,
-  },
-  {
-    title: "I Now Pronounce You Retro and Ellie",
-    url: "/I-Now-Pronounce-You-Retro-And-Ellie",
-    icon: TvMinimalPlay,
-  },
-  {
-    title: "It's Jack Paul Christmas",
-    url: "/Its-Jack-Paul-Christmas",
-    icon: TvMinimalPlay,
-  },
-  {
-    title: "Jack Paul Spooktacular",
-    url: "/Jack-Paul-Spooktacular",
-    icon: TvMinimalPlay,
-  },
-  {
-    title: "Jack Paul The Movie",
-    url: "/Jack-Paul-The-Movie",
-    icon: TvMinimalPlay,
-  },
-  {
-    title: "Little Bill's Valendies Movie",
-    url: "/Little-Bills-Valendies-Movie",
-    icon: TvMinimalPlay,
-  },
-  {
-    title: "Math Warfare",
-    url: "/Math-Warfare",
-    icon: TvMinimalPlay,
-  },
-  {
-    title: "Nightshift Survival",
-    url: "/Nightshift-Survival",
-    icon: TvMinimalPlay,
-  },
-  {
-    title: "Rosie Gets Grounded Movie",
-    url: "/Rosie-Gets-Grounded-The-Movie",
-    icon: TvMinimalPlay,
-  },
-  {
-    title: "The Comedy World Movie",
-    url: "/The-Comedy-World-Movie",
-    icon: TvMinimalPlay,
-  },
-  {
-    title: "The Horrid James Movie",
-    url: "/The-Horrid-James-Movie",
-    icon: TvMinimalPlay,
-  },
-  {
-    title: "The Surfs And The Peasants",
-    url: "/The-Surfs-and-the-Peasants",
-    icon: TvMinimalPlay,
-  },
-  {
-    title: "The Vyond Cinema Movie",
-    url: "/The-Vyond-Cinema-Movie",
-    icon: TvMinimalPlay,
-  },
-  {
-    title: "The Veyshal Movie",
-    url: "/The-Veyshal-Movie",
-    icon: TvMinimalPlay,
-  },
-  {
-    title: "Unhappy 25 Years Little Brat",
-    url: "/Unhappy-25-Years-Little-Brat",
-    icon: TvMinimalPlay,
-  },
-  {
-    title: "Vance Productions: The Movie",
-    url: "/Vance-Productions-The-Movie",
-    icon: TvMinimalPlay,
-  },
-];
+const items = movies.map((movie) => ({
+  title: movie.title,
+  url: movie.url,
+  icon: TvMinimalPlay,
+}));
 
 const header = [
   {
@@ -222,28 +92,13 @@ const footer = [
   },
 ];
 
-const shorts = [
-  {
-    title: "Carlos Birthday Gone Wrong",
-    url: "/Carlos-Birthday-Gone-Wrong",
+const shortItems = shorts
+  .filter((short) => short.title !== "The Random Green Blah Blah Thing")
+  .map((short) => ({
+    title: short.title,
+    url: short.url,
     icon: Clapperboard,
-  },
-  {
-    title: "Maskmas",
-    url: "/Maskmas",
-    icon: Clapperboard,
-  },
-  {
-    title: "New Turkey Eve",
-    url: "/New-Turkey-Eve",
-    icon: Clapperboard,
-  },
-  {
-    title: "Steamboat Willie",
-    url: "/Steamboat-Willie",
-    icon: Clapperboard,
-  },
-];
+  }));
 
 export function AppSidebar() {
   const scrollRef = useRef(null);
@@ -329,7 +184,7 @@ export function AppSidebar() {
           <SidebarGroupLabel>Shorts</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
-              {shorts.map((shorts) => (
+              {shortItems.map((shortItem) => (
                 <motion.div
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1, transition: { duration: 1 } }}
@@ -340,11 +195,11 @@ export function AppSidebar() {
                   }}
                   whileHover={{ scale: 1.05 }}
                 >
-                  <SidebarMenuItem key={shorts.title}>
+                  <SidebarMenuItem key={shortItem.title}>
                     <SidebarMenuButton asChild>
-                      <Link to={shorts.url}>
-                        <shorts.icon />
-                        <span>{shorts.title}</span>
+                      <Link to={shortItem.url}>
+                        <shortItem.icon />
+                        <span>{shortItem.title}</span>
                       </Link>
                     </SidebarMenuButton>
                   </SidebarMenuItem>

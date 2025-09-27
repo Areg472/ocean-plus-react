@@ -1,56 +1,28 @@
 import { ShortPage } from "@/components/ShortPage.tsx";
+import { shorts } from "@/data/shorts.ts";
 
-export function Carlosbirthdaygonewrong() {
-  return (
+const shortComponents: Record<string, () => JSX.Element> = {};
+
+shorts.forEach((short) => {
+  shortComponents[short.functionName] = () => (
     <ShortPage
-      year="February 23rd, 2024"
-      shortLink={import.meta.env.VITE_SHORT_LINK_CARLOS_BIRTHDAY_GONE_WRONG}
-      creator="Carlo Bear"
-      title="Carlos Birthday Gone Wrong"
+      year={short.year}
+      shortLink={short.shortLink}
+      creator={short.creator}
+      title={short.title}
     />
   );
-}
+});
 
-export function Maskmas() {
-  return (
-    <ShortPage
-      year="December 24th, 2023"
-      shortLink={import.meta.env.VITE_SHORT_LINK_MASKMAS}
-      creator="Carlo Bear"
-      title="Maskmas"
-    />
-  );
-}
+const shortExports = Object.fromEntries(
+  shorts.map((short) => [short.functionName, shortComponents[short.functionName]])
+);
+export const {
+  Carlosbirthdaygonewrong,
+  Maskmas,
+  Turkey,
+  Steamboatwillie,
+  BlaBla,
+} = shortExports;
 
-export function Turkey() {
-  return (
-    <ShortPage
-      year="December 31st, 2024"
-      shortLink={import.meta.env.VITE_SHORT_LINK_TURKEY}
-      creator="Carlo Bear"
-      title="New Turkey Eve"
-    />
-  );
-}
-
-export function Steamboatwillie() {
-  return (
-    <ShortPage
-      year="November 18th, 1928"
-      shortLink={import.meta.env.VITE_SHORT_LINK_STEAMBOAT_WILLIE}
-      creator="Walt Disney Studios"
-      title="Steamboat Willie"
-    />
-  );
-}
-
-export function BlaBla() {
-  return (
-    <ShortPage
-      year="March 17th, 2025"
-      shortLink={import.meta.env.VITE_SHORT_LINK_BLA_BLA}
-      creator="Carlo Bear"
-      title="The Random Green Blah Blah Thing"
-    />
-  );
-}
+export { shortComponents };

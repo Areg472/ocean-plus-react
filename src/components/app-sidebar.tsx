@@ -86,7 +86,7 @@ const footer = [
   },
 
   {
-    title: "Dolphin Pictures",
+    title: "Ocean Blue Studios",
     url: "https://link.oceanbluestream.com/oceanbluepictures",
     icon: Video,
   },

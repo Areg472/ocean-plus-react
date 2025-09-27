@@ -14,15 +14,6 @@ shorts.forEach((short) => {
   );
 });
 
-const shortExports = Object.fromEntries(
-  shorts.map((short) => [short.functionName, shortComponents[short.functionName]])
-);
-export const {
-  Carlosbirthdaygonewrong,
-  Maskmas,
-  Turkey,
-  Steamboatwillie,
-  BlaBla,
-} = shortExports;
-
 export { shortComponents };
+
+export default shortComponents;

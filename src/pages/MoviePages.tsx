@@ -16,37 +16,6 @@ movies.forEach((movie) => {
   );
 });
 
-const movieExports = Object.fromEntries(
-  movies.map((movie) => [movie.functionName, movieComponents[movie.functionName]])
-);
-export const {
-  Cailloumovie,
-  Cftwcftl123,
-  Cftwcftl4,
-  Cftwcftl5,
-  Jackpaul,
-  Jpspooktacular,
-  Comedyworld,
-  Gabricks,
-  Goofus1,
-  Goofus2,
-  Littlevalendies,
-  Mathwarfare,
-  Unhappy,
-  Veyshalmovie,
-  Vyondcinema,
-  Nightshiftsurvival,
-  Rosiegetsgrounded,
-  Jpchristmas,
-  Serbs,
-  HorridJames,
-  CaillouInto,
-  CaillouAcross,
-  AndrewOrozco1,
-  AndrewOrozco2,
-  AndrewOrozco3,
-  RetroAndEllie,
-  VanceProd,
-} = movieExports;
-
 export { movieComponents };
+
+export default movieComponents;

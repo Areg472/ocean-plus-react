@@ -78,7 +78,7 @@ export function MoviePage({
                     <AccordionItem value="item-2">
                       <AccordionTrigger>When was it released?</AccordionTrigger>
                       <AccordionContent className="accord">
-                        It was released in {year}
+                        It was released on {year}
                       </AccordionContent>
                     </AccordionItem>
                   </motion.div>

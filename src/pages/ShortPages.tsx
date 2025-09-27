@@ -15,7 +15,10 @@ shorts.forEach((short) => {
 });
 
 const shortExports = Object.fromEntries(
-  shorts.map((short) => [short.functionName, shortComponents[short.functionName]])
+  shorts.map((short) => [
+    short.functionName,
+    shortComponents[short.functionName],
+  ]),
 );
 export const {
   Carlosbirthdaygonewrong,

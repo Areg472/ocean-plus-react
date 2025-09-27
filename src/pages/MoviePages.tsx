@@ -17,7 +17,10 @@ movies.forEach((movie) => {
 });
 
 const movieExports = Object.fromEntries(
-  movies.map((movie) => [movie.functionName, movieComponents[movie.functionName]])
+  movies.map((movie) => [
+    movie.functionName,
+    movieComponents[movie.functionName],
+  ]),
 );
 export const {
   Cailloumovie,

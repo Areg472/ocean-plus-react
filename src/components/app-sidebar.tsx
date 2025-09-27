@@ -216,7 +216,7 @@ export function AppSidebar() {
             <motion.div whileHover={{ scale: 1.05 }}>
               <SidebarMenuItem key={footer.title}>
                 <SidebarMenuButton asChild>
-                  <a href={footer.url}>
+                  <a href={footer.url} target={"_blank"}>
                     <footer.icon />
                     <span>{footer.title}</span>
                   </a>

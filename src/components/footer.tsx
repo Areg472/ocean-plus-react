@@ -9,7 +9,7 @@ export function Footer() {
             <button className="buttons2 mb-1.5 cursor-pointer">Discord</button>
           </a>
           <a target="_blank" href="https://link.oceanbluestream.com/status">
-            <button className="buttons2">Status</button>
+            <button className="buttons2 cursor-pointer">Status</button>
           </a>
         </div>
         <div className="column">

@@ -1,138 +1,20 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { movies } from "../data/movies";
+import { shorts } from "../data/shorts";
 
+// Combine movies and shorts into a single items array
 const items = [
-  // Movies
-  {
-    title: "Andrew Orozco The Movie",
+  ...movies.map((movie) => ({
+    title: movie.title,
     type: "movie",
-    route: "/Andrew-orozco-the-movie",
-  },
-  {
-    title: "Andrew Orozco The Sequel",
-    type: "movie",
-    route: "/Andrew-orozco-the-sequel",
-  },
-  {
-    title: "Andrew Orozco 3 Summers Here",
-    type: "movie",
-    route: "/Andrew-orozco-3-summers-here",
-  },
-  { title: "Math Warfare", type: "movie", route: "/Math-warfare" },
-  { title: "The Veyshal Movie", type: "movie", route: "/The-veyshal-movie" },
-  {
-    title: "The Comedy World Movie",
-    type: "movie",
-    route: "/The-comedy-world-movie",
-  },
-  { title: "Caillou The Movie", type: "movie", route: "/Caillou-the-movie" },
-  {
-    title: "Little Bill's Valendies Movie",
-    type: "movie",
-    route: "/Little-bills-valendies-movie",
-  },
-  { title: "Goofus & Doofus", type: "movie", route: "/Goofus-and-Doofus-1" },
-  { title: "Goofus & Doofus 2", type: "movie", route: "/Goofus-and-Doofus-2" },
-  {
-    title: "It's Jack Paul Christmas",
-    type: "movie",
-    route: "/Its-Jack-Paul-Christmas",
-  },
-  {
-    title: "CFTWCFTL The Movie 4",
-    type: "movie",
-    route: "/Cftwcftl-the-movie-4",
-  },
-  {
-    title: "Jack Paul Spooktacular",
-    type: "movie",
-    route: "/Jack-Paul-Spooktacular",
-  },
-  {
-    title: "CFTWCFTL The Movie 123",
-    type: "movie",
-    route: "/Cftwcftl-the-movie-123",
-  },
-  {
-    title: "CFTWCFTL The Movie 5",
-    type: "movie",
-    route: "/Cftwcftl-the-movie-5",
-  },
-  {
-    title: "Jack Paul The Movie",
-    type: "movie",
-    route: "/Jack-paul-the-movie",
-  },
-  {
-    title: "GA Bricks The Movie",
-    type: "movie",
-    route: "/Ga-bricks-the-movie",
-  },
-  {
-    title: "Unhappy 25 Years Little Brat",
-    type: "movie",
-    route: "/Unhappy-25-years-little-brat",
-  },
-  {
-    title: "The Vyond Cinema Movie",
-    type: "movie",
-    route: "/The-vyond-cinema-movie",
-  },
-  {
-    title: "Nightshift Survival",
-    type: "movie",
-    route: "/Nightshift-survival",
-  },
-  {
-    title: "Rosie Gets Grounded The Movie",
-    type: "movie",
-    route: "/Rosie-gets-grounded-the-movie",
-  },
-  {
-    title: "The Surfs and the Peasants",
-    type: "movie",
-    route: "/The-surfs-and-the-peasants",
-  },
-  {
-    title: "The Horrid James Movie",
-    type: "movie",
-    route: "/The-horrid-james-movie",
-  },
-  {
-    title: "Caillou Into the Caillouverse",
-    type: "movie",
-    route: "/Caillou-into-the-caillouverse",
-  },
-  {
-    title: "Caillou Across the Caillouverse",
-    type: "movie",
-    route: "/Caillou-across-the-caillouverse",
-  },
-  {
-    title: "I Now Pronounce You Retro and Ellie",
-    type: "movie",
-    route: "/I-now-pronounce-you-retro-and-ellie",
-  },
-  {
-    title: "Vance Productions: The Movie",
-    type: "movie",
-    route: "/Vance-productions-the-movie",
-  },
-
-  // Shorts
-  {
-    title: "The Random Green Blah Blah Thing",
+    route: movie.url,
+  })),
+  ...shorts.map((short) => ({
+    title: short.title,
     type: "short",
-    route: "/The-random-green-blah-blah-thing",
-  },
-  {
-    title: "Carlos Birthday Gone Wrong",
-    type: "short",
-    route: "/Carlos-birthday-gone-wrong",
-  },
-  { title: "Maskmas", type: "short", route: "/Maskmas" },
-  { title: "New Turkey Eve", type: "short", route: "/Turkey" },
-  { title: "Steamboat Willie", type: "short", route: "/Steamboat-willie" },
+    route: short.url,
+  })),
 ];
 
 // Simple fuzzy search function

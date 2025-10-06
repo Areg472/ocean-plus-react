@@ -14,7 +14,7 @@ export const movies: Movie[] = [
   {
     id: "andrew-orozco-1",
     title: "Andrew Orozco The Movie",
-    year: "January 19th 2018",
+    year: "January 19th, 2018",
     creator: "JoJuan Johnson",
     genres: "Action/Adventure/Comedy",
     movieLink: import.meta.env.VITE_MOVIE_LINK_ANDREW_OROZCO_1,
@@ -24,7 +24,7 @@ export const movies: Movie[] = [
   {
     id: "andrew-orozco-2",
     title: "Andrew Orozco The Sequel",
-    year: "January 19th 2018",
+    year: "January 4th, 2019",
     creator: "JoJuan Johnson",
     genres: "Action/Adventure/Comedy",
     movieLink: import.meta.env.VITE_MOVIE_LINK_ANDREW_OROZCO_2,
@@ -34,7 +34,7 @@ export const movies: Movie[] = [
   {
     id: "andrew-orozco-3",
     title: "Andrew Orozco 3 Summer's Here",
-    year: "January 19th 2018",
+    year: "July 3rd, 2020",
     creator: "JoJuan Johnson",
     genres: "Action/Adventure/Comedy",
     movieLink: import.meta.env.VITE_MOVIE_LINK_ANDREW_OROZCO_3,
@@ -275,11 +275,21 @@ export const movies: Movie[] = [
   {
     id: "vance-productions",
     title: "Vance Productions: The Movie",
-    year: "May 21st 2021",
+    year: "May 21st, 2021",
     creator: "Ridenour Pictures",
     genres: "Animation/Action/Adventure",
     movieLink: import.meta.env.VITE_MOVIE_LINK_VANCE_PROD,
     url: "/Vance-Productions-The-Movie",
     functionName: "VanceProd",
+  },
+  {
+    id: "weatherstar",
+    title: "WeatherStar4,000video: The Movie",
+    year: "July 19th, 2019",
+    creator: "WeatherStar4,000video",
+    genres: "Action/Comedy/Drama",
+    movieLink: import.meta.env.VITE_MOVIE_LINK_WEATHERSTAR,
+    url: "/Weatherstar4000video-The-Movie",
+    functionName: "Weatherstar",
   },
 ];

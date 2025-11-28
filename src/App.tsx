@@ -73,7 +73,7 @@ function AppContent() {
             <Route path="/Terms-Of-Service" element={<TermsOfService />} />
             <Route path="/Fries-UP" element={<Friesup />} />
             <Route path="/About-Us" element={<Aboutus />} />
-            
+
             {movies.map((movie) => {
               const Component = movieComponents[movie.functionName];
               return (
@@ -84,7 +84,7 @@ function AppContent() {
                 />
               );
             })}
-            
+
             {shorts.map((short) => {
               const Component = shortComponents[short.functionName];
               return (
